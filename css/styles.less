@@ -1,0 +1,389 @@
+/* Import the Google Font 'Lato' */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@background: #F1F2F1;
+
+@red-500: #f44336;
+@yellow-500: #ffeb3b;
+@amber-500: #ffc107;
+@deepOrange-500: #FF5722;
+@lightBlue-500: #03a9f4;
+@lightBlue-900: #01579b;
+@indigo-500: #3f51b5;
+@blue-500: #2196f3;
+@grey-50: #FAFAFA;
+@grey-200: #eeeeee;
+@grey-500: #9E9E9E;
+@grey-300: #E0E0E0;
+@blanco: #FFFFFF;
+
+@barra-size: 25px;
+
+.container{
+    margin-top: 50px;
+}
+
+/* Container styles */
+body {
+  background-color: @background;
+  color: #333;
+  font-family: 'Lato';
+}
+
+.portafolio{
+    padding: 10px;
+    background: @blanco;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+}
+
+.portafolio img{
+    border-radius: 50%;
+}
+
+.portafolio h5{
+    margin-top: -15px;
+    color: @grey-500;
+}
+
+.linea{
+    margin-top: 15px;  margin-bottom: 15px;
+    border-radius: 2px;
+    height: 5px; background: @grey-300;
+    
+}
+
+.portafolio .about-me h3{
+    margin:7px;
+}
+
+.portafolio .about-me h3 i{
+    margin-right:5px;
+}
+
+.about-me ul li{
+    display: inline-block;
+    margin-right:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Chechear HTML para definir valores */
+@Percent-WebDesign: 80%;
+@Percent-HTML5: 70%;
+@Percent-CSS3: 75%;
+@Percent-JS: 20%;
+@Percent-JQuery: 45%;
+@Percent-TypeScript: 65%;
+@Percent-Angular2: 73%;
+@Percent-Java: 80%;
+
+
+.barra {
+    width: 90%; height: @barra-size;
+    position: relative;
+    background: @grey-200;
+    margin: 10px auto; border-radius: 5px;
+}
+
+
+#s-WebDesign{
+    width: @Percent-WebDesign; height: @barra-size;
+    position: absolute;
+    background-color: @indigo-500;
+    animation: Animate-WebDesign 4s;
+    -webkit-animation: Animate-WebDesign 4s;
+    -moz-animation: Animate-WebDesign 4s;
+    -o-animation: Animate-WebDesign 4s;
+}
+
+@keyframes Animate-WebDesign {
+    from { width: 10px; }to { width: @Percent-WebDesign; }
+}
+
+@-webkit-keyframes Animate-WebDesign {
+    from { width: 10px; }to { width: @Percent-WebDesign;}
+}
+
+@-moz-keyframes Animate-WebDesign {
+    from { width: 10px; }to { width: @Percent-WebDesign;}
+}
+
+@-o-keyframes Animate-WebDesign {
+    from { width: 10px; }to { width: @Percent-WebDesign;}
+}
+
+/*************************************************************************/
+#s-HTML {
+    width: @Percent-HTML5; height: @barra-size;
+    position: absolute;
+    background-color: @deepOrange-500;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+}
+
+@keyframes Animate-HTML {
+    from { width: 10px; }to { width: @Percent-HTML5; }
+}
+
+@-webkit-keyframes Animate-HTML {
+    from { width: 10px; }to { width: @Percent-HTML5;}
+}
+
+@-moz-keyframes Animate-HTML {
+    from { width: 10px; }to { width: @Percent-HTML5;}
+}
+
+@-o-keyframes Animate-HTML {
+    from { width: 10px; }to { width: @Percent-HTML5;}
+}
+
+/*************************************************************************/
+#s-CSS {
+    width: @Percent-CSS3; height: @barra-size;
+    position: absolute;
+    background-color: @lightBlue-500;
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+}
+
+@keyframes Animate-CSS {
+    from { width: 10px; }to { width: @Percent-CSS3;}
+}
+@-webkit-keyframes Animate-CSS {
+    from { width: 10px; }to { width: @Percent-CSS3;}
+}
+@-moz-keyframes Animate-CSS {
+    from { width: 10px; }to { width: @Percent-CSS3;}
+}
+@-o-keyframes Animate-CSS {
+    from { width: 10px; }to { width: @Percent-CSS3;}
+}
+
+/*************************************************************************/
+#s-JS{
+    width: @Percent-JS; height: @barra-size;
+    position: absolute;
+    background-color: @yellow-500;
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+}
+
+@keyframes Animate-JS {
+    from { width: 10px; }to { width: @Percent-JS; }
+}
+
+@-webkit-keyframes Animate-JS {
+    from { width: 10px; }to { width: @Percent-JS;}
+}
+
+@-moz-keyframes Animate-JS {
+    from { width: 10px; }to { width: @Percent-JS;}
+}
+
+@-o-keyframes Animate-JS {
+    from { width: 10px; }to { width: @Percent-JS;}
+}
+
+
+/*************************************************************************/
+#s-jQuery {
+    width: @Percent-JQuery;
+    height: @barra-size;
+    position: absolute;
+    background-color: @lightBlue-900;
+    animation: Animate-jQuery 5s;
+    -webkit-animation: Animate-jQuery 5s;
+    -moz-animation: Animate-jQuery 5s;
+    -o-animation: Animate-jQuery 5s;
+}
+
+@keyframes Animate-jQuery {
+    from { width: 10px; } to { width: @Percent-JQuery;}
+}
+@-webkit-keyframes Animate-jQuery {
+    from { width: 10px; } to { width: @Percent-JQuery;}
+}
+@-moz-keyframes Animate-jQuery {
+    from { width: 10px; } to { width: @Percent-JQuery;}
+}
+@-o-keyframes Animate-jQuery {
+    from { width: 10px; } to { width: @Percent-JQuery;}
+}
+
+/*************************************************************************/
+#s-TypeScript{
+    width: @Percent-TypeScript; height: @barra-size;
+    position: absolute;
+    background-color: @blue-500;
+    animation: Animate-TypeScript 4s;
+    -webkit-animation: Animate-TypeScript 4s;
+    -moz-animation: Animate-TypeScript 4s;
+    -o-animation: Animate-TypeScript 4s;
+}
+
+@keyframes Animate-TypeScript {
+    from { width: 10px; }to { width: @Percent-TypeScript; }
+}
+
+@-webkit-keyframes Animate-TypeScript {
+    from { width: 10px; }to { width: @Percent-TypeScript;}
+}
+
+@-moz-keyframes Animate-TypeScript {
+    from { width: 10px; }to { width: @Percent-TypeScript;}
+}
+
+@-o-keyframes Animate-TypeScript {
+    from { width: 10px; }to { width: @Percent-TypeScript;}
+}
+
+/*************************************************************************/
+#s-Angular2{
+    width: @Percent-Angular2; height: @barra-size;
+    position: absolute;
+    background-color: @red-500;
+    animation: Animate-Angular2 4s;
+    -webkit-animation: Animate-Angular2 4s;
+    -moz-animation: Animate-Angular2 4s;
+    -o-animation: Animate-Angular2 4s;
+}
+
+@keyframes Animate-Angular2 {
+    from { width: 10px; }to { width: @Percent-Angular2; }
+}
+
+@-webkit-keyframes Animate-Angular2 {
+    from { width: 10px; }to { width: @Percent-Angular2;}
+}
+
+@-moz-keyframes Animate-Angular2 {
+    from { width: 10px; }to { width: @Percent-Angular2;}
+}
+
+@-o-keyframes Animate-Angular2 {
+    from { width: 10px; }to { width: @Percent-Angular2;}
+}
+
+/*************************************************************************/
+#s-Java{
+    width: @Percent-Angular2; height: @barra-size;
+    position: absolute;
+    background-color: @amber-500;
+    animation: Animate-Java 4s;
+    -webkit-animation: Animate-Java 4s;
+    -moz-animation: Animate-Java 4s;
+    -o-animation: Animate-Java 4s;
+}
+
+@keyframes Animate-Java {
+    from { width: 10px; }to { width: @Percent-Java; }
+}
+
+@-webkit-keyframes Animate-Java {
+    from { width: 10px; }to { width: @Percent-Java;}
+}
+
+@-moz-keyframes Animate-Java {
+    from { width: 10px; }to { width: @Percent-Java;}
+}
+
+@-o-keyframes Animate-Java {
+    from { width: 10px; }to { width: @Percent-Java;}
+}
+
+.code-txt {
+    z-index: 1;
+    float: left;
+    //position: absolute;
+    margin-top: 5px;
+    margin-left: 7px;
+    text-shadow: none;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 14px;
+    }
+
+#s-JS .code-txt {
+    color: black;
+    text-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.16);
+}
+
+.Percent-txt {
+    z-index: 3;
+    position: relative;
+    padding-right: 5px;
+    margin-top: 5px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 12px;
+}
+
+.fadeIn {
+    /* CSS needed for animation */ 
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -o-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; 
+}
+/* Animation Times - Time to fade in */
+.fadeIn-3s {
+     -webkit-animation-duration:3s;
+     -moz-animation-duration:3s;
+     -o-animation-duration:3s;
+     animation-duration:3s;
+}
+/* Animation Delay - Time to be delayed  */
+.fadeIn-Delay-3s {
+     -webkit-animation-delay:3s;
+     -moz-animation-delay:3s;
+     -o-animation-delay:3s;
+     animation-delay:3s;
+}
+
+
+
+@media only screen and (max-width: 40em) {
+    .responsive-percent {
+        margin-right: -45px !important;
+    }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+     .responsive-percent {
+         margin-right: -45px !important;
+     }
+}
