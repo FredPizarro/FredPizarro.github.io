@@ -33,13 +33,12 @@ body {
 .portafolio{
     padding: 10px;
     background: @blanco;
-    height: 100%;
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     margin-bottom: 20px;
 }
 
-.portafolio img{
+.portafolio .foto{
     border-radius: 50%;
 }
 
@@ -390,6 +389,9 @@ body {
     display: inline-block;
 }
 
+
+
+
 .Cx1{
     width: 45%; height: @CG-x1;
     background: @grey-500;
@@ -432,24 +434,33 @@ body {
 }
 
 //wEB dEV
-#test2 .Cx1{ display: inline-block;
-    width: 100%;
+.t2x4{ margin-right: 20px; }
+.t1x4,.t2x4,.t3x4,.t4x4{
+    display: inline-block;
     position: relative;
+    border-radius: 10px;
+    background: @grey-500;
+    margin-bottom: 10px;
 }
-
-#test2 .Cx2-2 div{ display: inline-block;
-    width: 100%; height: 180px;
-    margin: 0px; margin-top:5px;
+.t1x4{
+    width: 100%;
+    height: 250px;
+    background: @grey-500;
 }
-#test2 .Cx1:hover{
-    background: @deepOrange-500;
+.t2x4,.t3x4{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
 }
-#test2 .Cx2-2 .twoC:hover{
-    background: @lightBlue-500;
+.t4x4{
+    margin-top: 10px;
+    width: 100%;
+    height: 160px;
 }
-#test2 .Cx2-2 .treeC:hover{
-    background: @yellow-500;
-}
+.t1x4:hover{ background: @deepOrange-500; }
+.t2x4:hover{ background: @lightBlue-500; }
+.t3x4:hover{ background: @yellow-500; }
+.t4x4:hover{ background: @lightBlue-900; }
 
 //Web APP
 #test3 div{
@@ -465,6 +476,7 @@ body {
     margin-right: 15px;
 }
 
+
 #test3 .Cx1-1{
     width: 45%;
    height: 720px; 
@@ -477,13 +489,17 @@ body {
 }
 
 //Desktop APP
-.completo{
+.t1{
     width: 100%; height: 720px;
     border-radius: 15px;
     background: @grey-500;
-    margin-bottom: 21px;
+    margin-bottom: 21px; padding: 20px;
 }
-#test4 .completo{
+.pJava{
+    border-radius: 5px;
+}
+
+#test4 .t1:hover{
     background: @amber-500;
 }
 
@@ -492,20 +508,21 @@ body {
 #test2,
 #test3,
 #test4{
-    height: 742px;
+    height: 772px;
 }
-
 
 @media only screen and (max-width: 40em) {
     .responsive-percent {
         margin-right: -45px !important;
     }
-    #test1{
-        height: 1060px;
+    #test1,#test2,#test3,#test4{
+        height: 100%;
     }
-    
     .Cx1,
     .Cx2-2 .twoC{margin: 0px; margin-bottom: 10px;
+        width: 100%;
+    }
+    #test3 .Cx1, #test3 .Cx1-1{
         width: 100%;
     }
     
@@ -514,10 +531,9 @@ body {
      .responsive-percent {
          margin-right: -45px !important;
      }
-    #test1{
-        height: 1060px;
+    #test1,#test2,#test3,#test4{
+        height: 100%;
     }
-    
     .Cx1,
     .Cx2-2 .twoC{margin: 0px; margin-bottom: 10px;
         width: 100%;
