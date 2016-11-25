@@ -5,39 +5,43 @@
     <title>Portafolio: Fred Pizarro</title>
     <link rel="stylesheet" href="assets/css/materialPE.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="assets/css/general-styles.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="imgs/ICONO_PS.png">
     
     
 </head>
 <body>
-   
+    <div class="fondo">
+     
+    </div>
     <div class="container">
         <div class="row">
             <div class="col s12 m4 l3">
                 <div class="portafolio">
                     <div class="center"><img class="foto" src="imgs/FredPizarro.png" alt=""></div>
-                    <h2>Fred Pizarro</h2>
-                    <h5>Web Design/ Web Development/ Java Development</h5>
+                    <br>
+                    <h5>Fred Pizarro</h5>
+                    <h6>Web Design/ Web Development/ Java Development</h6>
                     <div class="linea"></div>
                     <div class="about-me">
                       
-                       <!-- About me -->
-                        <h3><i class="fa fa-user-circle" ></i> About me</h3>
+                       <!-- About me --> <br>
+                        <h5><i class="fa fa-user-circle" ></i> About me</h5>
                          <p>
                            Human devoting his time to technology and natural art of my people and society.
                          </p><br>
                          
-                        <!-- Contact me --> 
-                        <h3><i class="fa fa-tty" aria-hidden="true"></i> Contact me</h3>
+                        <!-- Contact me -->  <br>
+                        <h5><i class="fa fa-tty" aria-hidden="true"></i> Contact me</h5>
                          <ul class="center">
                                 <li><a href="#"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
                                 <li><a href="https://fredpizarro.github.io/"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i></a></li>
                          </ul><br>
                          
-                        <!-- My Skills --> 
-                        <h3><i class="fa fa-star-o" aria-hidden="true"></i>My Skills</h3>
+                        <!-- My Skills --> <br>
+                        <h5><i class="fa fa-star-o" aria-hidden="true"></i>My Skills</h5>
                             
                             <div id="skills ">
                                 <div class="barra">
@@ -109,9 +113,16 @@
                     </ul>
                     
                 </div> <br>
+<!--                *******************************************************-->
                 <!-- UX/UI-->
                 <div id="test1" class="col s12 cuadros center">
-                    <div class="Cx1"></div>
+                    <div class="Cx1">
+                      <br>
+                       <a id="btnModal_01">
+                           <img src="imgs/web-page-001.jpg" alt="" width="70" height="120"> <br>
+                           <span>Web Design</span>
+                       </a>
+                    </div>
                     <div class="Cx2-2">
                         <div class="twoC"></div>
                         <div class="treeC"></div>
@@ -137,6 +148,9 @@
                     <div class="t1">
                         <div class="view-Panel">
                             <a href=""><img class="pJava" src="imgs/web-Dev2.png" alt="" width="250"></a>
+                            
+                            <a href="">Click</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -149,7 +163,27 @@
         
     </div>
     
+    
+<!--    Modal : btnModal_01-->
+   <div id="Modal_01" class="modal">
+      <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">×</span>
+            <h2>Web Design : "Ventas de Autos"</h2>
+          </div>
+          <div class="modal-body">
+           <img src="imgs/web-page-001.jpg" alt="" width="95%">
+          </div>
+          <div class="modal-footer">
+            <h5>Web Design: Skyrider Design</h5>
+          </div>
+        </div>
+    </div>
+    
+    
     <script src="assets/js/jquery-3.1.1.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
