@@ -617,7 +617,8 @@ body {
   /* Could be more or less, depending on screen size */
 }
 /* The Close Button */
-.close {
+.close,
+.close2 {
   color: #212121;
   background: #FFFF00;
   float: right;
@@ -633,6 +634,8 @@ body {
   position: fixed;
   right: 10%;
 }
+.close2:hover,
+.close2:focus,
 .close:hover,
 .close:focus {
   background: #FF1744;
