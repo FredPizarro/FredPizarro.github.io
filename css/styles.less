@@ -23,11 +23,13 @@
     margin-top: 50px;
 }
 
+
 /* Container styles */
 body {
   background-color: @background;
   color: #333;
   font-family: 'Lato';
+    
 }
 
 .portafolio{
@@ -394,6 +396,7 @@ body {
 
 .Cx1{
     top: 10;
+    float: left;
     width: 45%; height: @CG-x1;
     background: @grey-500;
     border-radius: 10px; margin: 0px;
@@ -409,6 +412,7 @@ body {
 .Cx2-2 div{
     display: block;
     position: relative;
+    margin-top: 0px;
 }
 
 .twoC{
@@ -464,28 +468,28 @@ body {
 .t4x4:hover{ background: @lightBlue-900; }
 
 //Web APP
-#test3 div{
+#web-mobil_app div{
     margin: 0px;
     display: inline-block; /*En un bloque*/
     position: relative; /*par correr a la izq del bloque*/
     margin-bottom: 18px;
 }
 
-#test3 .Cx1{
+#web-mobil_app .Cx1{
     width: 45%;
     height: 720px;
     margin-right: 15px;
 }
 
 
-#test3 .Cx1-1{
+#web-mobil_app .Cx1-1{
     width: 45%;
    height: 720px; 
 }
-#test3 .Cx1:hover{
+#web-mobil_app .Cx1:hover{
     background: @blue-500;
 }
-#test3 .Cx1-1:hover{
+#web-mobil_app .Cx1-1:hover{
     background: @red-500;
 }
 
@@ -500,15 +504,15 @@ body {
     border-radius: 5px;
 }
 
-#test4 .t1:hover{
+#desktop-mobil_app .t1:hover{
     background: @amber-500;
 }
 
 
-#test1,
-#test2,
-#test3,
-#test4{
+#ux_ui,
+#web-dev,
+#web-mobil_app,
+#desktop-mobil_app{
     height: 772px;
 }
 .wd_text{
@@ -547,7 +551,9 @@ body {
 }
 
 /* The Close Button */
-.close,.close2 {
+.close,.close2,
+.close-w-d, .close-tec-pc
+{
     color: #212121; background: #FFFF00;
     float: right;
     font-size: 28px;
@@ -561,8 +567,10 @@ body {
 }
 
 .close2:hover, .close2:focus,
-.close:hover,
-.close:focus {
+.close:hover,.close:focus,
+.close-w-d:hover,.close-w-d:focus,
+.close-tec-pc:hover, .close-tec-pc:focus
+{
     background: #FF1744;
     color: #FAFAFA;
     text-decoration: none;
@@ -630,14 +638,14 @@ body {
     .responsive-percent {
         margin-right: -45px !important;
     }
-    #test1,#test2,#test3,#test4{
+    #ux_ui,#web-dev,#web-mobil_app,#desktop-mobil_app{
         height: 100%;
     }
     .Cx1,
     .Cx2-2 .twoC{margin: 0px; margin-bottom: 10px;
         width: 100%;
     }
-    #test3 .Cx1, #test3 .Cx1-1{
+    #web-mobil_app .Cx1, #web-mobil_app .Cx1-1{
         width: 100%;
     }
     
@@ -646,7 +654,7 @@ body {
      .responsive-percent {
          margin-right: -45px !important;
      }
-    #test1,#test2,#test3,#test4{
+    #ux_ui,#web-dev,#web-mobil_app,#desktop-mobil_app{
         height: 100%;
     }
     .Cx1,
