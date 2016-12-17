@@ -427,6 +427,10 @@ body {
     background: @grey-500;
     border-radius: 10px;
     margin: 15px;
+    
+    img{
+        margin-top: 10px;
+    }
 }
 
 
@@ -526,6 +530,7 @@ body {
 
 
 
+
 //MODAL
 /* The Modal (background) */
 .modal {
@@ -550,10 +555,17 @@ body {
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
+
+a{
+    cursor: pointer
+}
+
+//span[class$="px_close"]
+//span[class^="close"]
 /* The Close Button */
-.close,.close2,.close3,
-.close-w-d, .close-tec-pc
-{
+
+
+span[class^="close"]{
     color: #212121; background: #FFFF00;
     float: right;
     font-size: 28px;
@@ -566,12 +578,7 @@ body {
     position: fixed; right: 10%;
 }
 
-.close:hover,.close:focus,
-.close2:hover, .close2:focus,
-.close3:hover, .close3:focus,
-.close-w-d:hover,.close-w-d:focus,
-.close-tec-pc:hover, .close-tec-pc:focus
-{
+span[class^="close"]:hover, span[class^="close"]:focus{
     background: #FF1744;
     color: #FAFAFA;
     text-decoration: none;
