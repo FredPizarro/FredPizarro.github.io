@@ -4,6 +4,9 @@
 .container {
   margin-top: 50px;
 }
+.align .center {
+  text-align: center;
+}
 /* Container styles */
 body {
   background-color: #f1f2f1;
@@ -490,7 +493,7 @@ body {
 }
 .Cx1-1 {
   width: 100%;
-  height: 365px;
+  height: 485px;
   border-radius: 10px;
   background: #9e9e9e;
   margin-bottom: 18px;
@@ -522,7 +525,7 @@ body {
 .t4x4 {
   margin-top: 10px;
   width: 100%;
-  height: 160px;
+  height: 220px;
 }
 .t1x4:hover {
   background: #ff5722;
@@ -546,12 +549,12 @@ body {
 }
 #web-mobil_app .Cx1 {
   width: 45%;
-  height: 720px;
+  height: 820px;
   margin-right: 15px;
 }
 #web-mobil_app .Cx1-1 {
   width: 45%;
-  height: 720px;
+  height: 820px;
 }
 #web-mobil_app .Cx1:hover {
   background: #2196f3;
@@ -561,7 +564,7 @@ body {
 }
 .t1 {
   width: 100%;
-  height: 720px;
+  height: 820px;
   border-radius: 15px;
   background: #9e9e9e;
   margin-bottom: 21px;
@@ -577,7 +580,7 @@ body {
 #web-dev,
 #web-mobil_app,
 #desktop-mobil_app {
-  height: 772px;
+  height: 846px;
 }
 .wd_text {
   margin: 0px;

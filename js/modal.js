@@ -8,6 +8,8 @@ var modal3 = document.getElementById('Modal_03');
 var modal_icon = document.getElementById('Modal_icon');
 var modal_color = document.getElementById('Modal_color');
 
+var modal_web_cleaners = document.getElementById('Modal_web-cleaners'); /* Web Development */
+
 var modal_Modal_web_dev = document.getElementById('Modal_web-dev'); /* desktop */
 var modal_Modal_tecnicopc = document.getElementById('Modal_tecnicopc'); /* desktop */
 var modal_system_renameFile = document.getElementById('Modal_system-rename'); /* desktop */
@@ -25,6 +27,8 @@ var btn3 = document.getElementById("btnModal_03");
 
 var btn_icon = document.getElementById("btnModal_icon");
 var btn_color = document.getElementById("btnModal_color");
+
+var btn_web_cleaners = document.getElementById("btnModal_web-Cleaners");/* Web Development */
 
 var btn_web_dev = document.getElementById("btnModal_web-dev"); /* desktop */
 var btn_tecnicopc = document.getElementById("btnModal_tecnicoPC"); /* desktop */
@@ -44,6 +48,8 @@ var span3 = document.getElementsByClassName("close3")[0];
 var spanicon = document.getElementsByClassName("close-icon")[0];
 var spancolor = document.getElementsByClassName("close-color")[0];
 
+var span_web_cleaners = document.getElementsByClassName("close-w-cleaners")[0];/* Web Development */
+
 var spanwd = document.getElementsByClassName("close-w-d")[0]; /* desktop */
 var spantpc = document.getElementsByClassName("close-tec-pc")[0]; /* desktop */
 var spansrf = document.getElementsByClassName("close-s-renamefile")[0]; /* desktop */
@@ -61,6 +67,8 @@ btn3.onclick = function() { modal3.style.display = "block"; document.body.style.
 btn_icon.onclick = function() { modal_icon.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_color.onclick = function() { modal_color.style.display = "block"; document.body.style.overflow = "hidden";   }
 
+btn_web_cleaners.onclick = function() { modal_web_cleaners.style.display = "block"; document.body.style.overflow = "hidden";   }
+
 btn_web_dev.onclick = function() { modal_Modal_web_dev.style.display = "block"; document.body.style.overflow = "hidden"; }
 btn_tecnicopc.onclick = function() { modal_Modal_tecnicopc.style.display = "block"; document.body.style.overflow = "hidden"; }
 btn_system_renameFile.onclick = function() { modal_system_renameFile.style.display = "block"; document.body.style.overflow = "hidden"; }
@@ -77,6 +85,7 @@ span3.onclick = function() { modal3.style.display = "none"; document.body.style.
 
 spanicon.onclick = function() { modal_icon.style.display = "none"; document.body.style.overflow = "scroll"; }
 spancolor.onclick = function() { modal_color.style.display = "none"; document.body.style.overflow = "scroll"; }
+span_web_cleaners.onclick = function() { modal_web_cleaners.style.display = "none"; document.body.style.overflow = "scroll"; }
 
 spanwd.onclick = function() { modal_Modal_web_dev.style.display = "none"; document.body.style.overflow = "scroll";  } 
 spantpc.onclick = function() { modal_Modal_tecnicopc.style.display = "none"; document.body.style.overflow = "scroll";  } 
@@ -101,6 +110,8 @@ window.onclick = function(event) {
         modal_icon.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_color) {
         modal_icon.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_web_cleaners) {
+        modal_web_cleaners.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_Modal_web_dev) {
         modal_Modal_web_dev.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_Modal_tecnicopc) {
