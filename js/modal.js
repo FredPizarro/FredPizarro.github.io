@@ -14,7 +14,7 @@ var modal_Modal_web_dev = document.getElementById('Modal_web-dev'); /* desktop *
 var modal_Modal_tecnicopc = document.getElementById('Modal_tecnicopc'); /* desktop */
 var modal_system_renameFile = document.getElementById('Modal_system-rename'); /* desktop */
 var modal_system_corporation = document.getElementById('Modal_system-corporation'); /* desktop */
-
+var modal_system_control = document.getElementById('Modal_system-control'); /* desktop */
 
 
 /*********************************************************************************************/
@@ -34,6 +34,7 @@ var btn_web_dev = document.getElementById("btnModal_web-dev"); /* desktop */
 var btn_tecnicopc = document.getElementById("btnModal_tecnicoPC"); /* desktop */
 var btn_system_renameFile = document.getElementById("btnModal_system-rename"); /* desktop */
 var btn_system_corporation = document.getElementById("btnModal_system-corporation"); /* desktop */
+var btn_system_control = document.getElementById("btnModal_system-control"); /* desktop */
 
 
 
@@ -54,6 +55,7 @@ var spanwd = document.getElementsByClassName("close-w-d")[0]; /* desktop */
 var spantpc = document.getElementsByClassName("close-tec-pc")[0]; /* desktop */
 var spansrf = document.getElementsByClassName("close-s-renamefile")[0]; /* desktop */
 var spanscorporation = document.getElementsByClassName("close-s-corporation")[0]; /* desktop */
+var span_s_control = document.getElementsByClassName("close-s-control")[0]; /* desktop */
 
 
 /*********************************************************************************************/
@@ -73,7 +75,7 @@ btn_web_dev.onclick = function() { modal_Modal_web_dev.style.display = "block"; 
 btn_tecnicopc.onclick = function() { modal_Modal_tecnicopc.style.display = "block"; document.body.style.overflow = "hidden"; }
 btn_system_renameFile.onclick = function() { modal_system_renameFile.style.display = "block"; document.body.style.overflow = "hidden"; }
 btn_system_corporation.onclick = function() { modal_system_corporation.style.display = "block"; document.body.style.overflow = "hidden"; }
-
+btn_system_control.onclick = function() { modal_system_control.style.display = "block"; document.body.style.overflow = "hidden"; }
 
 /*********************************************************************************************/
 
@@ -91,6 +93,8 @@ spanwd.onclick = function() { modal_Modal_web_dev.style.display = "none"; docume
 spantpc.onclick = function() { modal_Modal_tecnicopc.style.display = "none"; document.body.style.overflow = "scroll";  } 
 spansrf.onclick = function() { modal_system_renameFile.style.display = "none"; document.body.style.overflow = "scroll";  } 
 spanscorporation.onclick = function() { modal_system_corporation.style.display = "none"; document.body.style.overflow = "scroll";  } 
+span_s_control.onclick = function() { modal_system_control.style.display = "none"; document.body.style.overflow = "scroll";  } 
+
 
 
 /*********************************************************************************************/
@@ -120,5 +124,7 @@ window.onclick = function(event) {
         modal_system_renameFile.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_system_corporation) {
         modal_system_corporation.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_system_control) {
+        modal_system_control.style.display = "none"; document.body.style.overflow = "scroll";
     }
 }
