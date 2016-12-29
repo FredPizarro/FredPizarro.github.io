@@ -572,6 +572,9 @@ body {
 .pJava {
   border-radius: 5px;
 }
+#desktop-mobil_app .t1 {
+  text-align: center;
+}
 #desktop-mobil_app .t1:hover {
   background: #ffc107;
 }
