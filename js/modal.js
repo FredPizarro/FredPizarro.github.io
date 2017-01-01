@@ -11,6 +11,8 @@ var modal1 = document.getElementById('Modal_01');
 var modal2 = document.getElementById('Modal_02');
 var modal_web_cleaners = document.getElementById('Modal_web-cleaners'); /* Web Development */
 var modal_web_lan_cabling_solutions = document.getElementById('Modal_web-email-lan-cabling-solutions'); /* Web Development */
+var modal_web_location_form = document.getElementById('Modal_web-location-form'); /* Web Development */
+
 
 var modal_Modal_java_doc = document.getElementById('Modal_java-doc'); /* desktop */
 var modal_Modal_web_dev = document.getElementById('Modal_web-dev'); /* desktop */
@@ -33,6 +35,8 @@ var btn1 = document.getElementById("btnModal_01");
 var btn2 = document.getElementById("btnModal_02");
 var btn_web_cleaners = document.getElementById("btnModal_web-Cleaners");/* Web Development */
 var btn_web_lan_cabling_solutions = document.getElementById("btnModal_web-email-lan-cabling-solutions");/* Web Development */
+var btn_web_location_form = document.getElementById("btnModal_web-location-form");/* Web Development */
+
 
 var btn_java_doc = document.getElementById("btnModal_java-doc"); /* desktop */
 var btn_web_dev = document.getElementById("btnModal_web-dev"); /* desktop */
@@ -56,6 +60,8 @@ var span1 = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close2")[0];
 var span_web_cleaners = document.getElementsByClassName("close-w-cleaners")[0];/* Web Development */
 var span_web_lan_cabling_solutions = document.getElementsByClassName("close-w-email-lan-cabling-solutions")[0];/* Web Development */
+var span_web_location_form = document.getElementsByClassName("close-w-location-form")[0];/* Web Development */
+
 
 var span_java_doc = document.getElementsByClassName("close-java-doc")[0]; /* desktop */
 var spanwd = document.getElementsByClassName("close-w-d")[0]; /* desktop */
@@ -78,6 +84,7 @@ btn1.onclick = function() { modal1.style.display = "block"; document.body.style.
 btn2.onclick = function() { modal2.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_web_cleaners.onclick = function() { modal_web_cleaners.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_web_lan_cabling_solutions.onclick = function() { modal_web_lan_cabling_solutions.style.display = "block"; document.body.style.overflow = "hidden";   }
+btn_web_location_form.onclick = function() { modal_web_location_form.style.display = "block"; document.body.style.overflow = "hidden";   }
 
 
 btn_java_doc.onclick = function() { modal_Modal_java_doc.style.display = "block"; document.body.style.overflow = "hidden"; }
@@ -100,6 +107,8 @@ span1.onclick = function() { modal1.style.display = "none"; document.body.style.
 span2.onclick = function() { modal2.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_web_cleaners.onclick = function() { modal_web_cleaners.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_web_lan_cabling_solutions.onclick = function() { modal_web_lan_cabling_solutions.style.display = "none"; document.body.style.overflow = "scroll"; }
+span_web_location_form.onclick = function() { modal_web_location_form.style.display = "none"; document.body.style.overflow = "scroll"; }
+
 
 span_java_doc.onclick = function() { modal_Modal_java_doc.style.display = "none"; document.body.style.overflow = "scroll";  } 
 spanwd.onclick = function() { modal_Modal_web_dev.style.display = "none"; document.body.style.overflow = "scroll";  } 
@@ -131,6 +140,8 @@ window.onclick = function(event) {
         modal_web_cleaners.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_web_lan_cabling_solutions) {
         modal_web_lan_cabling_solutions.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_web_location_form) {
+        modal_web_location_form.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_Modal_web_dev) {
         modal_Modal_web_dev.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_Modal_java_doc) {
