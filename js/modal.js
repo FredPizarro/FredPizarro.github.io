@@ -1,6 +1,23 @@
 
 // Get the modal
-var modal_card_location = document.getElementById('Modal_card-location');
+//var modal_card_location = document.getElementById('Modal_card-location'); 
+var modal_card_location = $('#Modal_card-location');
+var btn_cardlocation = document.getElementById("btnModal_card-location");
+var spancl = document.getElementsByClassName("close-c-l")[0];
+
+
+
+//var table = document.getElementById('Modal_card-location');
+//var cells = 1; 
+//
+//for (var i = 0; i < cells; i++) { 
+//   $('#Modal_card-location div').click(function(){
+//       alert("Click");
+//   });
+//}
+
+
+
 var modal3 = document.getElementById('Modal_03');
 
 var modal_icon = document.getElementById('Modal_icon');
@@ -25,7 +42,6 @@ var modal_system_control = document.getElementById('Modal_system-control'); /* d
 /*********************************************************************************************/
 
 // Get the button that opens the modal
-var btn_cardlocation = document.getElementById("btnModal_card-location");
 var btn3 = document.getElementById("btnModal_03");
 
 var btn_icon = document.getElementById("btnModal_icon");
@@ -50,7 +66,6 @@ var btn_system_control = document.getElementById("btnModal_system-control"); /* 
 /*********************************************************************************************/
 
 // Get the <span> element that closes the modal
-var spancl = document.getElementsByClassName("close-c-l")[0];
 var span3 = document.getElementsByClassName("close3")[0];
 
 var spanicon = document.getElementsByClassName("close-icon")[0];
@@ -71,11 +86,22 @@ var spanscorporation = document.getElementsByClassName("close-s-corporation")[0]
 var span_s_control = document.getElementsByClassName("close-s-control")[0]; /* desktop */
 
 
+
+
 /*********************************************************************************************/
 
+
+
  // When the user clicks on the button, open the modal  / scroll oculto ( del body)
-btn_cardlocation.onclick = function() { modal_card_location.style.display = "block"; document.body.style.overflow = "hidden"; }
-btn3.onclick = function() { modal3.style.display = "block"; document.body.style.overflow = "hidden";   }
+btn_cardlocation.onclick = function() { modal_card_location.css("display", "block"); }
+
+$("#btnModal_card-location, #btnModal_03").click(function(){
+    document.body.style.overflow = "hidden";   
+});
+
+
+
+btn3.onclick = function() { modal3.style.display = "block";}
 
 btn_icon.onclick = function() { modal_icon.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_color.onclick = function() { modal_color.style.display = "block"; document.body.style.overflow = "hidden";   }
@@ -97,7 +123,10 @@ btn_system_control.onclick = function() { modal_system_control.style.display = "
 /*********************************************************************************************/
 
 // When the user clicks on <span> (x), close the modal / scroll visible  ( del body)
-spancl.onclick = function() { modal_card_location.style.display = "none"; document.body.style.overflow = "scroll"; }
+spancl.onclick = function() {
+    modal_card_location.css("display", "none");
+    document.body.style.overflow = "scroll"; 
+}
 span3.onclick = function() { modal3.style.display = "none"; document.body.style.overflow = "scroll"; }
 
 spanicon.onclick = function() { modal_icon.style.display = "none"; document.body.style.overflow = "scroll"; }
@@ -125,7 +154,7 @@ span_s_control.onclick = function() { modal_system_control.style.display = "none
 // When the user clicks anywhere outside of the modal, close it / scroll visible  ( del body)
 window.onclick = function(event) {
     if (event.target == modal_card_location) {
-        modal_card_location.style.display = "none"; document.body.style.overflow = "scroll";
+        modal_card_location.css("display", "none"); document.body.style.overflow = "scroll"; 
     }if (event.target == modal1) {
         modal1.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal2) {
