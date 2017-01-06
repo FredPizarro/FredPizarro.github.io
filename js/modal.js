@@ -27,6 +27,7 @@ var modal_color = document.getElementById('Modal_color');
 var modal1 = document.getElementById('Modal_01');
 var modal2 = document.getElementById('Modal_02');
 var modal_web_cleaners = document.getElementById('Modal_web-cleaners'); /* Web Development */
+var modal_web_navbar_basic = document.getElementById('Modal_web_navbar-basic'); /* Web Development */
 var modal_web_lan_cabling_solutions = document.getElementById('Modal_web-email-lan-cabling-solutions'); /* Web Development */
 var modal_web_location_form = document.getElementById('Modal_web-location-form'); /* Web Development */
 
@@ -50,6 +51,7 @@ var btn_color = document.getElementById("btnModal_color");
 var btn1 = document.getElementById("btnModal_01");
 var btn2 = document.getElementById("btnModal_02");
 var btn_web_cleaners = document.getElementById("btnModal_web-Cleaners");/* Web Development */
+var btn_web_navbar_basic = document.getElementById("btnModal_web_navbar-basic");/* Web Development */
 var btn_web_lan_cabling_solutions = document.getElementById("btnModal_web-email-lan-cabling-solutions");/* Web Development */
 var btn_web_location_form = document.getElementById("btnModal_web-location-form");/* Web Development */
 
@@ -74,6 +76,7 @@ var spancolor = document.getElementsByClassName("close-color")[0];
 var span1 = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close2")[0];
 var span_web_cleaners = document.getElementsByClassName("close-w-cleaners")[0];/* Web Development */
+var span_web_navbar_basic = document.getElementsByClassName("close-w-navbar-basic")[0];/* Web Development */
 var span_web_lan_cabling_solutions = document.getElementsByClassName("close-w-email-lan-cabling-solutions")[0];/* Web Development */
 var span_web_location_form = document.getElementsByClassName("close-w-location-form")[0];/* Web Development */
 
@@ -109,6 +112,7 @@ btn_color.onclick = function() { modal_color.style.display = "block"; document.b
 btn1.onclick = function() { modal1.style.display = "block"; document.body.style.overflow = "hidden"; }
 btn2.onclick = function() { modal2.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_web_cleaners.onclick = function() { modal_web_cleaners.style.display = "block"; document.body.style.overflow = "hidden";   }
+btn_web_navbar_basic.onclick = function() { modal_web_navbar_basic.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_web_lan_cabling_solutions.onclick = function() { modal_web_lan_cabling_solutions.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_web_location_form.onclick = function() { modal_web_location_form.style.display = "block"; document.body.style.overflow = "hidden";   }
 
@@ -135,6 +139,7 @@ spancolor.onclick = function() { modal_color.style.display = "none"; document.bo
 span1.onclick = function() { modal1.style.display = "none"; document.body.style.overflow = "scroll"; }
 span2.onclick = function() { modal2.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_web_cleaners.onclick = function() { modal_web_cleaners.style.display = "none"; document.body.style.overflow = "scroll"; }
+span_web_navbar_basic.onclick = function() { modal_web_navbar_basic.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_web_lan_cabling_solutions.onclick = function() { modal_web_lan_cabling_solutions.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_web_location_form.onclick = function() { modal_web_location_form.style.display = "none"; document.body.style.overflow = "scroll"; }
 
@@ -167,6 +172,8 @@ window.onclick = function(event) {
         modal_icon.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_web_cleaners) {
         modal_web_cleaners.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_web_navbar_basic) {
+        modal_web_navbar_basic.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_web_lan_cabling_solutions) {
         modal_web_lan_cabling_solutions.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_web_location_form) {
