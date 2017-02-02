@@ -34,6 +34,9 @@ var modal_web_card_product_house = document.getElementById('Modal_web-card-produ
                                                            /* Web Development */
 
 
+var modal_w_e_computo = document.getElementById('Modal_web-ecommerce_computo'); /* Web app */
+
+
 var modal_Modal_java_doc = document.getElementById('Modal_java-doc'); /* desktop */
 var modal_Modal_web_dev = document.getElementById('Modal_web-dev'); /* desktop */
 var modal_Modal_tecnicopc = document.getElementById('Modal_tecnicopc'); /* desktop */
@@ -57,6 +60,10 @@ var btn_web_navbar_basic = document.getElementById("btnModal_web_navbar-basic");
 var btn_web_lan_cabling_solutions = document.getElementById("btnModal_web-email-lan-cabling-solutions");/* Web Development */
 var btn_web_location_form = document.getElementById("btnModal_web-location-form");/* Web Development */
 var btn_web_card_product_house = document.getElementById("btnModal_web-card-product-house");/* Web Development */
+
+
+var btn_w_e_computo = document.getElementById("btnModal_web-ecommerce_computo"); /* Web app */
+
 
 
 var btn_java_doc = document.getElementById("btnModal_java-doc"); /* desktop */
@@ -83,6 +90,9 @@ var span_web_navbar_basic = document.getElementsByClassName("close-w-navbar-basi
 var span_web_lan_cabling_solutions = document.getElementsByClassName("close-w-email-lan-cabling-solutions")[0];/* Web Development */
 var span_web_location_form = document.getElementsByClassName("close-w-location-form")[0];/* Web Development */
 var span_web_card_product_house = document.getElementsByClassName("close-w-card-product-house")[0];/* Web Development */
+
+
+var span_w_e_computo = document.getElementsByClassName("close-web-ecommerce_computo")[0]; /* Web app */
 
 
 var span_java_doc = document.getElementsByClassName("close-java-doc")[0]; /* desktop */
@@ -122,6 +132,11 @@ btn_web_location_form.onclick = function() { modal_web_location_form.style.displ
 btn_web_card_product_house.onclick = function() { modal_web_card_product_house.style.display = "block"; document.body.style.overflow = "hidden";   }
 
 
+
+btn_w_e_computo.onclick = function() { modal_w_e_computo.style.display = "block"; document.body.style.overflow = "hidden"; }
+
+
+
 btn_java_doc.onclick = function() { modal_Modal_java_doc.style.display = "block"; document.body.style.overflow = "hidden"; }
 btn_web_dev.onclick = function() { modal_Modal_web_dev.style.display = "block"; document.body.style.overflow = "hidden"; }
 btn_tecnicopc.onclick = function() { modal_Modal_tecnicopc.style.display = "block"; document.body.style.overflow = "hidden"; }
@@ -148,6 +163,11 @@ span_web_navbar_basic.onclick = function() { modal_web_navbar_basic.style.displa
 span_web_lan_cabling_solutions.onclick = function() { modal_web_lan_cabling_solutions.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_web_location_form.onclick = function() { modal_web_location_form.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_web_card_product_house.onclick = function() { modal_web_card_product_house.style.display = "none"; document.body.style.overflow = "scroll"; }
+
+
+span_w_e_computo.onclick = function() { modal_w_e_computo.style.display = "none"; document.body.style.overflow = "scroll";  } 
+
+
 
 span_java_doc.onclick = function() { modal_Modal_java_doc.style.display = "none"; document.body.style.overflow = "scroll";  } 
 spanwd.onclick = function() { modal_Modal_web_dev.style.display = "none"; document.body.style.overflow = "scroll";  } 
@@ -187,6 +207,8 @@ window.onclick = function(event) {
         modal_web_card_product_house.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_Modal_web_dev) {
         modal_Modal_web_dev.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_w_e_computo) {
+        modal_w_e_computo.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_Modal_java_doc) {
         modal_Modal_java_doc.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_Modal_tecnicopc) {
