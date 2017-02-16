@@ -22,7 +22,7 @@ var modal3 = document.getElementById('Modal_03');
 
 var modal_icon = document.getElementById('Modal_icon');
 var modal_color = document.getElementById('Modal_color');
-
+var modal_theme = document.getElementById('Modal_Theme-brackets'); /* UX / UI */
 
 var modal1 = document.getElementById('Modal_01');
 var modal2 = document.getElementById('Modal_02');
@@ -52,6 +52,7 @@ var btn3 = document.getElementById("btnModal_03");
 
 var btn_icon = document.getElementById("btnModal_icon");
 var btn_color = document.getElementById("btnModal_color");
+var btn_theme = document.getElementById("btnModal_Theme-brackets"); /* UX / UI */
 
 var btn1 = document.getElementById("btnModal_01");
 var btn2 = document.getElementById("btnModal_02");
@@ -82,6 +83,7 @@ var span3 = document.getElementsByClassName("close3")[0];
 
 var spanicon = document.getElementsByClassName("close-icon")[0];
 var spancolor = document.getElementsByClassName("close-color")[0];
+var span_theme = document.getElementsByClassName("close-theme")[0]; /* UX / UI */
 
 var span1 = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close2")[0];
@@ -122,6 +124,7 @@ btn3.onclick = function() { modal3.style.display = "block";}
 
 btn_icon.onclick = function() { modal_icon.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_color.onclick = function() { modal_color.style.display = "block"; document.body.style.overflow = "hidden";   }
+btn_theme.onclick = function(){ modal_theme.style.display = "block"; document.body.style.overflow = "hidden"; }
 
 btn1.onclick = function() { modal1.style.display = "block"; document.body.style.overflow = "hidden"; }
 btn2.onclick = function() { modal2.style.display = "block"; document.body.style.overflow = "hidden";   }
@@ -132,9 +135,7 @@ btn_web_location_form.onclick = function() { modal_web_location_form.style.displ
 btn_web_card_product_house.onclick = function() { modal_web_card_product_house.style.display = "block"; document.body.style.overflow = "hidden";   }
 
 
-
 btn_w_e_computo.onclick = function() { modal_w_e_computo.style.display = "block"; document.body.style.overflow = "hidden"; }
-
 
 
 btn_java_doc.onclick = function() { modal_Modal_java_doc.style.display = "block"; document.body.style.overflow = "hidden"; }
@@ -155,6 +156,7 @@ span3.onclick = function() { modal3.style.display = "none"; document.body.style.
 
 spanicon.onclick = function() { modal_icon.style.display = "none"; document.body.style.overflow = "scroll"; }
 spancolor.onclick = function() { modal_color.style.display = "none"; document.body.style.overflow = "scroll"; }
+span_theme.onclick = function(){ modal_theme.style.display = "none"; document.body.style.overflow = "scroll"; }
 
 span1.onclick = function() { modal1.style.display = "none"; document.body.style.overflow = "scroll"; }
 span2.onclick = function() { modal2.style.display = "none"; document.body.style.overflow = "scroll"; }
@@ -195,6 +197,8 @@ window.onclick = function(event) {
         modal_icon.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_color) {
         modal_icon.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_theme) {
+        modal_theme.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_web_cleaners) {
         modal_web_cleaners.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_web_navbar_basic) {
