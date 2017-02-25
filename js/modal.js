@@ -30,9 +30,8 @@ var modal_web_cleaners = document.getElementById('Modal_web-cleaners'); /* Web D
 var modal_web_navbar_basic = document.getElementById('Modal_web_navbar-basic'); /* Web Development */
 var modal_web_lan_cabling_solutions = document.getElementById('Modal_web-email-lan-cabling-solutions'); /* Web Development */
 var modal_web_location_form = document.getElementById('Modal_web-location-form'); /* Web Development */
-var modal_web_card_product_house = document.getElementById('Modal_web-card-product-house');
-                                                           /* Web Development */
-
+var modal_web_card_product_house = document.getElementById('Modal_web-card-product-house'); /* Web Development */
+var modal_web_shopper = document.getElementById('Modal_web-shopper'); /* Web Development */
 
 var modal_w_e_computo = document.getElementById('Modal_web-ecommerce_computo'); /* Web app */
 
@@ -56,11 +55,12 @@ var btn_theme = document.getElementById("btnModal_Theme-brackets"); /* UX / UI *
 
 var btn1 = document.getElementById("btnModal_01");
 var btn2 = document.getElementById("btnModal_02");
-var btn_web_cleaners = document.getElementById("btnModal_web-Cleaners");/* Web Development */
-var btn_web_navbar_basic = document.getElementById("btnModal_web_navbar-basic");/* Web Development */
-var btn_web_lan_cabling_solutions = document.getElementById("btnModal_web-email-lan-cabling-solutions");/* Web Development */
-var btn_web_location_form = document.getElementById("btnModal_web-location-form");/* Web Development */
-var btn_web_card_product_house = document.getElementById("btnModal_web-card-product-house");/* Web Development */
+var btn_web_cleaners = document.getElementById("btnModal_web-Cleaners"); /* Web Development */
+var btn_web_navbar_basic = document.getElementById("btnModal_web_navbar-basic"); /* Web Development */
+var btn_web_lan_cabling_solutions = document.getElementById("btnModal_web-email-lan-cabling-solutions"); /* Web Development */
+var btn_web_location_form = document.getElementById("btnModal_web-location-form"); /* Web Development */
+var btn_web_card_product_house = document.getElementById("btnModal_web-card-product-house"); /* Web Development */
+var btn_web_shopper = document.getElementById("btnModal_web-Shopper"); /* Web Development */
 
 
 var btn_w_e_computo = document.getElementById("btnModal_web-ecommerce_computo"); /* Web app */
@@ -91,7 +91,8 @@ var span_web_cleaners = document.getElementsByClassName("close-w-cleaners")[0];/
 var span_web_navbar_basic = document.getElementsByClassName("close-w-navbar-basic")[0];/* Web Development */
 var span_web_lan_cabling_solutions = document.getElementsByClassName("close-w-email-lan-cabling-solutions")[0];/* Web Development */
 var span_web_location_form = document.getElementsByClassName("close-w-location-form")[0];/* Web Development */
-var span_web_card_product_house = document.getElementsByClassName("close-w-card-product-house")[0];/* Web Development */
+var span_web_card_product_house = document.getElementsByClassName("close-w-card-product-house")[0]; /* Web Development */
+var span_web_shopper = document.getElementsByClassName("close-web-shopper")[0]; /* Web Development */
 
 
 var span_w_e_computo = document.getElementsByClassName("close-web-ecommerce_computo")[0]; /* Web app */
@@ -126,6 +127,7 @@ btn_icon.onclick = function() { modal_icon.style.display = "block"; document.bod
 btn_color.onclick = function() { modal_color.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_theme.onclick = function(){ modal_theme.style.display = "block"; document.body.style.overflow = "hidden"; }
 
+/* Web Development */
 btn1.onclick = function() { modal1.style.display = "block"; document.body.style.overflow = "hidden"; }
 btn2.onclick = function() { modal2.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_web_cleaners.onclick = function() { modal_web_cleaners.style.display = "block"; document.body.style.overflow = "hidden";   }
@@ -133,6 +135,7 @@ btn_web_navbar_basic.onclick = function() { modal_web_navbar_basic.style.display
 btn_web_lan_cabling_solutions.onclick = function() { modal_web_lan_cabling_solutions.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_web_location_form.onclick = function() { modal_web_location_form.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_web_card_product_house.onclick = function() { modal_web_card_product_house.style.display = "block"; document.body.style.overflow = "hidden";   }
+btn_web_shopper.onclick = function() { modal_web_shopper.style.display = "block"; document.body.style.overflow = "hidden"; }
 
 
 btn_w_e_computo.onclick = function() { modal_w_e_computo.style.display = "block"; document.body.style.overflow = "hidden"; }
@@ -158,6 +161,7 @@ spanicon.onclick = function() { modal_icon.style.display = "none"; document.body
 spancolor.onclick = function() { modal_color.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_theme.onclick = function(){ modal_theme.style.display = "none"; document.body.style.overflow = "scroll"; }
 
+/* Web Development */
 span1.onclick = function() { modal1.style.display = "none"; document.body.style.overflow = "scroll"; }
 span2.onclick = function() { modal2.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_web_cleaners.onclick = function() { modal_web_cleaners.style.display = "none"; document.body.style.overflow = "scroll"; }
@@ -165,6 +169,7 @@ span_web_navbar_basic.onclick = function() { modal_web_navbar_basic.style.displa
 span_web_lan_cabling_solutions.onclick = function() { modal_web_lan_cabling_solutions.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_web_location_form.onclick = function() { modal_web_location_form.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_web_card_product_house.onclick = function() { modal_web_card_product_house.style.display = "none"; document.body.style.overflow = "scroll"; }
+span_web_shopper.onclick = function() { modal_web_shopper.style.display = "none"; document.body.style.overflow = "scroll"; }
 
 
 span_w_e_computo.onclick = function() { modal_w_e_computo.style.display = "none"; document.body.style.overflow = "scroll";  } 
@@ -209,6 +214,8 @@ window.onclick = function(event) {
         modal_web_location_form.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_web_card_product_house) {
         modal_web_card_product_house.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_web_shopper) {
+        modal_web_shopper.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_Modal_web_dev) {
         modal_Modal_web_dev.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_w_e_computo) {
