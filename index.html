@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Portafolio: Fred Pizarro</title>
-    <link rel="stylesheet" href="assets/css/materialPE.min.css">
-    <link rel="stylesheet" href="assets/css/general-styles.css">
+    <link rel="stylesheet" href="assets/css/material-pe.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="imgs/ICONO_PS.png">
     
@@ -14,14 +13,18 @@
     <div class="fondo">
      
     </div>
-    <div class="container">
+    <div class="">
         <div class="row">
             <div class="col s12 m4 l3">
                 <div class="portafolio">
-                    <div class="center"><img class="foto" src="imgs/FredPizarro.png" alt=""></div>
-                    <br>
-                    <h5 class="align center">Fred Pizarro</h5>
-                    <h6>Web Design/ Web Development/ Java Development</h6>
+                    <div class="perfil">
+                        <img class="foto" src="imgs/FredPizarro.png" alt="">
+                        <div class="user-detail">
+                            <span class="name">Fred Pizarro</span>
+                            <p>Web Design/ Web Dev/ Java Dev</p>
+                        </div>
+                    </div>
+                    
                     <div class="linea"></div>
                     <div class="about-me">
                       
@@ -66,17 +69,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#919191">
     <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
-</svg>
-
-                           My Skills</h5>
+</svg> My Skills
+                        </h5>
                             
-                            <div id="skills ">
-                                <div class="barra">
-                                    <div id="s-WebDesign"> 
-                                        <span class="code-txt">Web Design</span>
-                                        <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">80%</span>
-                                    </div>
+<!--                habilidades        -->
+                <div id="skills ">
+                            <div class="barra">
+                                <div id="s-WebDesign"> 
+                                    <span class="code-txt">Web Design</span>
+                                    <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">80%</span>
                                 </div>
+                            </div>
                                 <div class="barra">
                                     <div id="s-HTML"> 
                                         <span class="code-txt">HTML5</span>
@@ -120,32 +123,13 @@
                                     </div>
                                 </div>
                             </div>  
-                            
-                            
-                            <!-- Devices & Plataforms --> <br>
-                        <h5>
-<svg fill="#919191" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M7 5h10v2h2V3c0-1.1-.9-1.99-2-1.99L7 1c-1.1 0-2 .9-2 2v4h2V5zm8.41 11.59L20 12l-4.59-4.59L14 8.83 17.17 12 14 15.17l1.41 1.42zM10 15.17L6.83 12 10 8.83 8.59 7.41 4 12l4.59 4.59L10 15.17zM17 19H7v-2H5v4c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-4h-2v2z"/>
-</svg>
-
-
-                           Devices & Platforms</h5>
-                        <div class="devices align center" title="30/40 hrs/week">
-                            <img src="imgs/Vector-Icons-0988.svg" alt="" width="48" style="margin-right:10px;">
-                            
-                            
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
-                            <style type="text/css"> .st0{fill:#BDBDBD; } </style>
-                            <g><g><path class="st0" d="M29.3,45c0,1.6-1.3,3-3,3h-4.5c-1.6,0-3-1.4-3-3V3c0-1.7,1.4-3,3-3h4.5c1.7,0,3,1.3,3,3V45z"/></g><g>
-                                <path class="st0" d="M3,29.3c-1.6,0-3-1.4-3-3v-4.5c0-1.7,1.4-3,3-3h42c1.7,0,3,1.3,3,3v4.5c0,1.6-1.3,3-3,3H3z"/></g></g>
-                            </svg>
-
-                            
-                            <img src="imgs/multi-plataforma.svg" alt="" width="48" style="margin-left:10px;">
-
-                        </div>    
-                            
+                          
+<!--          devices imagenes-->
+                <div class="images-devices">
+                    <img src="imgs/logo_desktop.png" alt="" width="48px" height="48px">
+                    <img src="imgs/logo_web-dev.png" alt="" width="48px" height="48px">
+                    <img src="imgs/logo_android.png" alt="" width="48px" height="48px">
+                </div>
                             
                     </div>
                 </div>
@@ -153,32 +137,34 @@
                 
             </div>
             
+            
+<!--            portafolio-->
             <div class="col s12 m8 l9 portafolio">
                 <!-- HTML -->
                 <br>
                 <div class="seleccion">
                     <ul class="tabs work-list center">
-                        <li class="tab"><a class="active" href="#ux_ui">UX/ UI</a></li>
+                        <li class="tab"><a class="" href="#ux_ui">UX/ UI</a></li>
                         <li class="tab"><a href="#web-dev">Web Development</a></li>
                         <li class="tab"><a href="#web-mobil_app">Web & Mobil APP</a></li>
                         <li class="tab"><a href="#desktop-mobil_app">Desktop & Mobil APP</a></li>
                     </ul>
                     
-                </div> <br>
+                </div>
+                 <br>
 <!--                *******************************************************-->
                 <!-- UX/UI-->
-                <div id="ux_ui" class="col s12 cuadros center">
-                    <div class="Cx1"> <br>
+                <div id="ux_ui" class="cuadros row">
+                    <div class="col s12 m6 block-1x2_1x2">
                        <a id="btnModal_card-location"><img src="imgs/card-location-Prototype.png" alt="" width="80" height="80" title="Card location">
                            </a>
                     </div>
-                    <div class="Cx2-2">
-                        <div class="twoC">
-                           <br>
+                    <div class="col s12 m6 block-1x2_2x2">
+                        <div class="min-c1x2">
                             <a id="btnModal_03"><img src="imgs/report-material-design.png" alt="" width="70" height="120" title="Design Report">
                            </a>
                         </div>
-                        <div class="treeC" title="UI Kit">
+                        <div class="min-c2x2" title="UI Kit">
                             <a id="btnModal_icon">
                               <img src="imgs/icon-design-material.png" alt="" width="70" height="80" title="icon material">
                            </a> 
@@ -187,16 +173,18 @@
                            </a> 
                         </div>
                     </div> <br>
-                    <div class="Cx1-1">
+                    <div class="col s12 block-2x2">
                        <br>
                         <a id="btnModal_Theme-brackets">
                             <img src="imgs/UX_UI/brackets-themes.png" alt="" width="80" height="40" title="Theme 'Material Color' mode (dark) and (light)">
                         </a>
                     </div>
                 </div>
+                
+                
                 <!-- wEB dEV -->
-                <div id="web-dev" class="col s12">
-                    <div class="t1x4 center" title="Web Page basic">
+                <div id="web-dev" class="row">
+                    <div class="col s12 block-1x3" title="Web Page basic">
                         <br>
                         <a id="btnModal_web-Cleaners">
                            <img src="imgs/web-dev/Demo-Cleaners_Home.png" alt="" width="70" height="50" title="Web Lavanderia basic (all in view)">
@@ -211,9 +199,10 @@
                            <img src="imgs/web-dev/EC_Shop.png" alt="" width="70" height="120" title="Design Product Ropa Men & Woman + Accesorios">
                        </a>
                     </div>
-                    <div class="x4 center">
-                        <div class="t2x4">
-                            <br>
+                    <div class="col s12 block-2x3 row">
+                        <div class="col s12 l6 ">
+                            <div class="min-c1x2">
+                                <br>
                             <a id="btnModal_web_navbar-basic">
                                <img src="imgs/Web-Component/navbar_basic.png" alt="" width="70" height="20" title="navbar basic">
                            </a>
@@ -226,27 +215,38 @@
                            <a id="btnModal_web-card-product-house">
                                <img src="imgs/Web-Component/card-Product-House.png" alt="" width="70" height="60" title="Card Product House">
                            </a>
+                            </div>
                         </div>
-                         <div class="t3x4">
-                             
+                         <div class="col s12 l6">
+                             <div class="min-c2x2">
+                                 
+                             </div>
                          </div>
                     </div>
-                    <div class="t4x4">
+                    <div class="col s12 block-3x3">
                         
                     </div> <br>
                 </div>
+                
                 <!-- Web APP -->
-                <div id="web-mobil_app" class="col s12 center">
-                    <div class="Cx1  ">
-                        <a id="btnModal_web-ecommerce_computo">
+                <div id="web-mobil_app" class="row">
+                    <div class="col s12 m6 block-1x2">
+                        <div class="min-c">
+                            <a id="btnModal_web-ecommerce_computo">
                                <img src="imgs/web-app/ec_electronicos_promotion.png" alt="" width="70" height="120" title="Template/ Web design: Ecommerce">
-                        </a>
+                            </a>
+                        </div>
                     </div>
-                    <div class="Cx1-1"></div>
+                    <div class="col s12 m6 block-2x2">
+                        <div class="min-c">
+                            
+                        </div>
+                    </div>
                 </div>
+                
                 <!--Desktop APP-->
-                <div id="desktop-mobil_app" class="col s12">
-                    <div class="t1">
+                <div id="desktop-mobil_app" class="">
+                    <div class="min-dstkp">
                         <div class="view-Panel">
                             <a id="btnModal_java-doc">
                                <img src="imgs/app/Java.png" alt="" width="100" height="120">

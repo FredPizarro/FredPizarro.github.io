@@ -17,7 +17,6 @@
 @grey-300: #E0E0E0;
 @blanco: #FFFFFF;
 
-@barra-size: 25px;
 
 .container{
     margin-top: 50px;
@@ -37,22 +36,43 @@ body {
 }
 
 .portafolio{
+    margin-top: 10px;
     padding: 10px;
     background: @blanco;
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    margin-bottom: 20px;
+    
+    
+    .perfil{
+        
+        display: flex;
+        justify-content: center;
+                
+        .foto{ border-radius: 50%; } 
+        
+        .user-detail {
+            padding-top: 35px;
+            text-align: center;
+            
+            .name{ font-size: 24px; font-family: "Roboto Black";  white-space: normal; color: @grey-500; opacity: 0.8;  }
+        }
+        
+    }
+    h5{
+        margin-top: -15px;
+        color: @grey-500;
+    }
+    
+    .about-me h3{ margin:7px; i{  margin-right:5px;} }
+    .about-me ul li{
+        display: inline-block;
+        margin-right:5px;
+        
+    }
 }
 
-.portafolio .foto{
-    border-radius: 50%;
-}
 
-.portafolio h5{
-    margin-top: -15px;
-    color: @grey-500;
-}
-
+//separadores con bordes
 .linea{
     margin-top: 15px;  margin-bottom: 15px;
     border-radius: 2px;
@@ -60,18 +80,7 @@ body {
     
 }
 
-.portafolio .about-me h3{
-    margin:7px;
-}
 
-.portafolio .about-me h3 i{
-    margin-right:5px;
-}
-
-.about-me ul li{
-    display: inline-block;
-    margin-right:5px;
-}
 
 
 
@@ -95,6 +104,8 @@ body {
 
 
 /* Chechear HTML para definir valores */
+@barra-size: 15px;
+
 @Percent-WebDesign: 80%;
 @Percent-HTML5: 70%;
 @Percent-CSS3: 75%;
@@ -112,232 +123,17 @@ body {
     margin: 10px auto; border-radius: 5px;
 }
 
-
-#s-WebDesign{
-    width: @Percent-WebDesign; height: @barra-size;
-    position: absolute;
-    background-color: @indigo-500;
-    animation: Animate-WebDesign 4s;
-    -webkit-animation: Animate-WebDesign 4s;
-    -moz-animation: Animate-WebDesign 4s;
-    -o-animation: Animate-WebDesign 4s;
-}
-
-@keyframes Animate-WebDesign {
-    from { width: 10px; }to { width: @Percent-WebDesign; }
-}
-
-@-webkit-keyframes Animate-WebDesign {
-    from { width: 10px; }to { width: @Percent-WebDesign;}
-}
-
-@-moz-keyframes Animate-WebDesign {
-    from { width: 10px; }to { width: @Percent-WebDesign;}
-}
-
-@-o-keyframes Animate-WebDesign {
-    from { width: 10px; }to { width: @Percent-WebDesign;}
-}
-
-/*************************************************************************/
-#s-HTML {
-    width: @Percent-HTML5; height: @barra-size;
-    position: absolute;
-    background-color: @deepOrange-500;
-    animation: Animate-HTML 4s;
-    -webkit-animation: Animate-HTML 4s;
-    -moz-animation: Animate-HTML 4s;
-    -o-animation: Animate-HTML 4s;
-}
-
-@keyframes Animate-HTML {
-    from { width: 10px; }to { width: @Percent-HTML5; }
-}
-
-@-webkit-keyframes Animate-HTML {
-    from { width: 10px; }to { width: @Percent-HTML5;}
-}
-
-@-moz-keyframes Animate-HTML {
-    from { width: 10px; }to { width: @Percent-HTML5;}
-}
-
-@-o-keyframes Animate-HTML {
-    from { width: 10px; }to { width: @Percent-HTML5;}
-}
-
-/*************************************************************************/
-#s-CSS {
-    width: @Percent-CSS3; height: @barra-size;
-    position: absolute;
-    background-color: @lightBlue-500;
-    animation: Animate-CSS 5s;
-    -webkit-animation: Animate-CSS 5s;
-    -moz-animation: Animate-CSS 5s;
-    -o-animation: Animate-CSS 5s;
-}
-
-@keyframes Animate-CSS {
-    from { width: 10px; }to { width: @Percent-CSS3;}
-}
-@-webkit-keyframes Animate-CSS {
-    from { width: 10px; }to { width: @Percent-CSS3;}
-}
-@-moz-keyframes Animate-CSS {
-    from { width: 10px; }to { width: @Percent-CSS3;}
-}
-@-o-keyframes Animate-CSS {
-    from { width: 10px; }to { width: @Percent-CSS3;}
-}
-
-/*************************************************************************/
-#s-JS{
-    width: @Percent-JS; height: @barra-size;
-    position: absolute;
-    background-color: @yellow-500;
-    animation: Animate-JS 4s;
-    -webkit-animation: Animate-JS 4s;
-    -moz-animation: Animate-JS 4s;
-    -o-animation: Animate-JS 4s;
-}
-
-@keyframes Animate-JS {
-    from { width: 10px; }to { width: @Percent-JS; }
-}
-
-@-webkit-keyframes Animate-JS {
-    from { width: 10px; }to { width: @Percent-JS;}
-}
-
-@-moz-keyframes Animate-JS {
-    from { width: 10px; }to { width: @Percent-JS;}
-}
-
-@-o-keyframes Animate-JS {
-    from { width: 10px; }to { width: @Percent-JS;}
-}
-
-
-/*************************************************************************/
-#s-jQuery {
-    width: @Percent-JQuery;
-    height: @barra-size;
-    position: absolute;
-    background-color: @lightBlue-900;
-    animation: Animate-jQuery 5s;
-    -webkit-animation: Animate-jQuery 5s;
-    -moz-animation: Animate-jQuery 5s;
-    -o-animation: Animate-jQuery 5s;
-}
-
-@keyframes Animate-jQuery {
-    from { width: 10px; } to { width: @Percent-JQuery;}
-}
-@-webkit-keyframes Animate-jQuery {
-    from { width: 10px; } to { width: @Percent-JQuery;}
-}
-@-moz-keyframes Animate-jQuery {
-    from { width: 10px; } to { width: @Percent-JQuery;}
-}
-@-o-keyframes Animate-jQuery {
-    from { width: 10px; } to { width: @Percent-JQuery;}
-}
-
-/*************************************************************************/
-#s-TypeScript{
-    width: @Percent-TypeScript; height: @barra-size;
-    position: absolute;
-    background-color: @blue-500;
-    animation: Animate-TypeScript 4s;
-    -webkit-animation: Animate-TypeScript 4s;
-    -moz-animation: Animate-TypeScript 4s;
-    -o-animation: Animate-TypeScript 4s;
-}
-
-@keyframes Animate-TypeScript {
-    from { width: 10px; }to { width: @Percent-TypeScript; }
-}
-
-@-webkit-keyframes Animate-TypeScript {
-    from { width: 10px; }to { width: @Percent-TypeScript;}
-}
-
-@-moz-keyframes Animate-TypeScript {
-    from { width: 10px; }to { width: @Percent-TypeScript;}
-}
-
-@-o-keyframes Animate-TypeScript {
-    from { width: 10px; }to { width: @Percent-TypeScript;}
-}
-
-/*************************************************************************/
-#s-Angular2{
-    width: @Percent-Angular2; height: @barra-size;
-    position: absolute;
-    background-color: @red-500;
-    animation: Animate-Angular2 4s;
-    -webkit-animation: Animate-Angular2 4s;
-    -moz-animation: Animate-Angular2 4s;
-    -o-animation: Animate-Angular2 4s;
-}
-
-@keyframes Animate-Angular2 {
-    from { width: 10px; }to { width: @Percent-Angular2; }
-}
-
-@-webkit-keyframes Animate-Angular2 {
-    from { width: 10px; }to { width: @Percent-Angular2;}
-}
-
-@-moz-keyframes Animate-Angular2 {
-    from { width: 10px; }to { width: @Percent-Angular2;}
-}
-
-@-o-keyframes Animate-Angular2 {
-    from { width: 10px; }to { width: @Percent-Angular2;}
-}
-
-/*************************************************************************/
-#s-Java{
-    width: @Percent-Angular2; height: @barra-size;
-    position: absolute;
-    background-color: @amber-500;
-    animation: Animate-Java 4s;
-    -webkit-animation: Animate-Java 4s;
-    -moz-animation: Animate-Java 4s;
-    -o-animation: Animate-Java 4s;
-}
-
-@keyframes Animate-Java {
-    from { width: 10px; }to { width: @Percent-Java; }
-}
-
-@-webkit-keyframes Animate-Java {
-    from { width: 10px; }to { width: @Percent-Java;}
-}
-
-@-moz-keyframes Animate-Java {
-    from { width: 10px; }to { width: @Percent-Java;}
-}
-
-@-o-keyframes Animate-Java {
-    from { width: 10px; }to { width: @Percent-Java;}
-}
-
 .code-txt {
-    z-index: 1;
     float: left;
-    //position: absolute;
-    margin-top: 5px;
-    margin-left: 7px;
-    text-shadow: none;
+//    position: absolute;
+    margin-top: -1px; margin-left: 5px;
     color: #fff;
-    //font-family: Lato-Regular, sans-serif;
-    font-size: 14px;
-    }
+    font-family: "Roboto Medium"; font-size: 12px; text-shadow: none;
+    z-index: 1;
+}
 
 #s-JS .code-txt {
-    color: black;
+    color: #424242;
     text-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.16);
 }
 
@@ -345,11 +141,10 @@ body {
     z-index: 3;
     position: relative;
     padding-right: 5px;
-    margin-top: 5px;
+    margin-top: -1px;
     float: right;
-    text-shadow: none;
-    color: #fff;
-    //font-family: Lato-Regular, sans-serif;
+    color: #000;
+    font-family: "Roboto Black";
     font-size: 12px;
 }
 
@@ -381,149 +176,348 @@ body {
 }
 
 
+@keyframes Animate-WebDesign { from { width: 10px; }to { width: @Percent-WebDesign; } }
+@-webkit-keyframes Animate-WebDesign { from { width: 10px; }to { width: @Percent-WebDesign;} }
+@-moz-keyframes Animate-WebDesign { from { width: 10px; }to { width: @Percent-WebDesign;} }
+@-o-keyframes Animate-WebDesign{from{width:10px;}to{width:@Percent-WebDesign;}}
+
+#s-WebDesign{
+    width: @Percent-WebDesign; height: @barra-size;
+    background-color: @indigo-500;
+    animation: Animate-WebDesign 4s; -webkit-animation: Animate-WebDesign 4s; -moz-animation: Animate-WebDesign 4s; -o-animation: Animate-WebDesign 4s;
+}
+
+
+/*************************************************************************/
+@keyframes Animate-HTML{from{ width: 10px; }to { width: @Percent-HTML5; } }
+@-webkit-keyframes Animate-HTML{from{ width: 10px; }to { width:@Percent-HTML5;} }
+@-moz-keyframes Animate-HTML { from{ width: 10px; }to { width: @Percent-HTML5;}}
+@-o-keyframes Animate-HTML { from { width: 10px; }to { width: @Percent-HTML5;}}
+#s-HTML {
+    width: @Percent-HTML5; height: @barra-size;
+    position: absolute;
+    background-color: @deepOrange-500;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+}
+
+
+/*************************************************************************/
+@keyframes Animate-CSS {
+    from { width: 10px; }to { width: @Percent-CSS3;} }
+@-webkit-keyframes Animate-CSS {
+    from { width: 10px; }to { width: @Percent-CSS3;} }
+@-moz-keyframes Animate-CSS {
+    from { width: 10px; }to { width: @Percent-CSS3;} }
+@-o-keyframes Animate-CSS {
+    from { width: 10px; }to { width: @Percent-CSS3;} }
+#s-CSS {
+    width: @Percent-CSS3; height: @barra-size;
+    position: absolute;
+    background-color: @lightBlue-500;
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+}
+
+
+/*************************************************************************/
+@keyframes Animate-JS {
+    from { width: 10px; }to { width: @Percent-JS; } }
+@-webkit-keyframes Animate-JS {
+    from { width: 10px; }to { width: @Percent-JS;} }
+@-moz-keyframes Animate-JS {
+    from { width: 10px; }to { width: @Percent-JS;} }
+@-o-keyframes Animate-JS {
+    from { width: 10px; }to { width: @Percent-JS;} }
+#s-JS{
+    width: @Percent-JS; height: @barra-size;
+    position: absolute;
+    background-color: @yellow-500;
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+}
+
+
+
+/*************************************************************************/
+@keyframes Animate-jQuery {
+    from { width: 10px; } to { width: @Percent-JQuery;} }
+@-webkit-keyframes Animate-jQuery {
+    from { width: 10px; } to { width: @Percent-JQuery;} }
+@-moz-keyframes Animate-jQuery {
+    from { width: 10px; } to { width: @Percent-JQuery;} }
+@-o-keyframes Animate-jQuery {
+    from { width: 10px; } to { width: @Percent-JQuery;} }
+#s-jQuery {
+    width: @Percent-JQuery;
+    height: @barra-size;
+    position: absolute;
+    background-color: @lightBlue-900;
+    animation: Animate-jQuery 5s;
+    -webkit-animation: Animate-jQuery 5s;
+    -moz-animation: Animate-jQuery 5s;
+    -o-animation: Animate-jQuery 5s;
+}
+
+
+/*************************************************************************/
+@keyframes Animate-TypeScript {
+    from { width: 10px; }to { width: @Percent-TypeScript; } }
+@-webkit-keyframes Animate-TypeScript {
+    from { width: 10px; }to { width: @Percent-TypeScript;} }
+@-moz-keyframes Animate-TypeScript {
+    from { width: 10px; }to { width: @Percent-TypeScript;} }
+@-o-keyframes Animate-TypeScript {
+    from { width: 10px; }to { width: @Percent-TypeScript;} }
+#s-TypeScript{
+    width: @Percent-TypeScript; height: @barra-size;
+    position: absolute;
+    background-color: @blue-500;
+    animation: Animate-TypeScript 4s;
+    -webkit-animation: Animate-TypeScript 4s;
+    -moz-animation: Animate-TypeScript 4s;
+    -o-animation: Animate-TypeScript 4s;
+}
+
+
+/*************************************************************************/
+@keyframes Animate-Angular2 {
+    from { width: 10px; }to { width: @Percent-Angular2; } }
+@-webkit-keyframes Animate-Angular2 {
+    from { width: 10px; }to { width: @Percent-Angular2;} }
+@-moz-keyframes Animate-Angular2 {
+    from { width: 10px; }to { width: @Percent-Angular2;} }
+@-o-keyframes Animate-Angular2 {
+    from { width: 10px; }to { width: @Percent-Angular2;} }
+#s-Angular2{
+    width: @Percent-Angular2; height: @barra-size;
+    position: absolute;
+    background-color: @red-500;
+    animation: Animate-Angular2 4s;
+    -webkit-animation: Animate-Angular2 4s;
+    -moz-animation: Animate-Angular2 4s;
+    -o-animation: Animate-Angular2 4s;
+}
+
+
+/*************************************************************************/
+@keyframes Animate-Java {
+    from { width: 10px; }to { width: @Percent-Java; } }
+@-webkit-keyframes Animate-Java {
+    from { width: 10px; }to { width: @Percent-Java;} }
+@-moz-keyframes Animate-Java {
+    from { width: 10px; }to { width: @Percent-Java;} }
+@-o-keyframes Animate-Java {
+    from { width: 10px; }to { width: @Percent-Java;} }
+
+#s-Java{
+    width: @Percent-Angular2; height: @barra-size;
+    position: absolute;
+    background-color: @amber-500;
+    animation: Animate-Java 4s;
+    -webkit-animation: Animate-Java 4s;
+    -moz-animation: Animate-Java 4s;
+    -o-animation: Animate-Java 4s;
+}
+
+.images-devices {
+    display: flex;
+    justify-content: center;
+    img{ margin: 5px; }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @CG-x1: 320px; 
 
+//listado de tabs
+.seleccion{
+    .work-list{
+        
+        display: flex;
+        justify-content: center;
+        
+        li{
+            display: inline-block;
+            margin-left: 5px; margin-right: 15px;
+            
+            a{ color: #212121; font-family: "Roboto Bold"; opacity: 0.8;
+            
+                &:hover{
+                    color: @lightBlue-500;
+                    border-bottom: 3px solid @lightBlue-500;
+                    font-family: "Roboto Black";
+                    transition: 0.25s;
+                }
+            }
+            .active{
+                    color: @lightBlue-500;
+                    border-bottom: 3px solid @lightBlue-500;
+                    font-family: "Roboto Black";
+                    transition: 0.25s;
+            }
+            
+            
+            
+        }
+    }
 
-.work-list li{
-    display: inline-block;
-    margin-left: 5px; margin-right: 15px;
 }
 
-.cuadros div{
-    display: inline-block;
+
+.cuadros div{ display: inline-block; }
+
+//UX & UI 
+#ux_ui{
+    .block-1x2_1x2{
+        float: left;
+        height: @CG-x1;
+        background: @grey-500;
+        border-radius: 10px;
+        margin: 0px; margin-bottom: 15px;
+        padding: 15px;
+        display: block;
+        
+        &:hover{ background: @indigo-500; }
+    }
+    .block-1x2_2x2{
+        margin: 0px; 
+        display: flex;
+        flex-direction: column;
+        
+        .min-c1x2{
+            background: @grey-500;
+            border-radius: 10px; height: @CG-x1/2 - 37px;
+            padding: 15px;
+            margin-bottom: 15px;
+            
+            &:hover{ background: @indigo-500; }
+        }
+        .min-c2x2 {
+            margin-bottom: 15px;
+            background: @grey-500;
+            border-radius: 10px; height: @CG-x1/2 - 37px;
+            padding: 15px;
+            
+            img{ margin-top: 20px; }
+            &:hover{ background: @indigo-500; }
+        }
+        
+    }
+    .block-2x2{
+        width: 100%;
+        height: @CG-x1*1-65%;
+        border-radius: 10px;
+        background: @grey-500;
+        padding: 15px; padding-top: 0px;
+        
+        &:hover{ background: @indigo-500; }
+    }
 }
+// ************************************************************
 
 
-
-
-.Cx1{
-    top: 10;
-    float: left;
-    width: 45%; height: @CG-x1;
-    background: @grey-500;
-    border-radius: 10px; margin: 0px;
-    margin-bottom: 15px;
+//wEB dEV 
+#web-dev{
+    .block-1x3{
+        width: 100%;
+        height: @CG-x1/2;
+        background: @grey-500;
+        border-radius: 10px;
+        margin: 0px;
+        padding: 15px; padding-top: 0px;
+        
+        &:hover{ background: @deepOrange-500; }
+    }
+    .block-2x3{
+        width: 100%;
+        margin: 0px; padding: 0px;
+        
+        .min-c1x2{
+            margin-left: -10px;
+            background: @grey-500;
+            border-radius: 10px;
+            height: @CG-x1/2 - 20px;
+            padding: 15px; padding-top: 0px;
+            padding-bottom: 10px;
+            margin: 0px; margin-top: 20px;
+            
+            &:hover{ background: @yellow-500; }
+        }
+        .min-c2x2 {
+            background: @grey-500;
+            border-radius: 10px;
+            height: @CG-x1/2 - 20px;
+            padding: 15px; padding-top: 0px;
+            padding-bottom: 10px;
+            margin: 0px; margin-top: 20px;
+            
+            &:hover{ background: @lightBlue-500; }
+        }
+    }
+    .block-3x3{
+        height: @CG-x1*1 - 80px;
+        width: 100%;
+        background: @grey-500;
+        border-radius: 10px;
+        margin: 0px; margin-top: 20px;
+        padding: 15px; padding-top: 0px;
+        
+        &:hover{ background: @lightBlue-900; }
+    }
 }
+// ************************************************************
 
-.Cx1:hover,
-.twoC:hover,.treeC:hover,
-.Cx1-1:hover{
-    background: @indigo-500;
-}
-
-.Cx2-2 div{
-    display: block;
-    position: relative;
-    margin-top: 0px;
-}
-
-.twoC{
-    width: @CG-x1; height: @CG-x1 - 120px + 5px;
-    background: @grey-500;
-    border-radius: 10px;
-    margin: 15px;
-}
-
-.treeC{
-    width: @CG-x1; height: @CG-x1 - 220px;;
-    background: @grey-500;
-    border-radius: 10px;
-    margin: 15px;
+//Web APP
+#web-mobil_app{
     
-    img{
-        margin-top: 10px;
+    .min-c{
+        background: @grey-500;
+        height: @CG-x1*2 - 80px;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    
+    .block-1x2{
+        
+        
+        .min-c:hover{ background: @blue-500; }
+    }
+    .block-2x2{
+        
+        .min-c:hover{ background: @red-500; }
+    }
+}
+// ************************************************************
+
+//Desktop APP
+#desktop-mobil_app{
+    .min-dstkp{
+        height: @CG-x1*2 - 90px;
+        border-radius: 15px;
+        background: @grey-500;
+        margin-bottom: 21px; padding: 20px;
+        
+        &:hover{ background: @amber-500; }
     }
 }
 
-
-.Cx1-1{
-    width: 100%;
-    height: @CG-x1*2-155px;
-    border-radius: 10px;
-    background: @grey-500;
-    margin-bottom: 18px;
-}
-
-//wEB dEV
-.t2x4{ margin-right: 20px; }
-.t1x4,.t2x4,.t3x4,.t4x4{
-    float: left;
-    border-radius: 10px;
-    background: @grey-500;
-    margin-bottom: 10px;
-}
-.t1x4{
-    width: 100%;
-    height: 250px;
-    background: @grey-500;
-}
-.t2x4,.t3x4{
-    margin-top: 10px;
-    width: 300px;
-    height: 300px;
-}
-.t4x4{
-    margin-top: 10px;
-    width: 100%;
-    height: 220px;
-}
-.t1x4:hover{ background: @deepOrange-500; }
-.t2x4:hover{ background: @lightBlue-500; }
-.t3x4:hover{ background: @yellow-500; }
-.t4x4:hover{ background: @lightBlue-900; }
-
-//Web APP
-#web-mobil_app div{
-    margin: 0px;
-    display: inline-block; /*En un bloque*/
-    position: relative; /*par correr a la izq del bloque*/
-    margin-bottom: 18px;
-}
-
-#web-mobil_app .Cx1{
-    width: 45%;
-    height: 820px;
-    margin-right: 15px;
-}
-
-
-#web-mobil_app .Cx1-1{
-    width: 45%;
-   height: 820px; 
-}
-#web-mobil_app .Cx1:hover{
-    background: @blue-500;
-}
-#web-mobil_app .Cx1-1:hover{
-    background: @red-500;
-}
-
-//Desktop APP
-.t1{
-    width: 100%; height: 820px;
-    border-radius: 15px;
-    background: @grey-500;
-    margin-bottom: 21px; padding: 20px;
-}
-.pJava{
-    border-radius: 5px;
-}
-#desktop-mobil_app .t1{
-    text-align: center;
-}
-#desktop-mobil_app .t1:hover{
-    background: @amber-500;
-}
-
-
-#ux_ui,
-#web-dev,
-#web-mobil_app,
-#desktop-mobil_app{
-    height: 846px;
-}
 .wd_text{
     margin: 0px; margin-left: -3px;
     padding: 5px; background: #3F51B5; color: #F5F5F5;
@@ -595,6 +589,8 @@ span[class^="close"]:hover, span[class^="close"]:focus{
     background-color: transparent;
     color: white;
     font-family: "Roboto Medium", monospace;
+    
+    h2{ color: #212121; opacity: 0.8; }
 }
 
 /* Modal Body */
@@ -648,6 +644,18 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 
 
 @media only screen and (max-width: 40em) {
+    .perfil{
+        display: flex;
+        justify-content: space-between;
+        
+        .foto {
+            margin-top: 40px;
+            width: 30%;
+            height: 30%;
+        }
+    }
+    
+    
     .responsive-percent {
         margin-right: -45px !important;
     }
@@ -664,6 +672,12 @@ span[class^="close"]:hover, span[class^="close"]:focus{
     
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .foto {
+            width: 80px;
+            height: 80px;
+            margin-top: 25px;
+    }
+    
      .responsive-percent {
          margin-right: -45px !important;
      }
