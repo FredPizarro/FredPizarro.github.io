@@ -138,7 +138,6 @@ body {
 }
 
 .Percent-txt {
-    z-index: 3;
     position: relative;
     padding-right: 5px;
     margin-top: -1px;
@@ -468,7 +467,7 @@ body {
             padding-bottom: 10px;
             margin: 0px; margin-top: 20px;
             
-            &:hover{ background: @lightBlue-500; }
+            &:hover{ background: @lightBlue-900; }
         }
     }
     .block-3x3{
@@ -479,7 +478,7 @@ body {
         margin: 0px; margin-top: 20px;
         padding: 15px; padding-top: 0px;
         
-        &:hover{ background: @lightBlue-900; }
+        &:hover{ background: @lightBlue-500; }
     }
 }
 // ************************************************************
@@ -552,6 +551,10 @@ body {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    
+    h2{
+        text-align: center;
+    }
 }
 
 
@@ -602,8 +605,8 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 /* Modal Footer */
 .modal-footer {
     padding: 2px 16px;
-    background-color: #212121;
     color: white;
+    h5{ margin-left: 25px; }
 }
 
 /* Modal Content */

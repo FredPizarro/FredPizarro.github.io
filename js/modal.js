@@ -34,7 +34,7 @@ var modal_web_card_product_house = document.getElementById('Modal_web-card-produ
 var modal_web_shopper = document.getElementById('Modal_web-shopper'); /* Web Development */
 
 var modal_w_e_computo = document.getElementById('Modal_web-ecommerce_computo'); /* Web app */
-
+var modal_w_dashboard = document.getElementById('Modal_web-Dashboard-group'); /* Web app */
 
 var modal_Modal_java_doc = document.getElementById('Modal_java-doc'); /* desktop */
 var modal_Modal_web_dev = document.getElementById('Modal_web-dev'); /* desktop */
@@ -64,7 +64,7 @@ var btn_web_shopper = document.getElementById("btnModal_web-Shopper"); /* Web De
 
 
 var btn_w_e_computo = document.getElementById("btnModal_web-ecommerce_computo"); /* Web app */
-
+var btn_w_dashboard = document.getElementById("btnModal_web-Dashboard-group"); /* Web app */
 
 
 var btn_java_doc = document.getElementById("btnModal_java-doc"); /* desktop */
@@ -96,6 +96,7 @@ var span_web_shopper = document.getElementsByClassName("close-web-shopper")[0]; 
 
 
 var span_w_e_computo = document.getElementsByClassName("close-web-ecommerce_computo")[0]; /* Web app */
+var span_w_dashboard = document.getElementsByClassName("close-web-Dashboard-group")[0]; /* Web app */
 
 
 var span_java_doc = document.getElementsByClassName("close-java-doc")[0]; /* desktop */
@@ -137,8 +138,9 @@ btn_web_location_form.onclick = function() { modal_web_location_form.style.displ
 btn_web_card_product_house.onclick = function() { modal_web_card_product_house.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_web_shopper.onclick = function() { modal_web_shopper.style.display = "block"; document.body.style.overflow = "hidden"; }
 
-
+/* Web app */
 btn_w_e_computo.onclick = function() { modal_w_e_computo.style.display = "block"; document.body.style.overflow = "hidden"; }
+btn_w_dashboard.onclick = function() { modal_w_dashboard.style.display = "block"; document.body.style.overflow = "hidden"; }
 
 
 btn_java_doc.onclick = function() { modal_Modal_java_doc.style.display = "block"; document.body.style.overflow = "hidden"; }
@@ -172,7 +174,9 @@ span_web_card_product_house.onclick = function() { modal_web_card_product_house.
 span_web_shopper.onclick = function() { modal_web_shopper.style.display = "none"; document.body.style.overflow = "scroll"; }
 
 
+/* Web app */
 span_w_e_computo.onclick = function() { modal_w_e_computo.style.display = "none"; document.body.style.overflow = "scroll";  } 
+span_w_dashboard.onclick = function() { modal_w_dashboard.style.display = "none"; document.body.style.overflow = "scroll";  } 
 
 
 
@@ -220,6 +224,8 @@ window.onclick = function(event) {
         modal_Modal_web_dev.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_w_e_computo) {
         modal_w_e_computo.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_w_dashboard) {
+        modal_w_dashboard.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_Modal_java_doc) {
         modal_Modal_java_doc.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_Modal_tecnicopc) {
