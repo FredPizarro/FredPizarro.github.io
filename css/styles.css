@@ -293,7 +293,7 @@ body {
     width: 10px;
   }
   to {
-    width: 45%;
+    width: 30%;
   }
 }
 @-webkit-keyframes Animate-jQuery {
@@ -301,7 +301,7 @@ body {
     width: 10px;
   }
   to {
-    width: 45%;
+    width: 30%;
   }
 }
 @-moz-keyframes Animate-jQuery {
@@ -309,7 +309,7 @@ body {
     width: 10px;
   }
   to {
-    width: 45%;
+    width: 30%;
   }
 }
 @-o-keyframes Animate-jQuery {
@@ -317,11 +317,11 @@ body {
     width: 10px;
   }
   to {
-    width: 45%;
+    width: 30%;
   }
 }
 #s-jQuery {
-  width: 45%;
+  width: 30%;
   height: 15px;
   position: absolute;
   background-color: #01579b;
@@ -450,7 +450,7 @@ body {
   }
 }
 #s-Java {
-  width: 73%;
+  width: 80%;
   height: 15px;
   position: absolute;
   background-color: #ffc107;
