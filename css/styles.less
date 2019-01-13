@@ -13,8 +13,9 @@
 @blue-500: #2196f3;
 @grey-50: #FAFAFA;
 @grey-200: #eeeeee;
-@grey-500: #9E9E9E;
 @grey-300: #E0E0E0;
+@grey-500: #9E9E9E;
+@grey_800: #424242;
 @blanco: #FFFFFF;
 
 
@@ -44,24 +45,27 @@ body {
     
     
     .perfil{
-        
+        margin-top: 16px;
         display: flex;
         justify-content: center;
                 
-        .foto{ border-radius: 50%; } 
+        .foto{ margin-left: 16px; border-radius: 50%; height: 110px; width: 110px; } 
         
         .user-detail {
-            padding-top: 35px;
+			padding: 5px;
+            padding-top: 30px;
             text-align: center;
             
-            .name{ font-size: 24px; font-family: "Roboto Black";  white-space: normal; color: @grey-500; opacity: 0.8;  }
+            .name{ font-size: 24px; font-family: "Roboto Regular";  white-space: normal; color: @grey_800; opacity: 0.8; line-height: 80%  }
+			p{
+				line-height: 90%;
+				color: @grey-500;
+			}
         }
         
     }
-    h5{
-        margin-top: -15px;
-        color: @grey-500;
-    }
+	
+    h6{ margin: -1px; padding-left: 8px; color: @grey-500; }
     
     .about-me h3{ margin:7px; i{  margin-right:5px;} }
     .about-me ul li{
@@ -69,24 +73,39 @@ body {
         margin-right:5px;
         
     }
+	.list_justify{
+			display: flex;
+			align-items: center;
+			margin-bottom: 6px;
+			margin-top: 16px;
+	}
+	.space_justify{
+		padding-left: 24px + 8px; line-height: 1.4; color:@grey_800;
+		position: relative;
+	}
+	#about-me{
+		margin-bottom: 16px; 
+		#about_me_c{
+			svg{
+				position: absolute;
+				margin-left: -16px;
+			}
+			
+		}		
+	}
+	#contact-me{
+		
+	}
 }
 
 
 //separadores con bordes
 .linea{
-    margin-top: 15px;  margin-bottom: 15px;
+    margin-top: 16px;
     border-radius: 2px;
-    height: 5px; background: @grey-300;
+    height: 3px; background: @grey-300;
     
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -109,8 +128,8 @@ body {
 @Percent-WebDesign: 80%;
 @Percent-HTML5: 70%;
 @Percent-CSS3: 75%;
-@Percent-JS: 20%;
-@Percent-JQuery: 30%;
+@Percent-JS: 30%;
+@Percent-JQuery: 20%;
 @Percent-TypeScript: 65%;
 @Percent-Angular2: 73%;
 @Percent-Java: 80%;
@@ -120,7 +139,7 @@ body {
     width: 90%; height: @barra-size;
     position: relative;
     background: @grey-200;
-    margin: 10px auto; border-radius: 5px;
+    border-radius: 5px;
 }
 
 .code-txt {
@@ -328,7 +347,7 @@ body {
 .images-devices {
     display: flex;
     justify-content: center;
-    img{ margin: 5px; }
+    img{ margin: 5px; opacity: 0.6; }
 }
 
 
@@ -657,7 +676,7 @@ span[class^="close"]:hover, span[class^="close"]:focus{
             height: 30%;
         }
     }
-    
+       
     
     .responsive-percent {
         margin-right: -45px !important;
@@ -680,7 +699,7 @@ span[class^="close"]:hover, span[class^="close"]:focus{
             height: 80px;
             margin-top: 25px;
     }
-    
+
      .responsive-percent {
          margin-right: -45px !important;
      }
@@ -692,3 +711,11 @@ span[class^="close"]:hover, span[class^="close"]:focus{
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
