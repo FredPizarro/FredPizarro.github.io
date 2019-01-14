@@ -15,14 +15,17 @@ var spancl = document.getElementsByClassName("close-c-l")[0];
 //       alert("Click");
 //   });
 //}
-
+var modal_card_color = document.getElementById('Modal_card-color');
 
 
 var modal3 = document.getElementById('Modal_03');
-
+var modal_login = document.getElementById('Modal_login');
 var modal_icon = document.getElementById('Modal_icon');
 var modal_color = document.getElementById('Modal_color');
-var modal_theme = document.getElementById('Modal_Theme-brackets'); /* UX / UI */
+var modal_theme = document.getElementById('Modal_Theme-brackets');
+var modal_theme_atom = document.getElementById('Modal_Theme-atom');
+var modal_package_atom = document.getElementById('Modal_Package-atom');
+/* UX / UI */
 
 var modal1 = document.getElementById('Modal_01');
 var modal2 = document.getElementById('Modal_02');
@@ -49,11 +52,15 @@ var modal_system_school_control = document.getElementById('Modal_system-school-c
 /*********************************************************************************************/
 
 // Get the button that opens the modal
+var btn_card_color = document.getElementById("btnModal_card-color");
 var btn3 = document.getElementById("btnModal_03");
-
+var btn_login = document.getElementById("btnModal_login");
 var btn_icon = document.getElementById("btnModal_icon");
 var btn_color = document.getElementById("btnModal_color");
-var btn_theme = document.getElementById("btnModal_Theme-brackets"); /* UX / UI */
+var btn_theme = document.getElementById("btnModal_Theme-brackets");
+var btn_theme_atom = document.getElementById("btnModal_Theme-atom");
+var btn_package_atom = document.getElementById("btnModal_Package-atom");
+/* UX / UI */
 
 var btn1 = document.getElementById("btnModal_01");
 var btn2 = document.getElementById("btnModal_02");
@@ -83,11 +90,15 @@ var btn_system_school_control = document.getElementById("btnModal_system-school-
 /*********************************************************************************************/
 
 // Get the <span> element that closes the modal
+var span_card_color = document.getElementsByClassName("close-c-c")[0];
 var span3 = document.getElementsByClassName("close3")[0];
-
+var span_login = document.getElementsByClassName("close-login")[0];
 var spanicon = document.getElementsByClassName("close-icon")[0];
 var spancolor = document.getElementsByClassName("close-color")[0];
-var span_theme = document.getElementsByClassName("close-theme")[0]; /* UX / UI */
+var span_theme = document.getElementsByClassName("close-theme")[0];
+var span_theme_atom = document.getElementsByClassName("close-theme-atom")[0]; 
+var span_package_atom = document.getElementsByClassName("close-package-atom")[0]; 
+/* UX / UI */
 
 var span1 = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close2")[0];
@@ -128,11 +139,15 @@ $("#btnModal_card-location, #btnModal_03").click(function(){
 
 
 
-btn3.onclick = function() { modal3.style.display = "block";}
-
+btn_card_color.onclick = function(){ modal_card_color.style.display = "block"; document.body.style.overflow = "hidden"; }
+btn3.onclick = function() { modal3.style.display = "block"; document.body.style.overflow = "hidden";}
+btn_login.onclick = function(){ modal_login.style.display = "block"; document.body.style.overflow = "hidden"; }
 btn_icon.onclick = function() { modal_icon.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_color.onclick = function() { modal_color.style.display = "block"; document.body.style.overflow = "hidden";   }
 btn_theme.onclick = function(){ modal_theme.style.display = "block"; document.body.style.overflow = "hidden"; }
+btn_theme_atom.onclick = function(){ modal_theme_atom.style.display = "block"; document.body.style.overflow = "hidden"; }
+btn_package_atom.onclick = function(){ modal_package_atom.style.display = "block"; document.body.style.overflow = "hidden"; }
+/* UX / UI */
 
 /* Web Development */
 btn1.onclick = function() { modal1.style.display = "block"; document.body.style.overflow = "hidden"; }
@@ -161,15 +176,19 @@ btn_system_school_control.onclick = function() { modal_system_school_control.sty
 /*********************************************************************************************/
 
 // When the user clicks on <span> (x), close the modal / scroll visible  ( del body)
+span_card_color.onclick = function(){ modal_card_color.style.display = "none"; document.body.style.overflow = "scroll"; }
 spancl.onclick = function() {
     modal_card_location.css("display", "none");
     document.body.style.overflow = "scroll"; 
 }
 span3.onclick = function() { modal3.style.display = "none"; document.body.style.overflow = "scroll"; }
-
+span_login.onclick = function(){ modal_login.style.display = "none"; document.body.style.overflow = "scroll"; }
 spanicon.onclick = function() { modal_icon.style.display = "none"; document.body.style.overflow = "scroll"; }
 spancolor.onclick = function() { modal_color.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_theme.onclick = function(){ modal_theme.style.display = "none"; document.body.style.overflow = "scroll"; }
+span_theme_atom.onclick = function(){ modal_theme_atom.style.display = "none"; document.body.style.overflow = "scroll"; }
+span_package_atom.onclick = function(){ modal_package_atom.style.display = "none"; document.body.style.overflow = "scroll"; }
+/* UX / UI */
 
 /* Web Development */
 span1.onclick = function() { modal1.style.display = "none"; document.body.style.overflow = "scroll"; }
@@ -206,18 +225,26 @@ span_s_school_control.onclick = function() { modal_system_school_control.style.d
 window.onclick = function(event) {
     if (event.target == modal_card_location) {
         modal_card_location.css("display", "none"); document.body.style.overflow = "scroll"; 
+    }if (event.target == modal_card_color) {
+        modal_card_color.css("display", "none"); document.body.style.overflow = "scroll"; 
     }if (event.target == modal1) {
         modal1.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal2) {
         modal2.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal3) {
         modal3.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_login) {
+        modal_login.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_icon) {
         modal_icon.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_color) {
         modal_icon.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_theme) {
         modal_theme.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_theme_atom) {
+        modal_theme_atom.style.display = "none"; document.body.style.overflow = "scroll";
+    }if (event.target == modal_package_atom) {
+        modal_package_atom.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_web_cleaners) {
         modal_web_cleaners.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_web_navbar_basic) {

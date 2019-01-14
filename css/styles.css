@@ -157,7 +157,7 @@ body {
 }
 .code-txt {
   float: left;
-  margin-top: -1px;
+  margin-top: 1px;
   margin-left: 5px;
   color: #fff;
   font-family: "Roboto Medium";
@@ -169,6 +169,7 @@ body {
   color: #424242;
   text-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.16);
 }
+/* Oculto */
 .Percent-txt {
   position: relative;
   padding-right: 5px;
@@ -178,6 +179,7 @@ body {
   opacity: 0.6;
   font-family: "Roboto Black";
   font-size: 12px;
+  visibility: hidden;
 }
 .fadeIn {
   /* CSS needed for animation */
@@ -245,6 +247,9 @@ body {
   -webkit-animation: Animate-WebDesign 4s;
   -moz-animation: Animate-WebDesign 4s;
   -o-animation: Animate-WebDesign 4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*************************************************************************/
 @keyframes Animate-HTML {
@@ -288,6 +293,9 @@ body {
   -webkit-animation: Animate-HTML 4s;
   -moz-animation: Animate-HTML 4s;
   -o-animation: Animate-HTML 4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*************************************************************************/
 @keyframes Animate-CSS {
@@ -331,6 +339,9 @@ body {
   -webkit-animation: Animate-CSS 5s;
   -moz-animation: Animate-CSS 5s;
   -o-animation: Animate-CSS 5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*************************************************************************/
 @keyframes Animate-JS {
@@ -374,6 +385,9 @@ body {
   -webkit-animation: Animate-JS 4s;
   -moz-animation: Animate-JS 4s;
   -o-animation: Animate-JS 4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*************************************************************************/
 @keyframes Animate-jQuery {
@@ -417,6 +431,9 @@ body {
   -webkit-animation: Animate-jQuery 5s;
   -moz-animation: Animate-jQuery 5s;
   -o-animation: Animate-jQuery 5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*************************************************************************/
 @keyframes Animate-TypeScript {
@@ -460,6 +477,9 @@ body {
   -webkit-animation: Animate-TypeScript 4s;
   -moz-animation: Animate-TypeScript 4s;
   -o-animation: Animate-TypeScript 4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*************************************************************************/
 @keyframes Animate-Angular2 {
@@ -503,6 +523,9 @@ body {
   -webkit-animation: Animate-Angular2 4s;
   -moz-animation: Animate-Angular2 4s;
   -o-animation: Animate-Angular2 4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*************************************************************************/
 @keyframes Animate-Java {
@@ -546,6 +569,9 @@ body {
   -webkit-animation: Animate-Java 4s;
   -moz-animation: Animate-Java 4s;
   -o-animation: Animate-Java 4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .images-devices {
   margin-left: 26px;
@@ -671,7 +697,7 @@ body {
 #ux_ui .block-6x1 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 230px;
+  height: 260px;
 }
 #ux_ui .block-6x1:hover {
   background: #3d5afe;
@@ -905,6 +931,9 @@ span[class^="close"]:focus {
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
+}
+.modal-body img {
+  margin-bottom: 10px;
 }
 /* ajustar en bloques */
 /* Modal Footer */
