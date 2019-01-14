@@ -1,2 +1,4 @@
-css/styles.less
-css/styles.css
+*.less
+
+css/styles.min.css
+css/varColors.css

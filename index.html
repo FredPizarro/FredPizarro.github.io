@@ -13,12 +13,14 @@
     <div class="fondo">
      
     </div>
-    <div class="">
+    <div class="todo">
         <div class="row">
-            <div class="col s12 m4 l3">
-                <div class="portafolio">
+            <div class="col s12 m4 l3 one">
+                <div class="portafolio-user">
                     <div class="perfil">
-                        <img class="foto" src="imgs/FredPizarro.jpg" alt="">
+                        <a href="">
+                        	<img class="foto" src="imgs/FredPizarro.jpg" alt="">
+                        </a>
                         <div class="user-detail">
                             <span class="name">Fred Pizarro</span>
                             <p>Web Design/ Web Development</p>
@@ -168,60 +170,55 @@
                     </div>
                 </div>
                 
-                
             </div>
             
             
 <!--            portafolio-->
-            <div class="col s12 m8 l9 portafolio">
-                <!-- HTML -->
-                <br>
+            <div class="col s12 m8 l9 portafolio-content">
+                <div class="bloque2">
+                	<!-- HTML -->
                 <div class="seleccion">
                     <ul class="tabs work-list center">
-                        <li class="tab"><a class="" href="#ux_ui">UX/ UI</a></li>
-                        <li class="tab"><a href="#web-dev">Web Development</a></li>
-                        <li class="tab"><a href="#web-mobil_app">Web & Mobil APP</a></li>
-                        <li class="tab"><a href="#desktop-mobil_app">Desktop & Mobil APP</a></li>
+                        <li class="tab"><a class="scroll-up" href="#ux_ui">UX/ UI</a></li>
+                        <li class="tab"><a href="#web-dev" class="scroll-up">Web Development</a></li>
+                        <li class="tab"><a href="#web-mobil_app" class="scroll-up">Web & Mobil APP</a></li>
+                        <li class="tab"><a href="#desktop-mobil_app" class="scroll-up">Desktop APP</a></li>
                     </ul>
                     
                 </div>
                  <br>
 <!--                *******************************************************-->
                 <!-- UX/UI-->
-                <div id="ux_ui" class="cuadros row">
-                    <div class="col s12 m6 block-1x2_1x2">
+                <div id="ux_ui">
+                     <div class="block-2x2">
                        <a id="btnModal_card-location"><img src="imgs/card-location-Prototype.png" alt="" width="80" height="80" title="Card location">
                            </a>
-                    </div>
-                    <div class="col s12 m6 block-1x2_2x2">
-                        <div class="min-c1x2">
+                     </div>
+                     <div class="block-4x1_a">
                             <a id="btnModal_03"><img src="imgs/report-material-design.png" alt="" width="70" height="120" title="Design Report">
                            </a>
-                        </div>
-                        <div class="min-c2x2" title="UI Kit">
-                            <a id="btnModal_icon">
+                     </div>
+                     <div class="block-4x1_b" title="UI Kit">
+                           <a id="btnModal_icon">
                               <img src="imgs/icon-design-material.png" alt="" width="70" height="80" title="icon material">
                            </a> 
                            <a id="btnModal_color">
                               <img src="imgs/colorux.png" alt="" width="70" height="80" title="icon material">
                            </a> 
-                        </div>
-                    </div> <br>
-                    <div class="col s12 block-2x2">
-                       <br>
+                    </div>
+                     <div class="block-6x1">
                         <a id="btnModal_Theme-brackets">
-                            <img src="imgs/UX_UI/brackets-themes.png" alt="" width="80" height="40" title="Theme 'Material Color' mode (dark) and (light)">
+                            <img src="imgs/UX_UI/brackets-themes.png" alt="" width="70" height="40" title="Theme 'Material Color' mode (dark) and (light)">
                         </a>
                     </div>
-                </div>
+                </div><!-- end: UX/UI-->
                 
                 
                 <!-- wEB dEV -->
-                <div id="web-dev" class="row">
-                    <div class="col s12 block-1x3" title="Web Page basic">
-                        <br>
+                <div id="web-dev">
+                    <div class="block-6x1_a" title="Web Page basic">
                         <a id="btnModal_web-Cleaners">
-                           <img src="imgs/web-dev/Demo-Cleaners_Home.png" alt="" width="70" height="50" title="Web Lavanderia basic (all in view)">
+                           <img src="imgs/web-dev/Demo-Cleaners_Home.png" alt="" width="70" height="120" title="Web Lavanderia basic (all in view)">
                        </a>
                        <a id="btnModal_01">
                            <img src="imgs/home-shop-car-volvo-tractor.png" alt="" width="70" height="120" title="Design Shop">
@@ -233,8 +230,7 @@
                            <img src="imgs/web-dev/EC_Shop.png" alt="" width="70" height="120" title="Design Product Ropa Men & Woman + Accesorios">
                        </a>
                     </div>
-                    <div class="col s12 block-2x3 row">
-                        <div class="col s12 l6 ">
+                    <div class="block-3x1_a">
                             <div class="min-c1x2">
                                 <br>
                             <a id="btnModal_web_navbar-basic">
@@ -244,34 +240,29 @@
                                <img src="imgs/Web-Component/location-form.png" alt="" width="70" height="100" title="Web Form Location Basic">
                            </a>
                             </div>
-                        </div>
-                         <div class="col s12 l6">
-                             <div class="min-c2x2">
-                                <br>
-                             </div>
-                         </div>
                     </div>
-                    <div class="col s12 block-3x3">
-                        <br>
+                    <div class="block-3x1_b">
+                    </div>
+                    <div class="block-6x1_b">
                         <a id="btnModal_web-email-lan-cabling-solutions">
                             <img src="imgs/Web-Component/email-signature_Lan-Cabling-Solutions.png" alt="" width="70" height="100" title="Web Email Lan Cabling Solutions">
                         </a>
                         <a id="btnModal_web-card-product-house">
                             <img src="imgs/Web-Component/card-Product-House.png" alt="" width="70" height="60" title="Card Product House">
                         </a>
-                    </div> <br>
+                    </div>
                 </div>
                 
                 <!-- Web APP -->
-                <div id="web-mobil_app" class="row">
-                    <div class="col s12 m6 block-1x2">
+                <div id="web-mobil_app">
+                    <div class="block-3x1_a">
                         <div class="min-c">
                             <a id="btnModal_web-ecommerce_computo">
                                <img src="imgs/web-app/ec_electronicos_promotion.png" alt="" width="70" height="120" title="Template/ Web design: Ecommerce">
                             </a>
                         </div>
                     </div>
-                    <div class="col s12 m6 block-2x2">
+                    <div class="block-3x1_b">
                         <div class="min-c">
                             <a id="btnModal_web-Dashboard-group">
                                <img src="imgs/web-app/Dashboard-01.png" alt="" width="100" height="100" title="Template/ Web design: HTML5 + CSS3 (Working: Angular2 + TypeScript)">
@@ -285,9 +276,8 @@
                 </div>
                 
                 <!--Desktop APP-->
-                <div id="desktop-mobil_app" class="">
-                    <div class="min-dstkp">
-                        <div class="view-Panel">
+                <div id="desktop-mobil_app">
+                    <div class="block-6x1">
                             <a id="btnModal_java-doc">
                                <img src="imgs/app/Java.png" alt="" width="100" height="120">
                             </a>
@@ -309,11 +299,11 @@
                             <a id="btnModal_system-school-control">
                                <img src="imgs/app/system_school-control_generate-qr.png" alt="" width="150" height="120">
                             </a>
-                        </div>
                     </div>
                 </div>
                 
                 
+                </div>
             </div>
         </div>
         

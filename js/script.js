@@ -143,3 +143,12 @@ var methods = {
   $(document).ready(function(){
     $('ul.tabs').tabs();
   });
+
+
+
+/* Scroll arriba, con uso de la "class="scroll-up" " animado */
+$(document).ready(function(){
+     $('.scroll-up').click(function(){
+         $("html, body").animate({ scrollTop: 0 }, 900);
+     });
+})
