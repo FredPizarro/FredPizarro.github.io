@@ -1,7 +1,8 @@
 
+/* ------------------------------------------------------------------------------------------ */
+
 // Get the modal
-//var modal_card_location = document.getElementById('Modal_card-location'); 
-var modal_card_location = $('#Modal_card-location');
+var modal_card_location = document.getElementById("Modal_card-location");
 var btn_cardlocation = document.getElementById("btnModal_card-location");
 var spancl = document.getElementsByClassName("close-c-l")[0];
 
@@ -16,7 +17,6 @@ var spancl = document.getElementsByClassName("close-c-l")[0];
 //   });
 //}
 var modal_card_color = document.getElementById('Modal_card-color');
-
 
 var modal3 = document.getElementById('Modal_03');
 var modal_login = document.getElementById('Modal_login');
@@ -96,8 +96,8 @@ var span_login = document.getElementsByClassName("close-login")[0];
 var spanicon = document.getElementsByClassName("close-icon")[0];
 var spancolor = document.getElementsByClassName("close-color")[0];
 var span_theme = document.getElementsByClassName("close-theme")[0];
-var span_theme_atom = document.getElementsByClassName("close-theme-atom")[0]; 
-var span_package_atom = document.getElementsByClassName("close-package-atom")[0]; 
+var span_theme_atom = document.getElementsByClassName("close-theme-atom")[0];
+var span_package_atom = document.getElementsByClassName("close-package-atom")[0];
 /* UX / UI */
 
 var span1 = document.getElementsByClassName("close")[0];
@@ -131,22 +131,16 @@ var span_s_school_control = document.getElementsByClassName("close-s-school-cont
 
 
  // When the user clicks on the button, open the modal  / scroll oculto ( del body)
-btn_cardlocation.onclick = function() { modal_card_location.css("display", "block"); }
-
-$("#btnModal_card-location, #btnModal_03").click(function(){
-    document.body.style.overflow = "hidden";   
-});
-
-
-
-btn_card_color.onclick = function(){ modal_card_color.style.display = "block"; document.body.style.overflow = "hidden"; }
-btn3.onclick = function() { modal3.style.display = "block"; document.body.style.overflow = "hidden";}
-btn_login.onclick = function(){ modal_login.style.display = "block"; document.body.style.overflow = "hidden"; }
-btn_icon.onclick = function() { modal_icon.style.display = "block"; document.body.style.overflow = "hidden";   }
-btn_color.onclick = function() { modal_color.style.display = "block"; document.body.style.overflow = "hidden";   }
-btn_theme.onclick = function(){ modal_theme.style.display = "block"; document.body.style.overflow = "hidden"; }
-btn_theme_atom.onclick = function(){ modal_theme_atom.style.display = "block"; document.body.style.overflow = "hidden"; }
-btn_package_atom.onclick = function(){ modal_package_atom.style.display = "block"; document.body.style.overflow = "hidden"; }
+btn_cardlocation.onclick = function() => { modal_card_location.style.display = "block"; 
+document.body.style.overflow = "hidden";}
+btn_card_color.onclick = () =>{ modal_card_color.style.display = "block"; document.body.style.overflow = "hidden";}
+btn3.onclick = () => { modal3.style.display = "block"; document.body.style.overflow = "hidden";}
+btn_login.onclick = () =>{ modal_login.style.display = "block"; document.body.style.overflow = "hidden"; }
+btn_icon.onclick = () => { modal_icon.style.display = "block"; document.body.style.overflow = "hidden";   }
+btn_color.onclick = () => { modal_color.style.display = "block"; document.body.style.overflow = "hidden";   }
+btn_theme.onclick = () =>{ modal_theme.style.display = "block"; document.body.style.overflow = "hidden"; }
+btn_theme_atom.onclick = () =>{ modal_theme_atom.style.display = "block"; document.body.style.overflow = "hidden"; }
+btn_package_atom.onclick = () =>{ modal_package_atom.style.display = "block"; document.body.style.overflow = "hidden"; }
 /* UX / UI */
 
 /* Web Development */
@@ -177,10 +171,8 @@ btn_system_school_control.onclick = function() { modal_system_school_control.sty
 
 // When the user clicks on <span> (x), close the modal / scroll visible  ( del body)
 span_card_color.onclick = function(){ modal_card_color.style.display = "none"; document.body.style.overflow = "scroll"; }
-spancl.onclick = function() {
-    modal_card_location.css("display", "none");
-    document.body.style.overflow = "scroll"; 
-}
+spancl.onclick = function() { modal_card_location.style.display = "none"; 
+document.body.style.overflow = "scroll"; }
 span3.onclick = function() { modal3.style.display = "none"; document.body.style.overflow = "scroll"; }
 span_login.onclick = function(){ modal_login.style.display = "none"; document.body.style.overflow = "scroll"; }
 spanicon.onclick = function() { modal_icon.style.display = "none"; document.body.style.overflow = "scroll"; }
@@ -224,9 +216,9 @@ span_s_school_control.onclick = function() { modal_system_school_control.style.d
 // When the user clicks anywhere outside of the modal, close it / scroll visible  ( del body)
 window.onclick = function(event) {
     if (event.target == modal_card_location) {
-        modal_card_location.css("display", "none"); document.body.style.overflow = "scroll"; 
+        modal_card_location.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal_card_color) {
-        modal_card_color.css("display", "none"); document.body.style.overflow = "scroll"; 
+        modal_card_color.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal1) {
         modal1.style.display = "none"; document.body.style.overflow = "scroll";
     }if (event.target == modal2) {

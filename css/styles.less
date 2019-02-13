@@ -1,38 +1,14 @@
 /* Import the Google Font 'Open Sans' */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
+/* Colors */
+@import "varColors.less";
 @background: #F1F2F1;
-
-@red_500: #f44336;
-@red_600: #E53935;
-@yellow-500: #ffeb3b;
-@amber_500: #ffc107;
-@amber_600: #ffb300;
-@deep-orange_500: #FF5722;
-@light-blue_500: #03a9f4;
-
-@light-blue_400: #29b6f6;
-@light-blue_600: #039be5;
-@light-blue_800: #0277bd;
-@light-blue_900: #01579b;
-
-@indigo-500: #3f51b5;
-@indigo_A400:#3d5afe;
-@blue_500: #2196f3;
-@blue_600: #1E88E5;
-@blue_A400:#2979FF;
-@grey-50: #FAFAFA;
-@grey-200: #eeeeee;
-@grey-300: #E0E0E0;
-@grey-500: #9E9E9E;
-@grey_600: #757575;
-@grey_700: #616161;
-@grey_800: #424242;
 @blanco: #FFFFFF;
 
-@deep-orange_600: #f4511e;
-@yellow_A400: #ffea00;
-@light-blue_A700:#0091ea;
+@dektop: ~"screen and (min-width: 768px)";
+@tablet-min: ~"screen and (min-width: 601px) and (max-width: 800px)";
+
 
 @keyframes bgpHueColor{
 	25%{ background-position: 0 100%; }
@@ -61,14 +37,19 @@ body {
 .todo{ background: #424242;
 }
 
+.one.s12{
+		margin-top: -1rem;
+}
+
 /* mi perfil e información */
 .portafolio-user{
-    margin-top: 14px; margin-bottom: 14px;
+    margin-top: 2rem; margin-bottom: 14px;
     padding: 16px;
     background: @blanco;
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     
+	
     
     .perfil{
         margin-top: 16px;
@@ -90,7 +71,10 @@ body {
             .name{ font-size: 24px; font-family: "Roboto Regular";  white-space: normal; color: @grey_800; opacity: 0.8; line-height: 80%  }
 			p{
 				line-height: 90%;
-				color: @grey-500;
+				color: @grey_500;
+			}
+			@media @tablet-min{
+				padding-top: 0.5rem;
 			}
         }
         
@@ -113,9 +97,16 @@ body {
 			animation: bgpHueColor 30s linear infinite; 
 			opacity: 0.2;
 		}
+		@media @tablet-min{
+			flex-direction: column;
+			
+			.anim-photo:after{
+				left: 0;
+			}
+		}
     }
 	
-    h6{ margin: -1px; padding-left: 8px; color: @grey-500; }
+    h6{ margin: -1px; padding-left: 8px; color: @grey_500; }
     
     .about-me h3{ margin:7px; i{  margin-right:5px;} }
     .about-me ul li{
@@ -132,6 +123,10 @@ body {
 	.space_justify{
 		padding-left: 24px + 8px; line-height: 1.4; color:@grey_800;
 		position: relative;
+		
+		@media @tablet-min{
+			padding-left: 0px;
+		}
 	}
 	#about-me{
 		margin-bottom: 16px; 
@@ -146,13 +141,27 @@ body {
 	#contact-me{
 		
 	}
+	.images-devices {
+		margin-left: 16px + 10px;
+		margin-top: 16px;
+		display: flex;
+		img{ margin: 5px; opacity: 0.5; }
+		
+		@media @tablet-min{
+			display: none;
+		}
+	}
+
 }
 
 /* adjuntando imagenes de mis projectos */
 .portafolio-content{
-	margin-top: 14px;
+	width: 100%;
+	margin-top: 1rem;
 	margin-bottom: 10px;
-	margin-left: -5px !important;
+	
+	
+	
 	.bloque2{
 		padding-top: 16px;		
 		background: @blanco;
@@ -165,7 +174,7 @@ body {
 .linea{
     margin-top: 16px;
     border-radius: 2px;
-    height: 3px; background: @grey-300;
+    height: 3px; background: @grey_300;
     
 }
 
@@ -202,18 +211,17 @@ body {
 @Percent-WebDesign: 80%;
 @Percent-HTML5: 70%;
 @Percent-CSS3: 75%;
-@Percent-JS: 30%;
-@Percent-JQuery: 20%;
+@Percent-JS: 55%;
+@Percent-JQuery: 10%;
 @Percent-TypeScript: 65%;
-@Percent-Angular2: 73%;
-@Percent-Java: 80%;
+@Percent-Angular2: 85%;
+@Percent-Java: 70%;
 
 
 .barra {
     width: 90%; height: @barra-size;
     position: relative;
-    background: @grey-200;
-    border-radius: 5px;
+    background: @grey_200;
 }
 
 .code-txt {
@@ -226,7 +234,7 @@ body {
 }
 
 #s-JS .code-txt {
-    color: #424242;
+    color: @grey_800;
     text-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.16);
 }
 
@@ -236,7 +244,7 @@ body {
     padding-right: 5px;
     margin-top: -1px;
     float: right;
-    color: @grey-50; opacity: 0.6;
+    color: @grey_50; opacity: 0.6;
     font-family: "Roboto Black";
     font-size: 12px;
 	visibility: hidden;
@@ -277,7 +285,7 @@ body {
 
 #s-WebDesign{
     width: @Percent-WebDesign; height: @barra-size;
-    background-color: @indigo-500;
+    background-color: @indigo_500;
     animation: Animate-WebDesign 4s; -webkit-animation: Animate-WebDesign 4s; -moz-animation: Animate-WebDesign 4s; -o-animation: Animate-WebDesign 4s;
 	display: flex;
 	justify-content: space-between;
@@ -341,7 +349,7 @@ body {
 #s-JS{
     width: @Percent-JS; height: @barra-size;
     position: absolute;
-    background-color: @yellow-500;
+    background-color: @yellow_500;
     animation: Animate-JS 4s;
     -webkit-animation: Animate-JS 4s;
     -moz-animation: Animate-JS 4s;
@@ -446,12 +454,6 @@ body {
 	align-items: center;
 }
 
-.images-devices {
-	margin-left: 16px + 10px;
-	margin-top: 16px;
-    display: flex;
-    img{ margin: 5px; opacity: 0.5; }
-}
 
 
 
@@ -512,50 +514,50 @@ body {
 */
 .block-2x2{
 	grid-area: dosXdos; /*grid x6*/
-	background: @grey-500;
+	background: @grey_500;
     padding: 16px;
 }
 .block-3x1_a{
 	grid-area: tresXunoA;
-	background: @grey-500;
+	background: @grey_500;
 	padding: 16px;
 }
 .block-3x1_b{
 	grid-area: tresXunoB;
-	background: @grey-500;
+	background: @grey_500;
 	padding: 16px;
 }
 .block-4x1_a{
 	grid-area: cuatroXunoA;
-	background: @grey-500;
+	background: @grey_500;
     padding: 16px;
 }
 .block-4x1_b{
 	grid-area: cuatroXunoB;
-	background: @grey-500;
+	background: @grey_500;
     padding: 16px;
 }
 .block-6x1 {
 	grid-area: seisXuno;
-	background: @grey-500;
+	background: @grey_500;
 	padding: 16px;
 }
 .block-6x1_a{
 	grid-area: seisXunoA;
-	background: @grey-500;
+	background: @grey_500;
 	padding: 16px;
 	height: 150px;
 }
 .block-6x1_b{
 	grid-area: seisXunoB;
-	background: @grey-500;
+	background: @grey_500;
 	padding: 16px;
 	height: 150px;
 }
 
 
 @keyframes fade-in-out_one {
-  from { background: @indigo-500; }
+  from { background: @indigo_500; }
 	to{ background: @indigo_A400; }
 }
 
@@ -599,7 +601,7 @@ body {
 	to{ background: @deep-orange_600; }
 }
 @keyframes fade-in-out_yellow {
-  from { background: @yellow-500; }
+  from { background: @yellow_500; }
 	to{ background:  @yellow_A400; }
 }
 @keyframes fade-in-out_light-blue {
@@ -628,7 +630,7 @@ body {
 	.block-3x1_a{
 		 height: 240px;
          
-         &:hover{ background: @yellow-500;animation: fade-in-out_yellow 3s; }
+         &:hover{ background: @yellow_500;animation: fade-in-out_yellow 3s; }
    }.block-3x1_b{
 	     height: 240px;
             
@@ -809,7 +811,7 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: @grey-50;
+    background-color: @grey_50;
     margin: auto;
     padding: 0;
     width: 78.4%;
