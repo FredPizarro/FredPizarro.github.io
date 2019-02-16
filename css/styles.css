@@ -28,6 +28,7 @@ body {
   color: #333;
   font-family: 'Open Sans', sans-serif;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .todo {
   background: #424242;
@@ -698,6 +699,7 @@ body {
 #ux_ui div {
   text-align: center;
   padding: 20px 0;
+  height: 100%;
 }
 #ux_ui .block-2x2 {
   border-top-left-radius: 5px;
@@ -723,7 +725,6 @@ body {
 #ux_ui .block-6x1 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 260px;
 }
 #ux_ui .block-6x1:hover {
   background: #3d5afe;
@@ -768,6 +769,11 @@ body {
   background: transparent;
   padding: 10px;
 }
+#web-dev div {
+  text-align: center;
+  padding: 20px 0;
+  height: 100%;
+}
 #web-dev .block-6x1_a {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -776,15 +782,9 @@ body {
   background: #ff5722;
   animation: fade-in-out_deep-orange 3s;
 }
-#web-dev .block-3x1_a {
-  height: 240px;
-}
 #web-dev .block-3x1_a:hover {
   background: #ffeb3b;
   animation: fade-in-out_yellow 3s;
-}
-#web-dev .block-3x1_b {
-  height: 240px;
 }
 #web-dev .block-3x1_b:hover {
   background: #0277bd;
@@ -816,15 +816,19 @@ body {
 }
 #web-mobil_app {
   display: grid;
-  grid-template-areas: 'tresXunoA tresXunoA tresXunoA tresXunoB tresXunoB tresXunoB';
+  grid-template-areas: 'tresXunoA tresXunoA tresXunoA tresXunoB tresXunoB tresXunoB' 'tresXunoA tresXunoA tresXunoA tresXunoB tresXunoB tresXunoB' 'tresXunoA tresXunoA tresXunoA tresXunoB tresXunoB tresXunoB';
   grid-gap: 10px;
   background: transparent;
   padding: 10px;
 }
+#web-mobil_app div {
+  text-align: center;
+  padding: 20px 0;
+  height: 100%;
+}
 #web-mobil_app .block-3x1_a {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  height: 560px;
 }
 #web-mobil_app .block-3x1_a:hover {
   background: #2196f3;
@@ -833,7 +837,6 @@ body {
 #web-mobil_app .block-3x1_b {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 560px;
 }
 #web-mobil_app .block-3x1_b:hover {
   background: #f44336;
@@ -854,9 +857,13 @@ body {
   background: transparent;
   padding: 10px;
 }
+#desktop-mobil_app div {
+  text-align: center;
+  padding: 20px 0;
+  height: 100%;
+}
 #desktop-mobil_app .block-6x1 {
   border-radius: 5px;
-  height: 560px;
 }
 #desktop-mobil_app .block-6x1:hover {
   background: #ffc107;
@@ -911,6 +918,22 @@ a {
   cursor: pointer;
 }
 /* The Close Button */
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #424242;
+  opacity: 0.85;
+  font-family: "Roboto Medium", monospace;
+}
+.modal-header h2 {
+  color: #ffffff;
+}
+.modal-header ::selection {
+  /*Selección de textos*/
+  background: #29b6f6;
+  color: #424242;
+  opacity: 1 !important;
+}
 span[class^="close"] {
   color: #212121;
   background: #FFFF00;
@@ -933,22 +956,6 @@ span[class^="close"]:focus {
   color: #FAFAFA;
   text-decoration: none;
   cursor: pointer;
-}
-/* Modal Header */
-.modal-header {
-  padding: 2px 16px;
-  background-color: #424242;
-  opacity: 0.85;
-  font-family: "Roboto Medium", monospace;
-}
-.modal-header h2 {
-  color: #ffffff;
-}
-.modal-header ::selection {
-  /*Selección de textos*/
-  background: #29b6f6;
-  color: #424242;
-  opacity: 1 !important;
 }
 /* Modal Body */
 .modal-body {
@@ -1023,16 +1030,6 @@ span[class^="close"]:focus {
   .responsive-percent {
     margin-right: -45px !important;
   }
-  #ux_ui,
-  #web-dev,
-  #web-mobil_app,
-  #desktop-mobil_app {
-    height: 100%;
-  }
-  #web-mobil_app .Cx1,
-  #web-mobil_app .Cx1-1 {
-    width: 100%;
-  }
   .modal-content {
     width: 100%;
     margin-bottom: 5px;
@@ -1053,12 +1050,6 @@ span[class^="close"]:focus {
   }
   .responsive-percent {
     margin-right: -45px !important;
-  }
-  #ux_ui,
-  #web-dev,
-  #web-mobil_app,
-  #desktop-mobil_app {
-    height: 100%;
   }
   .Cx1,
   .Cx2-2 .twoC {

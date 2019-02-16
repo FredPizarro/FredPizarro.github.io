@@ -33,6 +33,7 @@ body {
   color: #333;
   font-family: 'Open Sans', sans-serif;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .todo{ background: #424242;
 }
@@ -572,7 +573,7 @@ body {
 	background: transparent;
 	padding: 10px;
 	
-	div{ text-align: center; padding: 20px 0; }
+	div{ text-align: center; padding: 20px 0; height: 100%; }
 	
     .block-2x2{
         border-top-left-radius: 5px;
@@ -590,7 +591,7 @@ body {
        
     .block-6x1{
         border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;
-		height: 260px;
+
         &:hover{ background: @indigo_A400; animation: fade-in-out_one 3s; }
     }
 }
@@ -623,16 +624,16 @@ body {
 	background: transparent;
 	padding: 10px;
 	
+	div{ text-align: center; padding: 20px 0; height: 100%; }
+	
     .block-6x1_a{
 		border-top-left-radius: 5px; border-top-right-radius: 5px;
         &:hover{ background: @deep-orange_500;animation: fade-in-out_deep-orange 3s; }
     }
 	.block-3x1_a{
-		 height: 240px;
          
          &:hover{ background: @yellow_500;animation: fade-in-out_yellow 3s; }
    }.block-3x1_b{
-	     height: 240px;
             
             &:hover{ background: @light-blue_800;animation: fade-in-out_light-blue 3s; }
    }
@@ -656,19 +657,21 @@ body {
 #web-mobil_app{
 	display: grid;
 	grid-template-areas: 
+		'tresXunoA tresXunoA tresXunoA tresXunoB tresXunoB tresXunoB'
+		'tresXunoA tresXunoA tresXunoA tresXunoB tresXunoB tresXunoB'
 		'tresXunoA tresXunoA tresXunoA tresXunoB tresXunoB tresXunoB';
 	grid-gap: 10px;
 	background: transparent;
 	padding: 10px;
+	
+	div{ text-align: center; padding: 20px 0; height: 100%; }
         
     .block-3x1_a{        
         border-top-left-radius: 5px; border-bottom-left-radius: 5px;
-		height: 560px;
         &:hover{ background: @blue_500;animation: fade-in-out_blue 3s; }
     }
     .block-3x1_b{
         border-top-right-radius: 5px; border-bottom-right-radius: 5px;
-		height: 560px;
         &:hover{ background: @red_500;animation: fade-in-out_red 3s; }
     }
 }
@@ -687,9 +690,10 @@ body {
 	background: transparent;
 	padding: 10px;
 	
+	div{ text-align: center; padding: 20px 0; height: 100%; }
+	
     .block-6x1{
         border-radius: 5px;
-		height: 560px;
         &:hover{ background: @amber_500;animation: fade-in-out_amber 3s; }
     }
 }
@@ -742,6 +746,20 @@ a{
 //span[class$="px_close"]
 //span[class^="close"]
 /* The Close Button */
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: @grey_800;
+	opacity: 0.85;
+    font-family: "Roboto Medium", monospace;
+    
+    h2{ color: @blanco;  }
+	::selection { /*Selección de textos*/
+		background: @light-blue_400;
+		color: @grey_800;
+		opacity: 1 !important;
+	}
+}
 
 
 span[class^="close"]{
@@ -763,20 +781,7 @@ span[class^="close"]:hover, span[class^="close"]:focus{
     text-decoration: none;
     cursor: pointer;
 }
-/* Modal Header */
-.modal-header {
-    padding: 2px 16px;
-    background-color: @grey_800;
-	opacity: 0.85;
-    font-family: "Roboto Medium", monospace;
-    
-    h2{ color: @blanco;  }
-	::selection { /*Selección de textos*/
-		background: @light-blue_400;
-		color: @grey_800;
-		opacity: 1 !important;
-	}
-}
+
 
 /* Modal Body */
 .modal-body {
@@ -860,12 +865,6 @@ span[class^="close"]:hover, span[class^="close"]:focus{
     .responsive-percent {
         margin-right: -45px !important;
     }
-    #ux_ui,#web-dev,#web-mobil_app,#desktop-mobil_app{
-        height: 100%;
-    }
-    #web-mobil_app .Cx1, #web-mobil_app .Cx1-1{
-        width: 100%;
-    }
 	.modal-content{
 		width: 100%; margin-bottom: 5px;
 		.modal-header{
@@ -888,9 +887,6 @@ span[class^="close"]:hover, span[class^="close"]:focus{
      .responsive-percent {
          margin-right: -45px !important;
      }
-    #ux_ui,#web-dev,#web-mobil_app,#desktop-mobil_app{
-        height: 100%;
-    }
     .Cx1,
     .Cx2-2 .twoC{margin: 0px; margin-bottom: 10px;
         width: 100%;
