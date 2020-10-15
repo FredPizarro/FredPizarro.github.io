@@ -1377,6 +1377,13 @@ span[class^="close"]:focus {
   #ux_ui .block-4x1_a {
     padding: 8px;
     height: 231px;
+    display: block;
+  }
+  #ux_ui .block-4x1_a a {
+    width: 100%;
+  }
+  #ux_ui .block-4x1_a a span {
+    width: 65px;
   }
   #web-dev {
     height: 100% !important;
