@@ -1,13 +1,32 @@
 /* Import the Google Font 'Open Sans' */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-
+ 
 /* Colors */
 @import "varColors.less";
 @background: #F1F2F1;
+@black: #424242;
 @blanco: #FFFFFF;
 
 @dektop: ~"screen and (min-width: 768px)";
 @tablet-min: ~"screen and (min-width: 601px) and (max-width: 800px)";
+
+
+/* Chechear HTML para definir valores */
+@barra-size: 18px;
+
+@Percent-WebDesign: 90%;
+@Percent-HTML5: 95%;
+@Percent-CSS3: 92%;
+@Percent-JS: 52%;
+@Percent-JQuery: 8%;
+@Percent-TypeScript: 63%;
+@Percent-Angular: 72%;
+@Percent-Firebase: 35%;
+@Percent-Ionic: 60%;
+@Percent-Java: 75%;
+
+
+/************************************************************************************************/
 
 
 @keyframes bgpHueColor{
@@ -29,24 +48,39 @@
 
 /* Container styles */
 body {
-  background-color: @background;
+  background-color: @black;
   color: #333;
   font-family: 'Open Sans', sans-serif;
   overflow-y: auto;
   overflow-x: hidden;
 }
-.todo{ background: #424242;
+/* conteniendo: Perfil Datos + contenido */
+.todo{ background: @black;
+	display: block;
+	
+	.content-data{
+		display: flex;
+		justify-content: space-between;
+		margin-left: 8px; margin-right: 8px;
+		
+		/* Perfil Datos */
+		.one{
+			margin-top: -1rem;
+			margin-right: 8px;
+		}
+	}
 }
 
-.one.s12{
-		margin-top: -1rem;
-}
+
 
 /* mi perfil e información */
 .portafolio-user{
-    margin-top: 2rem; margin-bottom: 14px;
+    margin-top: 2rem;
+	margin-bottom: 14px;
     padding: 16px;
+//	padding-bottom: 0px;
     background: @blanco;
+	height: 93.5%;
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     
@@ -57,17 +91,22 @@ body {
         display: flex;
         justify-content: center;
 		position: relative;
+		align-items: center;
+		
                 
         .foto{
 			top: 0px;
 			margin-left: 16px; border-radius: 50%; height: 110px; width: 110px;
 			margin-top: -1px;
 		} 
-        
+        /* Fred Pizarro
+					*  Web Design/ Front-End Web Development
+					*/
         .user-detail {
 			padding: 5px;
             padding-top: 30px;
             text-align: center;
+			margin-top: -8px;
             
             .name{ font-size: 24px; font-family: "Roboto Regular";  white-space: normal; color: @grey_800; opacity: 0.8; line-height: 80%  }
 			p{
@@ -78,13 +117,15 @@ body {
 				padding-top: 0.5rem;
 			}
         }
-        
+		.anim-photo{
+			position: relative;
+		}
 		.anim-photo:after{
 			content: '';
 			position: absolute;
 			background: #FFEA00; border-radius: 50%;
 			width: 110px; height: 110px;
-			top: 0px; margin-left: 16px;
+			top: 0px; left: 0; margin-left: 17px;
 			opacity: 0.1;
 		}
 		.anim-photo:before {
@@ -159,9 +200,7 @@ body {
 .portafolio-content{
 	width: 100%;
 	margin-top: 1rem;
-	margin-bottom: 10px;
-	
-	
+	margin-bottom: 14px;
 	
 	.bloque2{
 		padding-top: 16px;		
@@ -206,25 +245,27 @@ body {
 
 
 
-/* Chechear HTML para definir valores */
-@barra-size: 18px;
 
-@Percent-WebDesign: 80%;
-@Percent-HTML5: 70%;
-@Percent-CSS3: 75%;
-@Percent-JS: 55%;
-@Percent-JQuery: 10%;
-@Percent-TypeScript: 65%;
-@Percent-Angular2: 85%;
-@Percent-Java: 70%;
+
+
 
 
 .barra {
-    width: 90%; height: @barra-size;
+    width: 96%; height: @barra-size;
     position: relative;
     background: @grey_200;
 }
 
+/* Web design select */
+.select-data{
+	cursor: pointer;
+//	border: 2px solid @indigo_500;
+	opacity: 0.9;
+	&:hover{
+		opacity: 1;
+		
+	}
+}
 .code-txt {
     float: left;
 //    position: absolute;
@@ -236,6 +277,11 @@ body {
 
 #s-JS .code-txt {
     color: @grey_800;
+    text-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.16);
+}
+
+#s-Firebase .code-txt {
+    color: #00273F;
     text-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.16);
 }
 
@@ -398,7 +444,7 @@ body {
 #s-TypeScript{
     width: @Percent-TypeScript; height: @barra-size;
     position: absolute;
-    background-color: @blue_500;
+    background-color: #00273F;
     animation: Animate-TypeScript 4s;
     -webkit-animation: Animate-TypeScript 4s;
     -moz-animation: Animate-TypeScript 4s;
@@ -410,22 +456,72 @@ body {
 
 
 /*************************************************************************/
-@keyframes Animate-Angular2 {
-    from { width: 10px; }to { width: @Percent-Angular2; } }
-@-webkit-keyframes Animate-Angular2 {
-    from { width: 10px; }to { width: @Percent-Angular2;} }
-@-moz-keyframes Animate-Angular2 {
-    from { width: 10px; }to { width: @Percent-Angular2;} }
-@-o-keyframes Animate-Angular2 {
-    from { width: 10px; }to { width: @Percent-Angular2;} }
-#s-Angular2{
-    width: @Percent-Angular2; height: @barra-size;
+@keyframes Animate-Angular {
+    from { width: 10px; }to { width: @Percent-Angular; } }
+@-webkit-keyframes Animate-Angular {
+    from { width: 10px; }to { width: @Percent-Angular;} }
+@-moz-keyframes Animate-Angular {
+    from { width: 10px; }to { width: @Percent-Angular;} }
+@-o-keyframes Animate-Angular {
+    from { width: 10px; }to { width: @Percent-Angular;} }
+#s-Angular{
+    width: @Percent-Angular; height: @barra-size;
     position: absolute;
     background-color: @red_500;
-    animation: Animate-Angular2 4s;
-    -webkit-animation: Animate-Angular2 4s;
-    -moz-animation: Animate-Angular2 4s;
-    -o-animation: Animate-Angular2 4s;
+    animation: Animate-Angular 4s;
+    -webkit-animation: Animate-Angular 4s;
+    -moz-animation: Animate-Angular 4s;
+    -o-animation: Animate-Angular 4s;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+/*************************************************************************/
+@keyframes Animate-Firebase {
+    from { width: 10px; }to { width: @Percent-Firebase; } }
+@-webkit-keyframes Animate-Firebase {
+    from { width: 10px; }to { width: @Percent-Firebase;} }
+@-moz-keyframes Animate-Firebase {
+    from { width: 10px; }to { width: @Percent-Firebase;} }
+@-o-keyframes Animate-Firebase {
+    from { width: 10px; }to { width: @Percent-Firebase;} }
+
+#s-Firebase{
+    width: @Percent-Firebase; height: @barra-size;
+    position: absolute;
+    background-color: #FFCB2C; color: #00273F;
+    animation: Animate-Firebase 4s;
+    -webkit-animation: Animate-Firebase 4s;
+    -moz-animation: Animate-Firebase 4s;
+    -o-animation: Animate-Firebase 4s;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+/*************************************************************************/
+@keyframes Animate-Ionic {
+    from { width: 10px; }to { width: @Percent-Ionic; } }
+@-webkit-keyframes Animate-Ionic {
+    from { width: 10px; }to { width: @Percent-Ionic;} }
+@-moz-keyframes Animate-Ionic {
+    from { width: 10px; }to { width: @Percent-Ionic;} }
+@-o-keyframes Animate-Ionic {
+    from { width: 10px; }to { width: @Percent-Ionic;} }
+
+#s-Ionic{
+    width: @Percent-Ionic; height: @barra-size;
+    position: absolute;
+    background-color: #3880FF;
+    animation: Animate-Ionic 4s;
+    -webkit-animation: Animate-Ionic 4s;
+    -moz-animation: Animate-Ionic 4s;
+    -o-animation: Animate-Ionic 4s;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -538,11 +634,15 @@ body {
 	background: @grey_500;
     padding: 16px;
 }
+
+
+
 .block-6x1 {
 	grid-area: seisXuno;
 	background: @grey_500;
 	padding: 16px;
 }
+
 .block-6x1_a{
 	grid-area: seisXunoA;
 	background: @grey_500;
@@ -561,6 +661,88 @@ body {
   from { background: @indigo_500; }
 	to{ background: @indigo_A400; }
 }
+
+
+
+
+
+
+
+
+
+
+
+@keyframes spin {
+    0% { transform:scale(0.8) perspective(1px);
+		zoom: 110%; backface-visibility: hidden; /*Para quitar blurry text cuando se hace zoom*/ }
+    15% { transform:scale(0.9) perspective(1px);
+		zoom: 110%; backface-visibility: hidden;/*Para quitar blurry text cuando se hace zoom*/
+				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+    30% { transform:scale(1) perspective(1px);
+		zoom: 110%;	backface-visibility: hidden; /*Para quitar blurry text cuando se hace zoom*/
+				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+    45% { transform:scale(1) perspective(1px);
+		zoom: 110%;		backface-visibility: hidden;/*Para quitar blurry text cuando se hace zoom*/
+				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+    60% { transform:scale(1) perspective(1px);
+		zoom: 110%;		backface-visibility: hidden;/*Para quitar blurry text cuando se hace zoom*/
+				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+	75% { transform:scale(0.9) perspective(1px);
+		zoom: 110%;		backface-visibility: hidden; /*Para quitar blurry text cuando se hace zoom*/
+				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+    100% { transform:scale(0.8) perspective(1px);
+		zoom: 110%;		backface-visibility: hidden; /*Para quitar blurry text cuando se hace zoom*/ }
+}
+
+/* Cajita de titulos de las imagenes */
+.title_content{
+	a{
+		position: relative;
+		span{
+			display: none;
+		}
+		&:hover{
+			/* Titulo que se da aa cada imagen */
+			span{
+				border-top-left-radius: 3px;
+				border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;
+				padding: 4px;
+				padding-top: 8px; padding-bottom: 8px;
+				line-height: 0.85;
+				margin: 10px;				
+				width: 100%;
+				position: absolute;
+				display: block;
+				z-index: 100;
+				background: #FFCB2C; color: #00273F;
+				left: 0px; margin-left: -25px;
+				top: 10px;
+				text-decoration: none;
+				font-family: "Roboto Regular", monospace;
+				font-size: 11px;
+				font-style: oblique;
+	/* animación */
+    animation-name: spin;
+    animation-duration: 2800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+				
+				&:after{
+					content: '';
+					position: absolute;
+					top: 0;
+					right: 0;
+					margin-top: -10px;
+					  border-bottom: 10px solid #FFCB2C;
+					  border-left: 10px solid transparent;
+				}
+			}
+		}
+	}
+	
+}
+
+
 
 //UX & UI 
 #ux_ui{
@@ -643,6 +825,15 @@ body {
         &:hover{ background: @light-blue_500;animation: fade-in-out_light-blue2 3s; }
    }
 }
+//
+
+
+
+/* border image mobil */
+.brdr-mobile{
+	border: 1px solid #DDDDDD;
+}
+
 // ************************************************************
 
 @keyframes fade-in-out_blue {
@@ -681,21 +872,52 @@ body {
   from { background: @amber_500; }
 	to{ background:  @amber_600; }
 }
+
 //Desktop APP
 #desktop-mobil_app{
-	display: grid;
-	grid-template-areas:
-		'seisXuno seisXuno seisXuno seisXuno seisXuno seisXuno';
-	grid-gap: 10px;
-	background: transparent;
-	padding: 10px;
+	height: 100%;
+		padding: 16px;
 	
-	div{ text-align: center; padding: 20px 0; height: 100%; }
-	
-    .block-6x1{
+	.title_content{
+		background: @grey_500;
+//		border: 16px solid white;
+		padding: 16px;
+		
+		display: grid;
+//		grid-template-columns: repeat(auto-fit, 20rem);
+//		grid-template-columns: repeat(auto-fit, 12rem);
+		grid-template-columns: repeat( 2, 16rem);
+		grid-column: auto;
+		grid-gap: 8px;
+		justify-content: center;
+		a{	border: 1px solid #212121;
+			position: relative;
+			width: 220px;
+			display: flex;
+			justify-content: center;
+			img{
+				width: 100%;
+				height: 100%;
+//object-fit: cover; /* Cover  means that the img will fill the box and preserve its aspect ratio  */
+//object-position: center; /* Position of the image in it's parent */
+			}
+			span{
+				top: 0;
+				margin-top: 110px;
+			}
+		}
         border-radius: 5px;
         &:hover{ background: @amber_500;animation: fade-in-out_amber 3s; }
-    }
+    
+	}
+	
+//	div{ text-align: center; padding: 20px 0; height: 100%; }
+	
+	
+//    .block-6x1{
+//        border-radius: 5px;
+//        &:hover{ background: @amber_500;animation: fade-in-out_amber 3s; }
+//    }
 }
 
 .wd_text{
@@ -848,8 +1070,55 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Select data skills  **************************************************************/
+//.select_WebDesign_after{
+//	&:after{
+//			content: '';
+//			position: absolute;
+//			top: 0;
+//			right: 0;
+//			left: 0;
+//			background: @indigo_500;
+//			margin-left: -4px;
+//			border-radius: 50%;
+//			width: 16px; height: 16px;
+//	}
+//	img{
+//		border: 2px solid @indigo_500;
+//		&:hover{			
+//			border: 34px solid @indigo_500;
+//		}
+//	}
+//
+//}
+
+
+
+
+
+
+
+
+
+
 /* mobil */
 @media only screen and (max-width: 40em) {
+	.content-data{
+		flex-direction: column;
+	}
     .perfil{
         display: flex;
         justify-content: space-between;
@@ -860,7 +1129,7 @@ span[class^="close"]:hover, span[class^="close"]:focus{
             height: 30%;
         }
     }
-       
+	
     
     .responsive-percent {
         margin-right: -45px !important;
@@ -876,7 +1145,17 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 		right: 16px;
 
 	}
+	
+	#desktop-mobil_app{
+		.title_content{
+			grid-template-columns: repeat(1, 15rem);
+			a{
+				float: right;
+			}
+		}
+	}
 }
+//tablet
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
     .foto {
             width: 80px;
@@ -891,12 +1170,160 @@ span[class^="close"]:hover, span[class^="close"]:focus{
     .Cx2-2 .twoC{margin: 0px; margin-bottom: 10px;
         width: 100%;
     }
+	.one{
+		.perfil{
+			/* foto de perfil */
+			.anim-photo{
+				&::after, &::before{
+					width: 60px;
+					height: 60px;	
+					margin-left: -2px;
+				}
+				img{
+					background: red;
+					width: 60px;
+					height: 60px;
+					margin-left: -2px;
+				}
+			}
+			/* text perfil */
+			.user-detail{
+				/* Fred Pizarro */
+				.name{
+					font-size: 16px;
+				}
+				p{
+					line-height: 1;
+				}
+			}
+		}
+	}
+	#ux_ui{
+		height: 100% !important;
+		width: 100%;
+		.block-2x2{
+			padding-left: 8px;
+			display: grid;
+			grid-template-columns: repeat(5, 4rem);
+			grid-gap: 15px;
+			a{
+				width: 100%;
+				height: 84px;
+				display: flex;
+//				border: 2px solid blue;
+				img{
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+		.block-4x1_a{
+			padding: 8px;
+			height:231px;
+		}
+	}
+	#web-dev{
+		height: 100% !important;
+		.block-6x1_a{
+			width: 100%;
+			padding: 8px;
+			height: 140px;
+			display: grid;
+			grid-template-columns: repeat(7, 4rem);
+			grid-gap: 6px;
+			a{
+				width: 100%;
+				height: 100%;
+//				border: 2px solid red;
+				display: flex;
+				justify-content: center;
+				img{
+					width: 100%;
+					object-fit: cover;
+						object-position: center;
+				}
+			}
+		}
+		.block-3x1_a{}
+		.block-3x1_b{}
+		.block-6x1_b{
+			height: 223px;
+		}
+	}
+	#web-mobil_app{
+		height: 100% !important;
+		.block-3x1_a{
+			.title_content{
+				display: grid;
+				grid-template-columns: repeat(1, 8rem);
+				grid-gap: 8px;
+				padding: 8px;
+				padding-left: 9px;
+				padding-right: 9px;
+				a{
+					width: 100%;
+					height: 90%;
+//					border: 2px solid blue;
+					display: flex;
+					justify-content: center;
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						object-position: center;
+					}
+					
+				}
+			}
+		}
+		.block-3x1_b{
+			.title_content{
+				display: grid;
+				grid-template-columns: repeat(2, 10rem);
+				grid-gap: 8px;
+				padding: 8px;
+					justify-content: center;
+				a{
+//					border: 2px solid red;
+					display: flex;
+					img{
+						width: 100%;
+						height: 100%;
+//						object-fit: cover;
+//						object-position: center;
+					}
+				}
+			}
+		}
+	}
+	#desktop-mobil_app{
+		height: 100% !important;
+//		background: red;
+		.title_content{
+			margin-top: -6px;
+			grid-template-columns: repeat(2, 14rem);height: 580px;
+			a{
+				width: 190px;				
+			}
+		}
+	}
 }
-
+//desktop
 @media only screen and (min-width: 64em) {
 	body{
 		overflow-y: hidden;
 		background: #212121;
+	}
+	#desktop-mobil_app{
+		.title_content{
+			grid-template-columns: repeat(4, 12rem);
+				a{
+					width: 100%;
+					height: 70%;
+//					width: 180px;
+//					height: 150px;
+				}
+		}
 	}
 }
 

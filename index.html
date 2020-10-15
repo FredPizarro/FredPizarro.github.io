@@ -14,9 +14,9 @@
 
     </div>
     <div class="todo">
-        <div class="row">
+        <div class="content-data">
            
-            <div class="col s12 m4 l3 one">
+            <div id="one_id" class="one">
                 <div class="portafolio-user">
                     <div class="perfil">
                         <a href="" class="anim-photo">
@@ -24,7 +24,7 @@
                         </a>
                         <div class="user-detail">
                             <span class="name">Fred Pizarro</span>
-                            <p>Web Design/ Front-End Web Development</p>
+                            <p>UX & UI Designer/ Front-End / Mobile apps Development</p>
                         </div>
                     </div>
 
@@ -41,7 +41,8 @@
                        </div>
                        <div id="about_me_c" class="space_justify">
                          	<p>
-                           	Human devoting his time to technology and natural art of my people and society and fans Angular &nbsp; &nbsp; .
+<!--                           	Human devoting his time to technology and natural art of my people and society and fans Angular &nbsp; &nbsp; .-->
+                         	People dedicating their time to the technology and natural art of my people and society and especially fans Angular &nbsp; &nbsp; .
                            	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#E91E63" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                            	</svg>
                          	</p>
@@ -112,51 +113,63 @@
 <!--                habilidades        -->
                 <div id="skills " class="space_justify">
                             <div class="barra">
-                                <div id="s-WebDesign">
+                                <div id="s-WebDesign" class="select-data" onClick="selectData('select_WebDesign', '#3F51B5', '#fafafa')" >
                                     <span class="code-txt">Web Design</span>
-                                    <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">80%</span>
+                                    <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">90%</span>
                                 </div>
                             </div>
                                 <div class="barra">
-                                    <div id="s-HTML">
+                                    <div id="s-HTML" class="select-data" onClick="selectData('select_Html', '#FF5722', '#fafafa')">
                                         <span class="code-txt">HTML</span>
-                                        <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">70%</span>
+                                        <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">95%</span>
                                     </div>
                                 </div>
                                 <div class="barra">
-                                    <div id="s-CSS">
+                                    <div id="s-CSS" class="select-data" onClick="selectData('select_cSs', '#03A9F4', '#fafafa')">
                                         <span class="code-txt ">CSS</span>
-                                        <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">75%</span>
+                                        <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">92%</span>
                                     </div>
                                 </div>
                                 <div class="barra">
-                                    <div id="s-JS">
+                                    <div id="s-JS" class="select-data" onClick="selectData('select_JS', '#FFEB3B', '#212121')">
                                         <span class="code-txt color-shadown">JS</span>
-                                        <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">55%</span>
+                                        <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">52%</span>
                                     </div>
                                 </div>
                                 <div class="barra">
-                                    <div id="s-jQuery">
+                                    <div id="s-jQuery"  class="select-data" onClick="selectData('select_JQuery', '#01579B', '#fafafa')">
                                         <span class="code-txt ">jQuery</span>
-                                        <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">10%</span>
+                                        <span class="Percent-txt fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">8%</span>
                                     </div>
                                 </div>
                                 <div class="barra">
-                                    <div id="s-TypeScript">
+                                    <div id="s-TypeScript"  class="select-data" onClick="selectData('select_TypeScript', '#00273F', '#fafafa')">
                                         <span class="code-txt">TypeScript</span>
-                                        <span class="Percent-txt  fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">65%</span>
+                                        <span class="Percent-txt  fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">63%</span>
                                     </div>
                                 </div>
                                 <div class="barra">
-                                    <div id="s-Angular2">
+                                    <div id="s-Angular"  class="select-data" onClick="selectData('select_Angular', '#F44336', '#fafafa')">
                                         <span class="code-txt">Angular</span>
-                                        <span class="Percent-txt  fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">85%</span>
+                                        <span class="Percent-txt  fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">72%</span>
                                     </div>
                                 </div>
                                 <div class="barra">
-                                    <div id="s-Java">
+                                    <div id="s-Firebase"  class="select-data" onClick="selectData('select_Firebase', '#FFCB2C', '#212121')">
+                                        <span class="code-txt">Firebase</span>
+                                        <span class="Percent-txt  fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">35%</span>
+                                    </div>
+                                </div>
+                                <div class="barra">
+                                    <div id="s-Ionic"  class="select-data" onClick="selectData('select_Ionic', '#3880FF', '#fafafa')">
+                                        <span class="code-txt">Ionic</span>
+                                        <span class="Percent-txt  fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">60%</span>
+                                    </div>
+                                </div>
+                                <div class="barra">
+                                    <div id="s-Java"  class="select-data" onClick="selectData('select_Java', '#FFC107', '#212121')">
                                         <span class="code-txt">Java SE</span>
-                                        <span class="Percent-txt  fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">70%</span>
+                                        <span class="Percent-txt  fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">75%</span>
                                     </div>
                                 </div>
                             </div>
@@ -199,35 +212,53 @@
 <!--                *******************************************************-->
                 <!-- UX/UI-->
                 <div id="ux_ui">
-                     <div class="block-2x2">
-                       <a id="btnModal_card-location" onclick="modal(this.id)"><img src="imgs/UX_UI/card-location-Prototype.png" alt="" width="80" height="80" title="Card location">
+                     <div class="title_content block-2x2">
+                       <a id="btnModal_card-location" onclick="modal(this.id)" 
+                       class="select_WebDesign select_Html select_cSs "><img src="imgs/UX_UI/card-location-Prototype.png" alt="" width="80" height="80">
+                       <span>"Card location"</span>
                        </a>
-                       <a id="btnModal_card-color"  onclick="modal(this.id)"><img src="imgs/UX_UI/card-color.png" alt="" width="80" height="80" title="Card Color">
+                       <a id="btnModal_card-color"  onclick="modal(this.id)" 
+                       class="select_WebDesign select_cSs "><img src="imgs/UX_UI/card-color.png" alt="" width="80" height="80">
+                       <span>"Card Color"</span>
                        </a>
                      </div>
-                     <div class="block-4x1_a">
-                           <a id="btnModal_03"  onclick="modal(this.id)"><img src="imgs/report-material-design.png" alt="" width="70" height="90" title="Design Report">
+                     <div class="title_content block-4x1_a">
+                           <a id="btnModal_03"  onclick="modal(this.id)" 
+                           class="select_WebDesign select_Html select_cSs "><img src="imgs/report-material-design.png" alt="" width="70" height="90">
+                           <span>Design Report</span>
                            </a>
-                           <a id="btnModal_login"  onclick="modal(this.id)"><img src="imgs/UX_UI/login-component.png" alt="" width="50" height="90" title="Design a login and signup component">
+                           <a id="btnModal_login"  onclick="modal(this.id)" 
+                           class="select_WebDesign select_Html select_cSs "><img src="imgs/UX_UI/login-component.png" alt="" width="50" height="90">
+                           <span>Design a login and signup component</span>
                            </a>
                      </div>
-                     <div class="block-4x1_b" title="UI Kit">
-                           <a id="btnModal_icon"  onclick="modal(this.id)">
-                              <img src="imgs/icon-design-material.png" alt="" width="70" height="80" title="icon material">
+                     <div class="title_content block-4x1_b" title="UI Kit">
+                           <a id="btnModal_icon"  onclick="modal(this.id)" 
+                              class="select_WebDesign select_Html ">
+                              <img src="imgs/icon-design-material.png" alt="" width="70" height="80">
+                              <span>icon material</span>
                            </a>
-                           <a id="btnModal_color"  onclick="modal(this.id)">
-                              <img src="imgs/colorux.png" alt="" width="70" height="80" title="color material">
+                           <a id="btnModal_color"  onclick="modal(this.id)" 
+                              class="select_WebDesign select_Html select_cSs ">
+                              <img src="imgs/colorux.png" alt="" width="70" height="80" >
+                              <span>color material</span>
                            </a>
                     </div>
-                     <div class="block-6x1">
-                        <a id="btnModal_Theme-brackets"  onclick="modal(this.id)">
-                            <img src="imgs/UX_UI/brackets-themes.png" alt="" width="70" height="40" title="Extension-Brackets: 'Material Color' mode (dark) and (light)">
+                     <div class="title_content block-6x1">
+                        <a id="btnModal_Theme-brackets"  onclick="modal(this.id)" 
+                            class="select_Html select_cSs ">
+                            <img src="imgs/UX_UI/brackets-themes.png" alt="" width="70" height="40">
+                            <span>Extension-Brackets: 'Material Color' mode (dark) and (light)</span>
                         </a>
-                        <a id="btnModal_Theme-atom"  onclick="modal(this.id)">
-                            <img src="imgs/UX_UI/atom-theme.png" alt="" width="70" height="40" title="Extension-Atom: 'Coffee color dark syntax' ">
+                        <a id="btnModal_Theme-atom"  onclick="modal(this.id)" 
+                            class="select_Html select_cSs ">
+                            <img src="imgs/UX_UI/atom-theme.png" alt="" width="70" height="40" >
+                            <span>Extension-Atom: 'Coffee color dark syntax'</span>
                         </a>
-                        <a id="btnModal_Package-atom"  onclick="modal(this.id)">
-                            <img src="imgs/UX_UI/atom-package.png" alt="" width="70" height="40" title="Extension-Atom: 'ng ts snippets' ">
+                        <a id="btnModal_Package-atom"  onclick="modal(this.id)" 
+                            class="select_Html ">
+                            <img src="imgs/UX_UI/atom-package.png" alt="" width="70" height="40">
+                            <span>Extension-Atom: 'ng ts snippets'</span>
                         </a>
                     </div>
                 </div><!-- end: UX/UI-->
@@ -235,39 +266,55 @@
 
                 <!-- wEB dEV -->
                 <div id="web-dev">
-                    <div class="block-6x1_a" title="Web Page basic">
-                        <a id="btnModal_web-cleaners"  onclick="modal(this.id)">
-                           <img src="imgs/web-dev/Demo-Cleaners_Home.png" alt="" width="70" height="120" title="Web Lavanderia basic (all in view)">
+                    <div class="title_content block-6x1_a" title="Web Page basic">
+                       <a id="btnModal_web-cleaners"  onclick="modal(this.id)" 
+                            class="select_Html select_cSs select_JS select_JQuery ">
+                           <img src="imgs/web-dev/Demo-Cleaners_Home.png" alt="" width="70" height="120">
+                           <span>Web Lavanderia basic (all in view)</span>
                        </a>
-                       <a id="btnModal_01"  onclick="modal(this.id)">
-                           <img src="imgs/home-shop-car-volvo-tractor.png" alt="" width="70" height="120" title="Design Shop">
+                       <a id="btnModal_01"  onclick="modal(this.id)" 
+                           class="select_WebDesign select_Html select_cSs">
+                           <img src="imgs/home-shop-car-volvo-tractor.png" alt="" width="70" height="120" >
+                           <span>Design Shop</span>
                        </a>
-                       <a id="btnModal_02"  onclick="modal(this.id)">
-                           <img src="imgs/home-product-ropa.png" alt="" width="70" height="120" title="Design Product Ropa">
+                       <a id="btnModal_02"  onclick="modal(this.id)" 
+                            class="select_WebDesign select_Html select_cSs ">
+                           <img src="imgs/home-product-ropa.png" alt="" width="70" height="120">
+                           <span>Design Product Ropa</span>
                        </a>
-                       <a id="btnModal_web-shopper"  onclick="modal(this.id)">
-                           <img src="imgs/web-dev/EC_Shop.png" alt="" width="70" height="120" title="Design Product Ropa Men & Woman + Accesorios">
+                       <a id="btnModal_web-shopper"  onclick="modal(this.id)" 
+                            class="select_WebDesign select_Html select_cSs select_JS ">
+                           <img src="imgs/web-dev/EC_Shop.png" alt="" width="70" height="120">
+                           <span>Design Product Ropa Men & Woman + Accesorios</span>
                        </a>
                     </div>
-                    <div class="block-3x1_a">
+                    <div class="title_content block-3x1_a">
                             <div class="min-c1x2">
                                 <br>
-                           <a id="btnModal_web_navbar-basic"  onclick="modal(this.id)">
-                               <img src="imgs/Web-Component/navbar_basic.png" alt="" width="70" height="20" title="navbar basic">
+                           <a id="btnModal_web_navbar-basic"  onclick="modal(this.id)" 
+                               class="select_Html select_cSs select_JS ">
+                               <img src="imgs/Web-Component/navbar_basic.png" alt="" width="70" height="20">
+                               <span>navbar basic</span>
                            </a>
-                           <a id="btnModal_web-location-form"  onclick="modal(this.id)">
-                               <img src="imgs/Web-Component/location-form.png" alt="" width="70" height="100" title="Web Form Location Basic">
+                           <a id="btnModal_web-location-form"  onclick="modal(this.id)" 
+                               class="select_Html select_cSs ">
+                               <img src="imgs/Web-Component/location-form.png" alt="" width="70" height="100">
+                               <span>Web Form Location Basic</span>
                            </a>
                             </div>
                     </div>
                     <div class="block-3x1_b">
                     </div>
-                    <div class="block-6x1_b">
-                        <a id="btnModal_web-email-lan-cabling-solutions"  onclick="modal(this.id)">
-                            <img src="imgs/Web-Component/email-signature_Lan-Cabling-Solutions.png" alt="" width="70" height="100" title="Web Email Lan Cabling Solutions">
+                    <div class="title_content block-6x1_b">
+                        <a id="btnModal_web-email-lan-cabling-solutions"  onclick="modal(this.id)" 
+                            class="select_Html select_cSs ">
+                            <img src="imgs/Web-Component/email-signature_Lan-Cabling-Solutions.png" alt="" width="70" height="100">
+                            <span>Web Email Lan Cabling Solutions</span>
                         </a>
-                        <a id="btnModal_web-card-product-house"  onclick="modal(this.id)">
-                            <img src="imgs/Web-Component/card-Product-House.png" alt="" width="70" height="60" title="Card Product House">
+                        <a id="btnModal_web-card-product-house"  onclick="modal(this.id)" 
+                            class="select_Html select_cSs ">
+                            <img src="imgs/Web-Component/card-Product-House.png" alt="" width="70" height="60">
+                            <span>Card Product House</span>
                         </a>
                     </div>
                 </div>
@@ -275,53 +322,88 @@
                 <!-- Web APP -->
                 <div id="web-mobil_app">
                     <div class="block-3x1_a">
-                        <div class="min-c">
-                            <a id="btnModal_web-ecommerce_computo"  onclick="modal(this.id)">
-                               <img src="imgs/web-app/ec_electronicos_promotion.png" alt="" width="60" height="100" title="Template/ Web design: Ecommerce">
+                        <div class="title_content min-c">
+                            <a id="btnModal_web-ecommerce_computo"  onclick="modal(this.id)" 
+                               class="select_Html select_cSs select_JS select_TypeScript select_Angular ">
+                               <img src="imgs/web-app/ec_electronicos_promotion.png" alt="" width="60" height="100" >
+                               <span>Template/ Web design: Ecommerce</span>
                             </a>
-                            <a id="btnModal_app-spotify"  onclick="modal(this.id)">
-                               <img src="imgs/web-app/ng-spotify/11-min.png" alt="" width="70" height="100" title="APP design: app spotify ">
+                            <a id="btnModal_app-spotify"  onclick="modal(this.id)" 
+                              class="select_Html select_cSs select_JS select_TypeScript select_Angular ">
+                               <img src="imgs/web-app/ng-spotify/11-min.png" alt="" width="70" height="100" >
+                               <span>APP design: app spotify </span>
                             </a>
                         </div>
                     </div>
                     <div class="block-3x1_b">
-                        <div class="min-c">
-                            <a id="btnModal_web-dashboard-group"  onclick="modal(this.id)">
-                               <img src="imgs/web-app/Dashboard-01.png" alt="" width="100" height="100" title="Template/ Web design: HTML5 + CSS3 (Working: Angular2 + TypeScript)">
-                            </a>
-
-                            <a id="btnModal_app-QRcode"  onclick="modal(this.id)">
+                        <div class="title_content min-c">
+                            <a id="btnModal_web-dashboard-group"  onclick="modal(this.id)" 
+                              class="select_Html select_cSs select_JS select_TypeScript select_Angular select_Firebase">
+                               <img src="imgs/web-app/Dashboard-01.png" alt="" width="100" height="100" >
+                               <span>Template/ Web design: Dashboard</span>
+                            </a>                            
+                            <a id="btnModal_app-QRcode"  onclick="modal(this.id)" 
+                               class="select_Java select_Html select_cSs ">
                                <img src="imgs/web-app/QRCode_run.png" alt="" width="60" height="100">
+                               <span>Mobile app: QrCode Scanner</span>
+                            </a>                            
+                            <a id="btnModal_app-MLearning"  onclick="modal(this.id)" 
+                              class="select_Html select_cSs select_JS select_TypeScript select_Angular select_Firebase select_Ionic">
+                               <img src="imgs/web-app/MLearning/M_Learning_003-min.png" alt="" width="60" height="100">
+                               <span>Mobile app: MLearning</span>
+                            </a>        
+                            <a id="btnModal_app-Click-Clicking"  onclick="modal(this.id)" 
+                              class="select_Java  select_Html select_cSs">
+                               <img src="imgs/web-app/Click-Clicking/15_121383081_3653204294692209_8767515862796341942_n-min.png" alt="" width="60" height="100" >
+                               <span>Mobile app: Click Clicking</span>
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <!--Desktop APP-->
-                <div id="desktop-mobil_app">
-                    <div class="block-6x1">
-                            <a id="btnModal_java-doc"  onclick="modal(this.id)">
-                               <img src="imgs/app/Java.png" alt="" width="100" height="120">
+                <div id="desktop-mobil_app" class="desktopMAPP">
+                  
+                    <div class="title_content b-6x1">
+                            <a id="btnModal_java-doc"  onclick="modal(this.id)" 
+                               class="select_WebDesign select_Java">
+                               <img src="imgs/app/Java-doc_Loading-0.PNG" alt="">
+                               <span>My Doc. Java for Students</span>
                             </a>
-                            <a id="btnModal_web-dev"  onclick="modal(this.id)">
-                               <img src="imgs/app/Web-Development.png" alt="" width="150" height="120">
+                            <a id="btnModal_web-dev"  onclick="modal(this.id)" 
+                               class="select_WebDesign select_Java">
+                               <img src="imgs/app/Web-Development.png" alt="" >
+                               <span>My Doc. FullStack Development for Students</span>
                             </a>
-                            <a id="btnModal_tecnicoPC"  onclick="modal(this.id)">
-                               <img src="imgs/app/tecnicoPC.png" alt="" width="150" height="120">
+                            <a id="btnModal_tecnicoPC"  onclick="modal(this.id)" 
+                               class="select_WebDesign select_Java">
+                               <img src="imgs/app/tecnicoPC.png" alt="" >
+                               <span>My Doc. Servicio Tecnico PC & Laptop for Students </span>
                             </a>
-                            <a id="btnModal_system-rename"  onclick="modal(this.id)">
-                               <img src="imgs/app/Systems-renameFile.png" alt="" width="150" height="120">
+                            <a id="btnModal_system-rename"  onclick="modal(this.id)" 
+                               class="select_WebDesign select_Java">
+                               <img src="imgs/app/Systems-renameFile.png" alt=""  >
+                               <span>Rename, create and generate files</span>
                             </a>
-                            <a id="btnModal_system-corporation"  onclick="modal(this.id)">
-                               <img src="imgs/app/system-corporation_login.png" alt="" width="150" height="120">
+                            <a id="btnModal_system-corporation"  onclick="modal(this.id)" 
+                               class="select_WebDesign select_Java">
+                               <img src="imgs/app/system-corporation_login.png" alt=""  >
+                               <span>System corporation</span>
                             </a>
-                            <a id="btnModal_system-control"  onclick="modal(this.id)">
-                               <img src="imgs/app/system-control.png" alt="" width="150" height="120">
+                            <a id="btnModal_system-control" 
+                                onclick="modal(this.id)" 
+                               class="select_WebDesign select_Java">
+                               <img src="imgs/app/system-control.png" alt=""
+                                >
+                               <span>System control</span>
                             </a>
-                            <a id="btnModal_system-school-control"  onclick="modal(this.id)">
-                               <img src="imgs/app/system_school-control_generate-qr.png" alt="" width="150" height="120">
+                            <a id="btnModal_system-school-control"  onclick="modal(this.id)" 
+                               class="select_WebDesign select_Java">
+                               <img src="imgs/app/system_school-control_generate-qr.png" alt="" >
+                               <span>System SchoolControl students</span>
                             </a>
                     </div>
+                   
                 </div>
 
 
@@ -676,7 +758,7 @@
            <img src="imgs/web-app/ec_electronicos_products-search.png" alt="" width="95%">
           </div>
           <div class="modal-footer blue bg-500">
-            <h5>Ecommerce: Design & Template by Team Skyrider <br> (working HTML5 + CSS3 + Angular2 + FireBase ) </h5>
+            <h5>Ecommerce: Design & Template by Team Skyrider <br> (working HTML5 + CSS3 + Angular + FireBase ) </h5>
           </div>
         </div>
     </div>
@@ -742,7 +824,7 @@
            <img src="imgs/web-app/Dashboard-02-b.png" alt="" width="95%">
           </div>
           <div class="modal-footer red bg-500">
-            <h5>Dashboard: Design & Template by Team Skyrider <br> (working HTML5 + CSS3 + Angular2 + TypeScript + FireBase ) </h5>
+            <h5>Dashboard: Design & Template by Team Skyrider <br> (working HTML5 + CSS3 + Angular + TypeScript + FireBase ) </h5>
           </div>
         </div>
     </div>
@@ -756,27 +838,144 @@
           </div>
           <hr>
           <div class="modal-body">
-           <img src="imgs/web-app/QRCode_init.png" alt="" width="55%">
+           <img class="brdr-mobile" src="imgs/web-app/QRCode_init.png" alt="" width="55%">
            <br>
-           <img src="imgs/web-app/QRCode_run.png" alt="" width="55%">
+           <img class="brdr-mobile" src="imgs/web-app/QRCode_run.png" alt="" width="55%">
            <br>
-           <img src="imgs/web-app/QRCode_float-btn.png" alt="" width="55%">
+           <img class="brdr-mobile" src="imgs/web-app/QRCode_float-btn.png" alt="" width="55%">
            <br>
-           <img src="imgs/web-app/QRCode_configure.png" alt="" width="55%">
+           <img class="brdr-mobile" src="imgs/web-app/QRCode_configure.png" alt="" width="55%">
            <br>
-           <img src="imgs/web-app/QRCode_float-btnScan.png" alt="" width="55%">
+           <img class="brdr-mobile" src="imgs/web-app/QRCode_float-btnScan.png" alt="" width="55%">
            <br>
-           <img src="imgs/web-app/QRCode_float-btnSend.png" alt="" width="55%">
+           <img class="brdr-mobile" src="imgs/web-app/QRCode_float-btnSend.png" alt="" width="55%">
            <br>
-           <img src="imgs/web-app/QRCode_float-btnView.png" alt="" width="55%">
+           <img class="brdr-mobile" src="imgs/web-app/QRCode_float-btnView.png" alt="" width="55%">
            <br>
-           <img src="imgs/web-app/QRCode_Exit.png" alt="" width="55%">
+           <img class="brdr-mobile" src="imgs/web-app/QRCode_Exit.png" alt="" width="55%">
           </div>
           <div class="modal-footer red bg-500">
             <h5>Dashboard: Design & Template by Team Skyrider <br> (working Java + lib ZXing  + XML ) </h5>
           </div>
         </div>
     </div>
+
+<!--    btnModal_app-MLearning -->
+    <div id="Modal_app-MLearning" class="modal">
+      <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close-app-MLearning" onclick="modal_close(this.id)">×</span>
+            <h2>APP Android : "QRCode Data"</h2>
+          </div>
+          <hr>
+          <div class="modal-body">
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_001-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_001-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_002-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_003-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_004-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_005-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_006-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_007-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_008-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_009-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_010-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_011-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_012-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_013-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_014-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_015-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_016-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_017-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_018-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_019-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_020-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_021-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_022-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/MLearning/M_Learning_023-min.png" alt="" width="55%">
+          </div>
+          <div class="modal-footer red bg-500">
+            <h5>Dashboard: Design & Template by Team Skyrider <br> (working Angular + html + scss + JS lib + data JSON ) </h5>
+          </div>
+        </div>
+    </div>
+       
+<!--    btnModal_app-Click-Clicking  -->
+    <div id="Modal_app-Click-Clicking" class="modal">
+      <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close-app-Click-Clicking" onclick="modal_close(this.id)">×</span>
+            <a href="https://play.google.com/store/apps/details?id=com.click.clicking" target="_blank"><h2>APP Android : "Click Clicking"
+                <img src="assets/img/baseline-visibility-24px.svg" alt="">
+            </h2> </a>
+          </div>
+          <hr>
+          <div class="modal-body">
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/00_121466567_423458211974347_4793617782192533001_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/01_121578926_392344168436962_4957095708326951356_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/02_120793178_381446766576209_143942366119685188_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/03_120540204_4121388717876119_7545011128080827509_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/04_120620215_654797552125581_6825249255492713925_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/05_120742483_362263954821513_673971858521386244_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/06_120557176_1041741759606607_2867728790113151097_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/07_120627381_375438793492607_4259278824098428276_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/08_120612184_3611600935572200_6747183491140397863_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/10_120790149_2932000133753204_2037193891004638379_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/11_120601947_368346681201941_6833462852380119155_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/12_120757984_330511948179835_1741548267903698663_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/13_120703571_966849120464789_5653269354515113896_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/14_120584941_847990486005300_450257168851037929_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/15_121383081_3653204294692209_8767515862796341942_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/16_120761254_883882365475116_7878807807332535816_n-min.png" alt="" width="55%">
+           <br>
+           <img class="brdr-mobile" src="imgs/web-app/Click-Clicking/17_121491449_614145755931003_9217142340917262056_n-min.png" alt="" width="55%">
+          </div>
+          <div class="modal-footer red bg-500">
+            <h5>Dashboard: Design & Template by Team Skyrider <br> (working Java + XML ) </h5>
+          </div>
+        </div>
+    </div>     
+         
 
 <!--    Modal : btnModal_java-doc    -->
     <div id="Modal_java-doc" class="modal">
@@ -942,5 +1141,6 @@
     </div>
     <script src="js/tab.min.js"></script>
     <script src="js/modal.min.js"></script>
+    <script src="js/skill-select.min.js"></script>
 </body>
 </html>
