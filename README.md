@@ -1,5 +1,12 @@
 # FredPizarro.github.io
 ---
+## v2.5
+- Fixed grid content.
+- Fixed CSS see in mobil.
+- Fixed button floating
+- Fixed background, color in model and contents
+- Add links/urls in head models 
+
 ## v2.4
 - Add content.
 - Add grid layout template column.
