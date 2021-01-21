@@ -1,7 +1,6 @@
 *.less
 
 assets/css/animate.css
-assets/css/animate.min.css
 
 css/styles.css
 css/varColors.css
@@ -9,3 +8,4 @@ css/varColors.css
 js/modal.js
 js/tab.js
 js/skill-select.js
+js/mouse-pointer.js

@@ -1,10 +1,14 @@
+ 
+@import 'varColors.less';
+@import 'varConfig.less';
+
 /* Import the Google Font 'Open Sans' */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
  
 /* Colors */
 @import "varColors.less";
 @background: #F1F2F1;
-@black: #424242;
+//@black: #424242;
 @blanco: #FFFFFF;
 
 @dektop: ~"screen and (min-width: 768px)";
@@ -48,14 +52,15 @@
 
 /* Container styles */
 body {
-  background-color: @black;
+  background-color: @black !important;
   color: #333;
   font-family: 'Open Sans', sans-serif;
   overflow-y: auto;
   overflow-x: hidden;
 }
 /* conteniendo: Perfil Datos + contenido */
-.todo{ background: @black;
+.todo{
+    background: @black;
 	display: block;
 	
 	.content-data{
@@ -76,7 +81,7 @@ body {
 /* mi perfil e información */
 .portafolio-user{
     margin-top: 2rem;
-	margin-bottom: 14px;
+	margin-bottom: 0;
     padding: 16px;
 //	padding-bottom: 0px;
     background: @blanco;
@@ -104,17 +109,20 @@ body {
 					*/
         .user-detail {
 			padding: 5px;
-            padding-top: 30px;
+            padding-top: 30px; 
             text-align: center;
 			margin-top: -8px;
             
             .name{ font-size: 24px; font-family: "Roboto Regular";  white-space: normal; color: @grey_800; opacity: 0.8; line-height: 80%  }
-			p{
-				line-height: 90%;
+			p{ /* en lo que me desempeño: UX & UI Designer/ Front-end ... */
+				line-height: 16px;
 				color: @grey_500;
 			}
 			@media @tablet-min{
 				padding-top: 0.5rem;
+                p{
+                    line-height: 14px !important;
+                }
 			}
         }
 		.anim-photo{
@@ -181,7 +189,11 @@ body {
 		}		
 	}
 	#contact-me{
-		
+        .list_justify{
+            @media @tablet{
+                display: none;
+            }
+        }
 	}
 	.images-devices {
 		margin-left: 16px + 10px;
@@ -200,7 +212,7 @@ body {
 .portafolio-content{
 	width: 100%;
 	margin-top: 1rem;
-	margin-bottom: 14px;
+	margin-bottom: 0;
 	
 	.bloque2{
 		padding-top: 16px;		
@@ -208,6 +220,14 @@ body {
 		border-radius: 3px;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	}
+    @media @tablet{
+        .bloque2{
+          height: 97.6%;
+            .title_content.block-2x2{
+                height: 9%;
+            }
+        }
+    }
 }
 
 //separadores con bordes
@@ -253,7 +273,8 @@ body {
 .barra {
     width: 96%; height: @barra-size;
     position: relative;
-    background: @grey_200;
+//    background: @grey_200;
+    background: transparent;
 }
 
 /* Web design select */
@@ -576,21 +597,19 @@ body {
         li{
             display: inline-block;
             margin-left: 5px; margin-right: 15px;
+            /* button tap */
+            a{ color: #212121;
+               font-family: "Roboto Bold";
+               opacity: 0.8;
+               border-bottom: 3px solid transparent;
+                margin: 1px;
             
-            a{ color: #212121; font-family: "Roboto Bold"; opacity: 0.8;
-            
-                &:hover{
+                &.active, &:hover{
                     color: @light-blue_500;
-                    border-bottom: 3px solid @light-blue_500;
-                    font-family: "Roboto Black";
+                    border-bottom-color: @light-blue_500;
                     transition: 0.25s;
+                    text-shadow: 0.54px 0px 0px @light-blue_500;
                 }
-            }
-            .active{
-                    color: @light-blue_500;
-                    border-bottom: 3px solid @light-blue_500;
-                    font-family: "Roboto Black";
-                    transition: 0.25s;
             }
             
             
@@ -647,13 +666,11 @@ body {
 	grid-area: seisXunoA;
 	background: @grey_500;
 	padding: 16px;
-	height: 150px;
 }
 .block-6x1_b{
 	grid-area: seisXunoB;
 	background: @grey_500;
 	padding: 16px;
-	height: 150px;
 }
 
 
@@ -694,7 +711,7 @@ body {
 		zoom: 110%;		backface-visibility: hidden; /*Para quitar blurry text cuando se hace zoom*/ }
 }
 
-/* Cajita de titulos de las imagenes */
+/* Cajita de titulos de las imagenes  */
 .title_content{
 	a{
 		position: relative;
@@ -707,16 +724,17 @@ body {
 				border-top-left-radius: 3px;
 				border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;
 				padding: 4px;
-				padding-top: 8px; padding-bottom: 8px;
+//				padding-top: 8px;
+                padding-bottom: 8px;
 				line-height: 0.85;
-				margin: 10px;				
-				width: 100%;
+//				margin: 10px;		
 				position: absolute;
 				display: block;
 				z-index: 100;
 				background: #FFCB2C; color: #00273F;
 				left: 0px; margin-left: -25px;
-				top: 10px;
+//				top: 10px;
+                top: 0;
 				text-decoration: none;
 				font-family: "Roboto Regular", monospace;
 				font-size: 11px;
@@ -767,7 +785,7 @@ body {
     }
     .block-4x1_b{
         
-        img{ margin-top: 20px; }
+        img{  }
             &:hover{ background: @indigo_A400; animation: fade-in-out_one 3s; }
     }
        
@@ -802,13 +820,14 @@ body {
 		'seisXunoA seisXunoA seisXunoA seisXunoA seisXunoA seisXunoA'
 		'tresXunoA tresXunoA tresXunoA tresXunoB tresXunoB tresXunoB'
 		'seisXunoB seisXunoB seisXunoB seisXunoB seisXunoB seisXunoB';
-	grid-gap: 10px;
+	grid-gap: 8px;
 	background: transparent;
 	padding: 10px;
 	
 	div{ text-align: center; padding: 20px 0; height: 100%; }
 	
     .block-6x1_a{
+        height: 100% !important;
 		border-top-left-radius: 5px; border-top-right-radius: 5px;
         &:hover{ background: @deep-orange_500;animation: fade-in-out_deep-orange 3s; }
     }
@@ -971,8 +990,10 @@ a{
 /* Modal Header */
 .modal-header {
     padding: 2px 16px;
-    background-color: @grey_800;
-	opacity: 0.85;
+    background-color: rgba(@blue_500, 0.85);
+    border: none;
+    
+//	opacity: 0.85;
     font-family: "Roboto Medium", monospace;
     
     h2{ color: @blanco;  }
@@ -983,25 +1004,24 @@ a{
 	}
 }
 
-
+/* button close in the modals */
 span[class^="close"]{
     color: #212121; background: #FFFF00;
     float: right;
     font-size: 28px;
     font-weight: bold;
     margin-top: 5px;
-    padding-top: 7px; padding-bottom: 7px;
-    padding-left: 20px; padding-right: 20px;
+    padding: 6px 20px;
     border-radius: 50%;
     box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
     position: fixed; right: 10%;
-}
 
-span[class^="close"]:hover, span[class^="close"]:focus{
-    background: #FF1744;
-    color: #FAFAFA;
-    text-decoration: none;
-    cursor: pointer;
+    &:hover, &:focus{
+        background: #FF1744;
+        color: #FAFAFA;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
 
@@ -1106,8 +1126,10 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 //}
 
 
-
-
+/* posicionamiento relativo para que cuadre bien */
+a[class^="select_"]{
+    position: relative;
+}
 
 
 
@@ -1154,6 +1176,7 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 			}
 		}
 	}
+  
 }
 //tablet
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -1193,16 +1216,23 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 					font-size: 16px;
 				}
 				p{
-					line-height: 1;
+					line-height: 2;
 				}
 			}
 		}
 	}
 	#ux_ui{
-		height: 100% !important;
+		height: 100%;
 		width: 100%;
+        
+//        @media @tablet{
+            height: 94% !important;
+//        }
+        
 		.block-2x2{
+            padding-top: 8px;
 			padding-left: 8px;
+			padding-right: 8px;
 			display: grid;
 			grid-template-columns: repeat(5, 4rem);
 			grid-gap: 15px;
@@ -1219,28 +1249,49 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 		}
 		.block-4x1_a{
 			padding: 8px;
-			height:231px;
+//			height:231px;
+            height: 100%;
 			display: block;
+			display: grid;
+			grid-template-columns: repeat(2, 4rem);
+			grid-gap: 15px;
 			a{
 				width: 100%;
+                height: 95px;
+                img{
+                    width: 100%;
+                }
 				span{
 					width: 65px;
 				}
 			}
 		}
+        .block-4x1_b{
+            a{
+                height: 85px;
+            }
+        }
+        .block-6x1{            
+            grid-template-columns: repeat(7, 4rem);
+            grid-column-gap: 16.5px;
+            a{
+                height: 45px;
+            }
+        }
 	}
 	#web-dev{
 		height: 100% !important;
 		.block-6x1_a{
 			width: 100%;
-			padding: 8px;
+			padding: 6px;
 			height: 140px;
 			display: grid;
-			grid-template-columns: repeat(7, 4rem);
+			grid-template-columns: repeat(8, 4rem);
 			grid-gap: 6px;
+            padding-top: 16px;
 			a{
 				width: 100%;
-				height: 100%;
+				height: 120px;
 //				border: 2px solid red;
 				display: flex;
 				justify-content: center;
@@ -1251,31 +1302,50 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 				}
 			}
 		}
-		.block-3x1_a{}
-		.block-3x1_b{}
+		.block-3x1_a{
+            display: grid;
+            grid-template-columns: repeat(5, 4rem);
+            grid-gap: 8px;
+            padding-left: 0px;
+            div.min-c1x2{
+                margin-left: 6px;
+            }
+//                padding-right: 8px;
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+		.block-3x1_b{
+            padding-left: 4px;
+//            padding-right: 8px;
+            display: grid;
+            grid-template-columns: repeat(3, 4rem);
+            grid-gap: 8px;
+        }
 		.block-6x1_b{
-			height: 223px;
+			height: 79%;
 		}
 	}
 	#web-mobil_app{
-		height: 100% !important;
+		height: 94% !important;
 		.block-3x1_a{
+            padding-left: 0px;
 			.title_content{
 				display: grid;
-				grid-template-columns: repeat(1, 8rem);
+				grid-template-columns: repeat(3, 4.2rem);
 				grid-gap: 8px;
-				padding: 8px;
+				padding: 6px;
 				padding-left: 9px;
 				padding-right: 9px;
 				a{
-					width: 100%;
-					height: 90%;
+                    height: 100px;
 //					border: 2px solid blue;
 					display: flex;
 					justify-content: center;
 					img{
 						width: 100%;
-						height: 100%;
 						object-fit: cover;
 						object-position: center;
 					}
@@ -1286,16 +1356,15 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 		.block-3x1_b{
 			.title_content{
 				display: grid;
-				grid-template-columns: repeat(2, 10rem);
+				grid-template-columns: repeat(4, 4.4rem);
 				grid-gap: 8px;
 				padding: 8px;
 					justify-content: center;
 				a{
 //					border: 2px solid red;
-					display: flex;
+					height: 100px;
 					img{
 						width: 100%;
-						height: 100%;
 //						object-fit: cover;
 //						object-position: center;
 					}
@@ -1308,12 +1377,19 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 //		background: red;
 		.title_content{
 			margin-top: -6px;
-			grid-template-columns: repeat(2, 14rem);height: 580px;
+			grid-template-columns: repeat(3, 10.65rem);
+            height: 95%;
 			a{
-				width: 190px;				
+				width: 100%;
+//                height: 100%;
+                height: 160px;
+//                img{
+//                    object-fit: cover;
+//                }
 			}
 		}
 	}
+    
 }
 //desktop
 @media only screen and (min-width: 64em) {
@@ -1334,8 +1410,65 @@ span[class^="close"]:hover, span[class^="close"]:focus{
 	}
 }
 
+//@media only screen and (max-width: 704px) {
+@media only screen and (max-width: 704px) {
+    #about-me{
+        .list_justify{
+            display: none;
+            
+            
+        }
+    }
+    #my-skills{
+        .list_justify{
+            display: none;
+        }
+    }
+    
+    /* UX/ UI */
+    .ux_ui{
+//        height: 180%;
+        height: 100%;
+    }
+}
+
+/* pequeña frase nueva*/
+.quotes{
+    margin: -4px 8px 0 8px;
+    padding: 0.8rem 4rem 0.8rem 4rem;
+    text-align: center;
+    @media @tablet{
+        margin-top: 2px;
+        padding: 0.8rem 8rem 0.8rem 8rem;
+    }
+    p{
+        font-size: 13px;
+        color: @gray_700;
+        line-height: 12px;
+        i{
+            font-size: 24px;
+        }
+    }
+}
 
 
 
 
 
+
+/* mobil */
+@media only screen and (max-width: 640px){
+     #about-me{
+        .list_justify{
+                display: flex;
+        }
+    }
+    #my-skills{
+        .list_justify{
+                display: flex;
+        }
+    }
+    .quotes{
+        padding: 0.8rem 1rem 0.8rem 1rem;
+    }
+}
