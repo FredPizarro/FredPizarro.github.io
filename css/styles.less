@@ -13,21 +13,21 @@
 
 @dektop: ~"screen and (min-width: 768px)";
 @tablet-min: ~"screen and (min-width: 601px) and (max-width: 800px)";
-
+@mobil: ~"screen and (min-width: 0px) and (max-width: 600px)";
 
 /* Chechear HTML para definir valores */
 @barra-size: 18px;
-
+ 
 @Percent-WebDesign: 90%;
 @Percent-HTML5: 95%;
 @Percent-CSS3: 92%;
 @Percent-JS: 52%;
-@Percent-JQuery: 8%;
-@Percent-TypeScript: 63%;
-@Percent-Angular: 72%;
-@Percent-Firebase: 35%;
-@Percent-Ionic: 60%;
-@Percent-Java: 75%;
+@Percent-NodeJS: 65%;
+@Percent-TypeScript: 73%;
+@Percent-Angular: 85%;
+@Percent-Firebase: 45%;
+@Percent-Ionic: 73%;
+@Percent-Java: 55%;
 
 
 /************************************************************************************************/
@@ -64,14 +64,26 @@ body {
 	display: block;
 	
 	.content-data{
-		display: flex;
-		justify-content: space-between;
+		// display: flex;
+		// justify-content: space-between;
+		display: grid;
+		grid-template-columns: 30% 69%;
+		// column-gap: 1%;
+
+		@media @mobil{
+			grid-template-columns: 100%;			
+		}
+
+
 		margin-left: 8px; margin-right: 8px;
 		
 		/* Perfil Datos */
 		.one{
 			margin-top: -1rem;
 			margin-right: 8px;
+			@media @mobil{
+				margin-right: 0px;			
+			}
 		}
 	}
 }
@@ -199,7 +211,48 @@ body {
 		margin-left: 16px + 10px;
 		margin-top: 16px;
 		display: flex;
-		img{ margin: 5px; opacity: 0.5; }
+		img{ margin: 5px; }
+
+		#pucp{
+			height: 50px;
+            opacity: 0.8;
+			&:hover{
+                opacity: 1;
+				cursor: pointer;				
+				.st0{fill: #042354; }
+				.st1{fill:#FFFFFF;}
+				.st2{fill: #042354; }
+			}
+		}
+
+		#unmsm, #udemy, #unas, #udemy{
+			height: 45px;
+            opacity: 0.8;
+			cursor: pointer;
+			&:hover{
+                opacity: 1;
+                 
+            }
+			
+		}
+		#unmsm:hover{
+			filter: invert(24%) sepia(64%) saturate(1850%) hue-rotate(341deg) brightness(100%) contrast(105%);
+		}
+        
+        #unas {
+            height: 48px;
+
+			&:hover{
+				filter: invert(20%) sepia(76%) saturate(915%) hue-rotate(112deg) brightness(92%) contrast(101%);
+			
+			}
+        }
+
+		#udemy:hover{
+			filter: invert(24%) sepia(72%) saturate(3150%) hue-rotate(266deg) brightness(96%) contrast(96%);
+
+		}
+
 		
 		@media @tablet-min{
 			display: none;
@@ -430,23 +483,23 @@ body {
 
 
 /*************************************************************************/
-@keyframes Animate-jQuery {
-    from { width: 10px; } to { width: @Percent-JQuery; } }
-@-webkit-keyframes Animate-jQuery {
-    from { width: 10px; } to { width: @Percent-JQuery;} }
-@-moz-keyframes Animate-jQuery {
-    from { width: 10px; } to { width: @Percent-JQuery;} }
-@-o-keyframes Animate-jQuery {
-    from { width: 10px; } to { width: @Percent-JQuery;} }
-#s-jQuery {
-    width: @Percent-JQuery;
+@keyframes Animate-NodeJS {
+    from { width: 10px; } to { width: @Percent-NodeJS; } }
+@-webkit-keyframes Animate-NodeJS {
+    from { width: 10px; } to { width: @Percent-NodeJS;} }
+@-moz-keyframes Animate-NodeJS {
+    from { width: 10px; } to { width: @Percent-NodeJS;} }
+@-o-keyframes Animate-NodeJS {
+    from { width: 10px; } to { width: @Percent-NodeJS;} }
+#s-NodeJS {
+    width: @Percent-NodeJS;
     height: @barra-size;
     position: absolute;
-    background-color: @light-blue_900;
-    animation: Animate-jQuery 5s;
-    -webkit-animation: Animate-jQuery 5s;
-    -moz-animation: Animate-jQuery 5s;
-    -o-animation: Animate-jQuery 5s;
+    background-color: @green_400;
+    animation: Animate-NodeJS 5s;
+    -webkit-animation: Animate-NodeJS 5s;
+    -moz-animation: Animate-NodeJS 5s;
+    -o-animation: Animate-NodeJS 5s;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -692,16 +745,32 @@ body {
 @keyframes spin {
     0% { transform:scale(0.8) perspective(1px);
 		zoom: 110%; backface-visibility: hidden; /*Para quitar blurry text cuando se hace zoom*/ }
+	5% { transform:scale(0.83) perspective(1px);
+			zoom: 110%; backface-visibility: hidden; /*Para quitar blurry text cuando se hace zoom*/ }
+	10% { transform:scale(0.86) perspective(1px);
+			zoom: 110%; backface-visibility: hidden; /*Para quitar blurry text cuando se hace zoom*/ }
+				
     15% { transform:scale(0.9) perspective(1px);
 		zoom: 110%; backface-visibility: hidden;/*Para quitar blurry text cuando se hace zoom*/
 				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+	20% { transform:scale(0.93) perspective(1px);
+		zoom: 110%; backface-visibility: hidden;/*Para quitar blurry text cuando se hace zoom*/
+				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+	25% { transform:scale(0.96) perspective(1px);
+		zoom: 110%; backface-visibility: hidden;/*Para quitar blurry text cuando se hace zoom*/
+				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+							
+
     30% { transform:scale(1) perspective(1px);
 		zoom: 110%;	backface-visibility: hidden; /*Para quitar blurry text cuando se hace zoom*/
 				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+							
+
     45% { transform:scale(1) perspective(1px);
 		zoom: 110%;		backface-visibility: hidden;/*Para quitar blurry text cuando se hace zoom*/
 				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
-    60% { transform:scale(1) perspective(1px);
+    	
+	60% { transform:scale(1) perspective(1px);
 		zoom: 110%;		backface-visibility: hidden;/*Para quitar blurry text cuando se hace zoom*/
 				box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
 	75% { transform:scale(0.9) perspective(1px);
@@ -725,7 +794,7 @@ body {
 				border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;
 				padding: 4px;
 //				padding-top: 8px;
-                padding-bottom: 8px;
+                padding-bottom: 6px;
 				line-height: 0.85;
 //				margin: 10px;		
 				position: absolute;
