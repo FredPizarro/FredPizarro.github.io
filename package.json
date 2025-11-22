@@ -1,0 +1,27 @@
+{
+  "name": "fredpizarro-portfolio",
+  "version": "1.0.0",
+  "description": "Live server para portafolio de Fred Pizarro",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "less": "npx lessc css/styles.less css/styles.css",
+    "less:watch": "less-watch-compiler css css styles.less",
+    "start:dev": "node server.js & npm run less:watch"
+  },
+  "keywords": [
+    "live-server",
+    "express",
+    "livereload"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-livereload": "^0.6.1",
+    "express": "^4.18.2",
+    "less-watch-compiler": "^1.16.3",
+    "livereload": "^0.9.3"
+  }
+}
+

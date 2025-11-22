@@ -22,28 +22,28 @@
   font-style: normal;
   font-weight: 300;
   font-stretch: normal;
-  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVc.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVc.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-stretch: normal;
-  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-stretch: normal;
-  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   font-stretch: normal;
-  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');
 }
 /* Colors */
 /* Chechear HTML para definir valores */
@@ -163,7 +163,7 @@ body {
 .portafolio-user .perfil .anim-photo:after {
   content: '';
   position: absolute;
-  background: #FFEA00;
+  background: #000ECC;
   border-radius: 50%;
   width: 110px;
   height: 110px;
@@ -280,7 +280,8 @@ body {
   filter: invert(24%) sepia(64%) saturate(1850%) hue-rotate(341deg) brightness(100%) contrast(105%);
 }
 .portafolio-user .images-devices #unas {
-  height: 48px;
+  height: 58px;
+  margin-top: -0.5rem;
 }
 .portafolio-user .images-devices #unas:hover {
   filter: invert(20%) sepia(76%) saturate(915%) hue-rotate(112deg) brightness(92%) contrast(101%);
@@ -366,18 +367,54 @@ body {
 .fadeIn {
   /* CSS needed for animation */
   opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  -o-animation: fadeIn ease-in 1;
   animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 /* Animation Times - Time to fade in */
 .fadeIn-3s {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
   animation-duration: 3s;
 }
 /* Animation Delay - Time to be delayed  */
 .fadeIn-Delay-3s {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
   animation-delay: 3s;
 }
 @keyframes Animate-WebDesign {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 90%;
+  }
+}
+@-webkit-keyframes Animate-WebDesign {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 90%;
+  }
+}
+@-moz-keyframes Animate-WebDesign {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 90%;
+  }
+}
+@-o-keyframes Animate-WebDesign {
   from {
     width: 10px;
   }
@@ -399,6 +436,30 @@ body {
 }
 /*************************************************************************/
 @keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 95%;
+  }
+}
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 95%;
+  }
+}
+@-moz-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 95%;
+  }
+}
+@-o-keyframes Animate-HTML {
   from {
     width: 10px;
   }
@@ -428,6 +489,30 @@ body {
     width: 92%;
   }
 }
+@-webkit-keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 92%;
+  }
+}
+@-moz-keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 92%;
+  }
+}
+@-o-keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 92%;
+  }
+}
 #s-CSS {
   width: 92%;
   height: 18px;
@@ -443,6 +528,30 @@ body {
 }
 /*************************************************************************/
 @keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 52%;
+  }
+}
+@-webkit-keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 52%;
+  }
+}
+@-moz-keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 52%;
+  }
+}
+@-o-keyframes Animate-JS {
   from {
     width: 10px;
   }
@@ -472,6 +581,30 @@ body {
     width: 65%;
   }
 }
+@-webkit-keyframes Animate-NodeJS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
+@-moz-keyframes Animate-NodeJS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
+@-o-keyframes Animate-NodeJS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
 #s-NodeJS {
   width: 65%;
   height: 18px;
@@ -487,6 +620,30 @@ body {
 }
 /*************************************************************************/
 @keyframes Animate-TypeScript {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 73%;
+  }
+}
+@-webkit-keyframes Animate-TypeScript {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 73%;
+  }
+}
+@-moz-keyframes Animate-TypeScript {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 73%;
+  }
+}
+@-o-keyframes Animate-TypeScript {
   from {
     width: 10px;
   }
@@ -516,6 +673,30 @@ body {
     width: 85%;
   }
 }
+@-webkit-keyframes Animate-Angular {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 85%;
+  }
+}
+@-moz-keyframes Animate-Angular {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 85%;
+  }
+}
+@-o-keyframes Animate-Angular {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 85%;
+  }
+}
 #s-Angular {
   width: 85%;
   height: 18px;
@@ -531,6 +712,30 @@ body {
 }
 /*************************************************************************/
 @keyframes Animate-Firebase {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 45%;
+  }
+}
+@-webkit-keyframes Animate-Firebase {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 45%;
+  }
+}
+@-moz-keyframes Animate-Firebase {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 45%;
+  }
+}
+@-o-keyframes Animate-Firebase {
   from {
     width: 10px;
   }
@@ -561,6 +766,30 @@ body {
     width: 73%;
   }
 }
+@-webkit-keyframes Animate-Ionic {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 73%;
+  }
+}
+@-moz-keyframes Animate-Ionic {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 73%;
+  }
+}
+@-o-keyframes Animate-Ionic {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 73%;
+  }
+}
 #s-Ionic {
   width: 73%;
   height: 18px;
@@ -576,6 +805,30 @@ body {
 }
 /*************************************************************************/
 @keyframes Animate-Java {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 55%;
+  }
+}
+@-webkit-keyframes Animate-Java {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 55%;
+  }
+}
+@-moz-keyframes Animate-Java {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 55%;
+  }
+}
+@-o-keyframes Animate-Java {
   from {
     width: 10px;
   }
@@ -1031,6 +1284,7 @@ body {
 }
 .modal-content h2 {
   text-align: center;
+  font-size: 3.2em;
 }
 a {
   cursor: pointer;
@@ -1085,6 +1339,10 @@ span[class^="close"]:focus {
   margin-bottom: 10px;
 }
 /* ajustar en bloques */
+.btn-ver-mas {
+  color: #448AFF;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
 /* Modal Footer */
 .modal-footer {
   margin-top: 10px;
@@ -1112,6 +1370,16 @@ span[class^="close"]:focus {
   animation-duration: 0.4s;
 }
 /* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 @keyframes animatetop {
   from {
     top: -300px;
