@@ -573,7 +573,7 @@ body {
   align-items: center;
 }
 /*************************************************************************/
-@keyframes Animate-NodeJS {
+@keyframes Animate-NestJS {
   from {
     width: 10px;
   }
@@ -581,7 +581,7 @@ body {
     width: 65%;
   }
 }
-@-webkit-keyframes Animate-NodeJS {
+@-webkit-keyframes Animate-NestJS {
   from {
     width: 10px;
   }
@@ -589,7 +589,7 @@ body {
     width: 65%;
   }
 }
-@-moz-keyframes Animate-NodeJS {
+@-moz-keyframes Animate-NestJS {
   from {
     width: 10px;
   }
@@ -597,7 +597,7 @@ body {
     width: 65%;
   }
 }
-@-o-keyframes Animate-NodeJS {
+@-o-keyframes Animate-NestJS {
   from {
     width: 10px;
   }
@@ -605,15 +605,15 @@ body {
     width: 65%;
   }
 }
-#s-NodeJS {
+#s-NestJS {
   width: 65%;
   height: 18px;
   position: absolute;
-  background-color: #66BB6A;
-  animation: Animate-NodeJS 5s;
-  -webkit-animation: Animate-NodeJS 5s;
-  -moz-animation: Animate-NodeJS 5s;
-  -o-animation: Animate-NodeJS 5s;
+  background-color: #EF5350;
+  animation: Animate-NestJS 5s;
+  -webkit-animation: Animate-NestJS 5s;
+  -moz-animation: Animate-NestJS 5s;
+  -o-animation: Animate-NestJS 5s;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -840,7 +840,7 @@ body {
   width: 55%;
   height: 18px;
   position: absolute;
-  background-color: #ffc107;
+  background-color: #4CAF50;
   animation: Animate-Java 4s;
   -webkit-animation: Animate-Java 4s;
   -moz-animation: Animate-Java 4s;
