@@ -87,7 +87,6 @@
 
 
  		margin-left: 8px;
- 		margin-right: 8px;
 
  		/* Perfil Datos */
  		.one {
@@ -110,7 +109,7 @@
  	padding: 16px;
  	//	padding-bottom: 0px;
  	background: @blanco;
- 	height: 93.5%;
+ 	// height: 93.5%;
  	border-radius: 3px;
  	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
@@ -1338,10 +1337,18 @@
  	background: transparent;
  	padding: 10px;
 
+	@media @mobil {
+		padding-bottom: 1.6rem;
+	}
+
  	div {
  		text-align: center;
  		padding: 20px 0;
  		height: 100%;
+
+		@media @mobil {
+			padding: 20px 0.5rem;
+		}
  	}
 
  	.block-2x2 {
@@ -1436,6 +1443,10 @@
  	background: transparent;
  	padding: 10px;
 
+	 @media @mobil {
+		padding-bottom: 1.9rem;
+	}
+
  	div {
  		text-align: center;
  		padding: 20px 0;
@@ -1522,6 +1533,10 @@
  	background: transparent;
  	padding: 10px;
 
+	@media @mobil {
+		padding-bottom: 1.6rem;
+	}
+
  	div {
  		text-align: center;
  		padding: 20px 0;
@@ -1566,17 +1581,20 @@
  	height: 100%;
  	padding: 16px;
 
+	@media @mobil {
+		padding-bottom: 3.8rem;
+	}
+
  	.title_content {
  		background: @grey_500;
  		//		border: 16px solid white;
- 		padding: 16px;
-
+ 		padding: 1rem;
  		display: grid;
  		//		grid-template-columns: repeat(auto-fit, 20rem);
  		//		grid-template-columns: repeat(auto-fit, 12rem);
  		grid-template-columns: repeat(2, 16rem);
  		grid-column: auto;
- 		grid-gap: 8px;
+ 		grid-gap: 3px;
  		justify-content: center;
 
  		a {
@@ -2174,11 +2192,11 @@
 
  	#desktop-mobil_app {
  		.title_content {
- 			grid-template-columns: repeat(4, 12rem);
+ 			grid-template-columns: repeat(4, auto);
 
  			a {
  				width: 100%;
- 				height: 70%;
+ 				height: 100%;
  				//					width: 180px;
  				//					height: 150px;
  			}
@@ -2211,7 +2229,7 @@
 
  /* pequeña frase nueva*/
  .quotes {
- 	margin: -4px 8px 0 8px;
+ 	margin: 8px 8px 0 8px;
  	padding: 0.8rem 4rem 0.8rem 4rem;
  	text-align: center;
 
