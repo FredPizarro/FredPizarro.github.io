@@ -1109,12 +1109,17 @@ body {
 }
 #ux_ui .block-4x1_a {
   border-top-right-radius: 5px;
-  /* las tarjetas saltan a la siguiente linea (wrap) si no caben */
+  /* igual que .block-2x2 (wrap), pero con tarjetas de menor ancho: 4 por linea */
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
   gap: 10px;
+}
+#ux_ui .block-4x1_a a {
+  flex: 0 1 calc(25% - 10px);
+  max-width: 110px;
+  min-width: 0;
 }
 #ux_ui .block-4x1_a:hover {
   background: #3d5afe;

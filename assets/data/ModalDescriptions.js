@@ -220,6 +220,15 @@ text: `Guía de iconografía Material Design: Selección de iconos adaptada a la
  Incluye barra de navegación inferior con Home, Dictionary, Quiz y Roadmap.`
 			}
 		},
+		'Modal_section-list-of-articule-people': {
+			'section-list-of-articule-people2': {
+				title: 'Section List of Article People',
+				text: `Diseño de tablero tipo kanban para "Proyectos de investigación": cabecera con título, paginador, avatares del
+ equipo y botón de invitar. Cuatro columnas con tarjeta de cabecera en degradado y contador (Tesis, Año sabático, Acuerdos
+ y convenios, Fondos concursables), cada una con su botón para agregar, y tarjetas de proyecto con etiquetas, fecha,
+ tareas, adjuntos y responsables.`
+			}
+		},
 		'Modal_card-registro-usuarios': {
 			'card-registro-usuarios': {
 				title: 'Card Registro Usuarios',
@@ -244,6 +253,26 @@ text: `Guía de iconografía Material Design: Selección de iconos adaptada a la
  tipo de evaluación, el documento de sustento en PDF, la fecha y las acciones de ver, editar y eliminar.`
 			}
 		},
+		'Modal_APP-datafast': {
+			'Procesamiento-de-archivos-DataFast01': {
+				title: 'DataFast: versión final con hilos',
+				text: `Aplicación de escritorio para procesar archivos: tabla con nombre, tipo (CSV, XLSX, PDF, XML, JSON), tamaño y
+ estado de cada archivo, barra de acciones (Procesar, Cancelar, Reiniciar) y registro de actividad. Muestra el estado
+ inicial, con todos los archivos pendientes al 0%.`
+			},
+			'Procesamiento-de-archivos-DataFast02': {
+				title: 'DataFast: procesamiento en curso',
+				text: `Vista del procesamiento en modo síncrono: los archivos completados aparecen con barra de progreso al 100%, el
+ archivo actual muestra el estado "Descargando" con su avance, y el registro de actividad detalla cada etapa (validando,
+ procesando, registros, errores y advertencias).`
+			},
+			'Procesamiento-de-archivos-DataFast03': {
+				title: 'DataFast: versión asíncrona',
+				text: `Versión asíncrona que no bloquea la ventana: el proceso corre en un hilo secundario, mientras se muestra el
+ archivo en curso, el registro de descarga por porcentaje y una barra de progreso con su estado, de modo que la interfaz
+ sigue respondiendo.`
+			}
+		},
 		'Modal_mascota-quizcat': {
 			'maskota_QuizCat': {
 				title: 'Mascota QuizCat',
@@ -260,6 +289,28 @@ text: `Guía de iconografía Material Design: Selección de iconos adaptada a la
  fondo ámbar con círculo amarillo. Transmite el estudio y la práctica de forma amigable.`
 			}
 		},
+		'Modal_graphic-lineal': {
+			'graphic-lineal': {
+				title: 'Graphic Lineal',
+				text: `Diseño de dos tarjetas con gráficos de líneas para un panel de métricas: "Uso de la aplicación" (en verde) y
+ "Nuevos registros" (en azul). Cada tarjeta tiene ícono, título, subtítulo con el dato destacado, línea con área suave,
+ etiquetas de fecha en el eje horizontal, cuadrícula discontinua y un punto que marca el pico con su valor y fecha.`
+			}
+		},
+		'Modal_card-block-design-group': {
+			'card-block-design-group01': {
+				title: 'Card Block Design Group',
+				text: `Diseño de card para un grupo de investigación: cabecera en tono lila con la etiqueta del tipo de grupo, su
+ nombre en destacado y el responsable con su foto, y un cuerpo con el número de líneas de investigación asociadas, el
+ nombre completo del grupo y los avatares de sus integrantes con un contador de miembros adicionales.`
+			},
+			'card-block-design-group02': {
+				title: 'Card Block Design Group: línea de investigación',
+				text: `Variante de card para una línea de investigación, en tono cálido: etiqueta naranja "Línea Inv.", ícono, título
+ destacado, marca de favorito con estrella, cantidad de docentes asociados, unidad académica y avatares de los
+ responsables.`
+			}
+		},
 		'Modal_table-content-cards': {
 			'table-content-cards': {
 				title: 'Table Content Cards',
@@ -267,6 +318,12 @@ text: `Guía de iconografía Material Design: Selección de iconos adaptada a la
  ascendente/descendente, alternador entre vista de tabla y de cards, selector de registros por página y contador de
  resultados. La tabla incluye selección por fila, columnas ordenables (Centro de Estudios, Carrera/Especialidad,
  Experiencia Laboral, Completitud), acciones y estado de carga.`
+			},
+			'table-content-cards2': {
+				title: 'Table Content Cards: contratos',
+				text: `Variante de la lista aplicada a "Lista de Contratos": selector de orden con dirección, alternador tabla/cards,
+ registros por página y contador. Columnas Responsable, Contrato (ordenada), Trayectoria laboral, Estado, Duración
+ restante, Llenado y Acciones, con indicador de carga animado con el logo del sistema mientras se obtienen los datos.`
 			}
 		},
 		'Modal_actions-buttons': {
@@ -288,6 +345,14 @@ text: `Guía de iconografía Material Design: Selección de iconos adaptada a la
 				text: `Diseño web de perfil de trabajador (hoja de vida): columna lateral con foto, datos personales y de contacto, y
  panel principal con Experiencia laboral y Formación académica. Pestañas (Resumen, Docencia, Publicaciones,
  Investigaciones), botones de exportación a Word, PDF y Excel, y un aviso informativo cuando faltan datos laborales.`
+			}
+		},
+		'Modal_web-quizcat': {
+			'QuizCat-web': {
+				title: 'Web QuizCat (landing page)',
+				text: `Landing page de la app QuizCat con acceso anticipado: cabecera naranja con el logo, mensaje principal "Convierte
+ tus clases en aprendizaje inteligente", descripción de los quizzes automáticos con IA y el banco de preguntas, tarjeta con
+ código QR de descarga, botón de preregistro y una vista previa de la app en un teléfono con su pantalla de examen.`
 			}
 		},
 		'Modal_web-diagrama-gantt': {

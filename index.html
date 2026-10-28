@@ -281,7 +281,7 @@
                 <a class="nav-tab scroll-up active" href="#ux_ui">UX/ UI</a>
               </li>
               <li class="tab">
-                <a href="#web-dev" class="nav-tab scroll-up">Web Development</a>
+                <a href="#web-dev" class="nav-tab scroll-up">One-Page MVP</a>
               </li>
               <li class="tab">
                 <a href="#web-mobil_app" class="nav-tab scroll-up">Web & Mobil APP</a>
@@ -339,6 +339,14 @@
                   src="imgs/UX_UI/table-content-cards.png" alt="" style="width:100%; max-width:240px; height:auto;">
                 <span>"Table Content Cards"</span>
               </a>
+              <a id="btnModal_card-block-design-group" onclick="modal(this.id)" class="select_WebDesign select_Html select_cSs"><img
+                  src="imgs/UX_UI/card-block-design-group01.png" alt="" style="width:80px; height:auto;">
+                <span>"Card Block Design Group"</span>
+              </a>
+              <a id="btnModal_graphic-lineal" onclick="modal(this.id)" class="select_WebDesign select_Html select_cSs"><img
+                  src="imgs/UX_UI/graphic-lineal.png" alt="" width="80" height="80" style="object-fit:cover; object-position:top;">
+                <span>"Graphic Lineal"</span>
+              </a>
             </div>
             <div class="title_content block-4x1_a">
               <a id="btnModal_03" onclick="modal(this.id)" onmouseover="onMouseOver(this.id)"
@@ -365,6 +373,11 @@
                 class="select_WebDesign select_Html select_cSs "><img src="imgs/UX_UI/card-registro-usuarios.png" alt=""
                   style="width:100%; max-width:160px; height:auto;">
                 <span>Card Registro Usuarios</span>
+              </a>
+              <a id="btnModal_section-list-of-articule-people" onclick="modal(this.id)" onmouseover="onMouseOver(this.id)"
+                class="select_WebDesign select_Html select_cSs "><img src="imgs/UX_UI/section-list-of-articule-people2.png" alt=""
+                  style="width:100%; max-width:160px; height:auto;">
+                <span>Section List of Article People</span>
               </a>
             </div>
             <div class="title_content block-4x1_a block-4x1_b" title="UI Kit">
@@ -441,6 +454,11 @@
                 class="select_WebDesign select_Html select_cSs select_JS select_TypeScript ">
                 <img src="imgs/web-dev/json-generate-diagrama-gantt-min.png" alt="" width="70" height="120">
                 <span>Generate Diagrama Gantt, from JSON file</span>
+              </a>
+              <a id="btnModal_web-quizcat" onclick="modal(this.id)" onmouseover="onMouseOver(this.id)"
+                class="select_WebDesign select_Html select_cSs ">
+                <img src="imgs/web-dev/QuizCat-web.png" alt="" style="width:120px; height:auto;">
+                <span>Web QuizCat (landing page)</span>
               </a>
             </div>
             <div class="title_content block-3x1_a">
@@ -579,6 +597,12 @@
                 class="select_WebDesign select_Python">
                 <img src="imgs/Desktop-APP/spotify_lyrics/spotify_lyrics_2.png" alt="">
                 <span>APP Desktop: Aimp Lyrics</span>
+              </a>
+
+              <a id="btnModal_APP-datafast" onclick="modal(this.id)" onmouseover="onMouseOver(this.id)"
+                class="select_WebDesign select_Java">
+                <img src="imgs/Desktop-APP/Procesamiento-de-archivos-DataFast02.png" alt="">
+                <span>APP Desktop: DataFast</span>
               </a>
             </div>
 
@@ -763,6 +787,24 @@
     </div>
   </div>
 
+  <!--    Modal : btnModal_section-list-of-articule-people-->
+  <div id="Modal_section-list-of-articule-people" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close-c-c" onclick="modal_close(this.id)">×</span>
+        <h2>Web Design : "Section List of Article People"</h2>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <img src="imgs/UX_UI/section-list-of-articule-people2.png" alt="" width="95%">
+      </div>
+      <div class="modal-footer indigo bg-500">
+        <h5>Web Design: mockup by Design - by Fred Pizarro</h5>
+      </div>
+    </div>
+  </div>
+
   <!--    Modal : btnModal_card-registro-usuarios-->
   <div id="Modal_card-registro-usuarios" class="modal">
     <!-- Modal content -->
@@ -836,6 +878,43 @@
     </div>
   </div>
 
+  <!--    Modal : btnModal_graphic-lineal-->
+  <div id="Modal_graphic-lineal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close-c-c" onclick="modal_close(this.id)">×</span>
+        <h2>Web Design : "Graphic Lineal"</h2>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <img src="imgs/UX_UI/graphic-lineal.png" alt="" style="width:389px; max-width:95%; height:auto;">
+      </div>
+      <div class="modal-footer indigo bg-500">
+        <h5>Web Design: mockup by Design - by Fred Pizarro</h5>
+      </div>
+    </div>
+  </div>
+
+  <!--    Modal : btnModal_card-block-design-group-->
+  <div id="Modal_card-block-design-group" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close-c-c" onclick="modal_close(this.id)">×</span>
+        <h2>Web Design : "Card Block Design Group"</h2>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <img src="imgs/UX_UI/card-block-design-group01.png" alt="" style="width:408px; max-width:95%; height:auto;">
+        <img src="imgs/UX_UI/card-block-design-group02.png" alt="" style="width:366px; max-width:95%; height:auto;">
+      </div>
+      <div class="modal-footer indigo bg-500">
+        <h5>Web Design: mockup by Design - by Fred Pizarro</h5>
+      </div>
+    </div>
+  </div>
+
   <!--    Modal : btnModal_table-content-cards-->
   <div id="Modal_table-content-cards" class="modal">
     <!-- Modal content -->
@@ -847,6 +926,7 @@
       <hr>
       <div class="modal-body">
         <img src="imgs/UX_UI/table-content-cards.png" alt="" width="95%">
+        <img src="imgs/UX_UI/table-content-cards2.png" alt="" width="95%">
       </div>
       <div class="modal-footer indigo bg-500">
         <h5>Web Design: mockup by Design - by Fred Pizarro</h5>
@@ -1120,6 +1200,24 @@
       </div>
       <div class="modal-footer deep-orange bg-500">
         <h5>Web Design: mockup/ Development - Team Skyrider</h5>
+      </div>
+    </div>
+  </div>
+
+  <!--    btnModal_web-quizcat -->
+  <div id="Modal_web-quizcat" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close-c-c" onclick="modal_close(this.id)">×</span>
+        <h2>Web: "QuizCat (landing page)"</h2>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <img src="imgs/web-dev/QuizCat-web.png" alt="" width="95%">
+      </div>
+      <div class="modal-footer deep-orange bg-500">
+        <h5>Web Design: mockup/ Development - by Fred Pizarro</h5>
       </div>
     </div>
   </div>
@@ -1898,6 +1996,29 @@
       </div>
       <div class="modal-footer amber bg-500">
         <h5>APP Desktop: Es una Aplicación desarrollada a partir de un fork del proyecto OSDLyrics, adaptada específicamente para el reproductor Spotify. Denominada Spotify Lyrics, fue implementada en "Python" by Team Skyrider </h5>
+      </div>
+    </div>
+  </div>
+
+  <!--    Modal : btnModal_APP-datafast-->
+  <div id="Modal_APP-datafast" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close-APP-datafast" onclick="modal_close(this.id)">×</span>
+        <h2>APP Desktop: "DataFast - Procesamiento de archivos"</h2>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <img src="imgs/Desktop-APP/Procesamiento-de-archivos-DataFast01.png" alt="" width="95%">
+        <br>
+        <img src="imgs/Desktop-APP/Procesamiento-de-archivos-DataFast02.png" alt="" width="95%">
+        <br>
+        <img src="imgs/Desktop-APP/Procesamiento-de-archivos-DataFast03.png" alt="" width="60%">
+        <br>
+      </div>
+      <div class="modal-footer amber bg-500">
+        <h5>APP Desktop: DataFast, sistema de procesamiento de archivos con hilos (Java Swing)</h5>
       </div>
     </div>
   </div>
