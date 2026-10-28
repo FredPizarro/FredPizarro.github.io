@@ -68,6 +68,36 @@
 .align .center {
   text-align: center;
 }
+.text-align {
+  text-align: justify;
+}
+/* desktop: .todo 94vh, tarjetas al 100% de su contenedor */
+@media only screen and (min-width: 960px) {
+  .todo {
+    height: 94vh;
+  }
+  .todo .content-data {
+    height: 100%;
+    /* mismo margen superior que .portafolio-content para igualar alturas */
+  }
+  .todo .content-data .one {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .portafolio-user {
+    box-sizing: border-box;
+    height: 100%;
+    margin-top: 0;
+  }
+  .portafolio-content .bloque2 {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  #ux_ui {
+    box-sizing: border-box;
+    height: 100%;
+  }
+}
 /* Container styles */
 body {
   background-color: #212121 !important;

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Portafolio: Fred Pizarro</title>
   <link rel="stylesheet" href="assets/css/material-pe.min.css">
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/styles.css"> 
   <!-- <link rel="stylesheet" href="css/styles.css"> -->
   <link rel="shortcut icon" type="image/x-icon" href="imgs/ICONO_PS.png">
   <meta name="viewport"
@@ -46,17 +46,17 @@
                 <h6>About me</h6>
               </div>
               <div id="about_me_c" class="space_justify">
-                <p>
+                <p class="text-align">
                   <!--                           	Human devoting his time to technology and natural art of my people and society and fans Angular &nbsp; &nbsp; .-->
                   <!-- People dedicating their time to the technology and natural art of my people and society and especially fans Angular &nbsp; &nbsp; . -->
-                  People dedicating their time to the technology and natural art of my people and society and especially
-                  software &nbsp; &nbsp; .
+                  Software Developer with over 5 years of experience designing and developing robust, scalable, and secure solutions. I have led Full Stack development for public and private sector institutions, building platforms from scratch using RESTful API-based architectures and Clean Architecture principles. I apply software engineering best practices to improve the efficiency, security, and quality of business and institutional processes. 
+                  &nbsp; &nbsp;
 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none" />
                     <path fill="#E91E63"
                       d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                  </svg>
+                  </svg> -->
                 </p>
               </div>
             </div>
@@ -310,6 +310,10 @@
                 class="select_WebDesign select_Html select_cSs select_JS select_TypeScript"><img
                   src="imgs/UX_UI/card-upload-str-1-min.png" alt="" width="80" height="80">
                 <span>"Card Upload STR"</span>
+              </a>
+              <a id="btnModal_baner-app-download" onclick="modal(this.id)" class="select_WebDesign select_Html select_cSs"><img
+                  src="imgs/UX_UI/baner-app-download.png" alt="" width="80" height="80">
+                <span>"Banner App Download"</span>
               </a>
             </div>
             <div class="title_content block-4x1_a">
@@ -597,6 +601,24 @@
           analizar archivos de subtítulos SRT permitiendo procesarlos línea por línea. Ofrece validaciones automáticas
           de formato, tiempos y secuencias agregandoles colores, tamanho y/o mayusculas, todo presentado en una interfaz
           moderna, clara y completamente responsive. </h5>
+      </div>
+    </div>
+  </div>
+
+  <!--    Modal : btnModal_baner-app-download-->
+  <div id="Modal_baner-app-download" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close-c-c" onclick="modal_close(this.id)">×</span>
+        <h2>Web Design : "Banner App Download"</h2>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <img src="imgs/UX_UI/baner-app-download.png" alt="" width="95%">
+      </div>
+      <div class="modal-footer indigo bg-500">
+        <h5>Web Design: mockup by Design - by Fred Pizarro</h5>
       </div>
     </div>
   </div>
