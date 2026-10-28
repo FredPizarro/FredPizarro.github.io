@@ -1096,6 +1096,12 @@ body {
 }
 #ux_ui .block-2x2 {
   border-top-left-radius: 5px;
+  /* las tarjetas saltan a la siguiente linea (wrap) */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  gap: 10px;
 }
 #ux_ui .block-2x2:hover {
   background: #3d5afe;
@@ -1103,6 +1109,12 @@ body {
 }
 #ux_ui .block-4x1_a {
   border-top-right-radius: 5px;
+  /* las tarjetas saltan a la siguiente linea (wrap) si no caben */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  gap: 10px;
 }
 #ux_ui .block-4x1_a:hover {
   background: #3d5afe;
@@ -1390,6 +1402,64 @@ span[class^="close"]:focus {
 }
 .modal-body img {
   margin-bottom: 10px;
+}
+/* Nube de descripcion sobre imagenes de modales (js/modal-tooltip.js) */
+.img-cloud {
+  position: fixed;
+  z-index: 2147483647;
+  max-width: 320px;
+  padding: 12px 16px;
+  background: #212121;
+  color: #FAFAFA;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  /* flecha unida a la nube; .at-X = lado del click donde queda la nube */
+}
+.img-cloud.show {
+  opacity: 1;
+}
+.img-cloud::after {
+  content: '';
+  position: absolute;
+  border: 8px solid transparent;
+}
+.img-cloud.at-top::after {
+  left: var(--arrow-x, 50%);
+  bottom: -16px;
+  margin-left: -8px;
+  border-top-color: #212121;
+}
+.img-cloud.at-bottom::after {
+  left: var(--arrow-x, 50%);
+  top: -16px;
+  margin-left: -8px;
+  border-bottom-color: #212121;
+}
+.img-cloud.at-right::after {
+  top: var(--arrow-y, 50%);
+  left: -16px;
+  margin-top: -8px;
+  border-right-color: #212121;
+}
+.img-cloud.at-left::after {
+  top: var(--arrow-y, 50%);
+  right: -16px;
+  margin-top: -8px;
+  border-left-color: #212121;
+}
+.img-cloud strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.img-cloud p {
+  margin: 0;
 }
 /* ajustar en bloques */
 .btn-ver-mas {
